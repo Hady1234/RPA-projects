@@ -1,0 +1,44 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Climate&Flowchart_1",
+        "Season&Flowchart_1",
+        "SupernaturalWeather&Flowchart_1",
+        "User_SupernaturalWeather&Flowchart_1",
+        "User_Season&Flowchart_1",
+        "User_Climate&Flowchart_1",
+        "TrayAgain&Flowchart_1",
+        "Description&Flowchart_1",
+        "Temperature&Flowchart_1",
+        "High&Flowchart_1",
+        "Low&Flowchart_1",
+        "Relative&Flowchart_1",
+        "WindForce&Flowchart_1",
+        "WindSpeed&Flowchart_1",
+        "AllData&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "StartSearch.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

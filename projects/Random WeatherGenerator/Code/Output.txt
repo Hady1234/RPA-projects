@@ -1,0 +1,8 @@
+Description is = Clear
+Temperature is = Moderate
+High is = 45°F(7°C)
+Low is = 34°F(1°C)
+Relative is = Colderthannormal
+WindForce is = Light
+WindSpeed is = 9mph(14kph)
+Recomendation is = its cold today, wear a Jacket  

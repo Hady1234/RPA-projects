@@ -1,0 +1,43 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ProjectFlow.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "CuntryName&Flowchart_1",
+        "Recovered&Flowchart_1",
+        "CoronavirusCases&Flowchart_1",
+        "Deaths&Flowchart_1",
+        "InputLabel&Flowchart_1",
+        "ExptionMessage&Flowchart_1",
+        "TryAgain&Flowchart_1",
+        "RobotType&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Report.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TimeZone&Sequence_1",
+        "ReadExel&Sequence_7",
+        "LastRow&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Note"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
