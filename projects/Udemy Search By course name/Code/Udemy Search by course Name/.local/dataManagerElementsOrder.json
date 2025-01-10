@@ -1,0 +1,89 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Udemy Open.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolRelaod&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "boolLogedin"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Udemy Login.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "userAcount&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "inBoolLogedin",
+        "inUserAcount"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Udemy Search Project.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boollogedin&Flowchart_1",
+        "courseName&Flowchart_1",
+        "userAcount&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Udemy Courses Search.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "courseName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "User Getters.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "outUserAcount",
+        "outCourseName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Extract top three Courses.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "arrDicStrCources&Sequence_1",
+        "strExtractid&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "test.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
