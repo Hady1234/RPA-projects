@@ -1,4 +1,12 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Extract_top_three_Courses" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1149.3333333333333,1869.3333333333333" sap2010:WorkflowViewState.IdRef="Extract_top_three_Courses_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Extract_top_three_Courses" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="arrDicStrCources" Type="OutArgument(scg:Dictionary(x:String, x:String)[])" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,1980.6666666666667</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Extract_top_three_Courses_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -41,6 +49,7 @@
       <x:String>System.Security</x:String>
       <x:String>UiPath.Activities.System.Arrays</x:String>
       <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Numerics</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -103,19 +112,20 @@
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Extract_top_three_Courses" sap:VirtualizedContainerService.HintSize="980,1804.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Extract_top_three_Courses" sap:VirtualizedContainerService.HintSize="980,1916" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strExtractid" />
-      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)[]" Name="arrDicStrCources" />
+      <Variable x:TypeArguments="s:Double[]" Name="doublePrices" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap:VirtualizedContainerService.HintSize="918,118" sap2010:WorkflowViewState.IdRef="Assign_7">
+    <Assign sap:VirtualizedContainerService.HintSize="918,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_7">
       <Assign.To>
         <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)[]">[arrDicStrCources]</OutArgument>
       </Assign.To>
@@ -125,8 +135,14 @@ New Dictionary(Of String,String) From {{ "Name","" },{"Price","0"},{"Rating","0.
 New Dictionary(Of String,String) From {{ "Name","" },{"Price","0"},{"Rating","0.0"},{"Author",""},{"href",""}}
 }]</InArgument>
       </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe Search'" sap:VirtualizedContainerService.HintSize="918,1598.6666666666667" sap2010:WorkflowViewState.IdRef="BrowserScope_4" InformativeScreenshot="cbf63b08bf28f6a96bbdc7f82f743bb7" Selector="&lt;html app='msedge.exe' title='Search results*' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe Search'" sap:VirtualizedContainerService.HintSize="918,1608" sap2010:WorkflowViewState.IdRef="BrowserScope_4" InformativeScreenshot="cbf63b08bf28f6a96bbdc7f82f743bb7" Selector="&lt;html app='msedge.exe' title='Search results*' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -226,6 +242,9 @@ New Dictionary(Of String,String) From {{ "Name","" },{"Price","0"},{"Rating","0.
                     <DelegateInArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="Course" />
                   </ActivityAction.Argument>
                   <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="788,972.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:Int32" Default="0" Name="intIncrementer" />
+                    </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -255,7 +274,7 @@ New Dictionary(Of String,String) From {{ "Name","" },{"Price","0"},{"Rating","0.
                         <OutArgument x:TypeArguments="x:String">[Course("Name")]</OutArgument>
                       </ui:GetValue.Value>
                     </ui:GetValue>
-                    <ui:AnchorBase AnchorPosition="Auto" ContinueOnError="{x:Null}" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="726,232.66666666666666" sap2010:WorkflowViewState.IdRef="AnchorBase_1">
+                    <ui:AnchorBase AnchorPosition="Auto" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="726,232.66666666666666" sap2010:WorkflowViewState.IdRef="AnchorBase_1">
                       <ui:AnchorBase.Action>
                         <ActivityAction x:TypeArguments="ui:Anchor">
                           <ActivityAction.Argument>
@@ -343,5 +362,59 @@ New Dictionary(Of String,String) From {{ "Name","" },{"Price","0"},{"Rating","0.
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:BrowserScope>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="918,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,197.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_16">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="354,109.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[arrDicStrCources(0)(&quot;Name&quot;)+Environment.NewLine+&#xD;&#xA;arrDicStrCources(0)(&quot;Price&quot;)+Environment.NewLine+&#xD;&#xA;arrDicStrCources(0)(&quot;Rating&quot;)+Environment.NewLine+&#xD;&#xA;arrDicStrCources(0)(&quot;Author&quot;)+Environment.NewLine+&#xD;&#xA;&quot;https://www.udemy.com&quot;+arrDicStrCources(0)(&quot;href&quot;)+Environment.NewLine]" />
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="918,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,197.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_17">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="354,109.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[arrDicStrCources(1)(&quot;Name&quot;)+Environment.NewLine+&#xD;&#xA;arrDicStrCources(1)(&quot;Price&quot;)+Environment.NewLine+&#xD;&#xA;arrDicStrCources(1)(&quot;Rating&quot;)+Environment.NewLine+&#xD;&#xA;arrDicStrCources(1)(&quot;Author&quot;)+Environment.NewLine+&#xD;&#xA;&quot;https://www.udemy.com&quot;+arrDicStrCources(1)(&quot;href&quot;)+Environment.NewLine]" />
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="918,48" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,197.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_18">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="354,109.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[arrDicStrCources(2)(&quot;Name&quot;)+Environment.NewLine+&#xD;&#xA;arrDicStrCources(2)(&quot;Price&quot;)+Environment.NewLine+&#xD;&#xA;arrDicStrCources(2)(&quot;Rating&quot;)+Environment.NewLine+&#xD;&#xA;arrDicStrCources(2)(&quot;Author&quot;)+Environment.NewLine+&#xD;&#xA;&quot;https://www.udemy.com&quot;+arrDicStrCources(2)(&quot;href&quot;)+Environment.NewLine]" />
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
   </Sequence>
 </Activity>

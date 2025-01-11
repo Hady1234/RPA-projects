@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,1969.3333333333333</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,1850.6666666666667</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -93,13 +93,13 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Udemy Open" sap:VirtualizedContainerService.HintSize="766,1904.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Udemy Open" sap:VirtualizedContainerService.HintSize="766,1786" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="704,1816.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="704,1698" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Boolean" Name="boolRelaod" />
       </Sequence.Variables>
@@ -108,20 +108,20 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" BrowserType="Edge" CommunicationMethod="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Open Browser And Navigate to Udemy" Hidden="{x:Null}" sap:VirtualizedContainerService.HintSize="642,1706" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" Url="https://www.google.com/" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}">
+      <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Browser And Navigate to Udemy" sap:VirtualizedContainerService.HintSize="642,1587.3333333333333" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.google.com/">
         <ui:OpenBrowser.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="608,1556" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="608,1437.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:MaximizeWindow ContinueOnError="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="546,57.333333333333336" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" Window="{x:Null}" />
-              <ui:Activate ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" sap:VirtualizedContainerService.HintSize="546,57.333333333333336" sap2010:WorkflowViewState.IdRef="Activate_1">
+              <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="546,57.333333333333336" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+              <ui:Activate DelayBefore="{x:Null}" DelayMS="{x:Null}" sap:VirtualizedContainerService.HintSize="546,57.333333333333336" sap2010:WorkflowViewState.IdRef="Activate_1">
                 <ui:Activate.Target>
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="9fb2288c-9099-47f6-9140-71f90bb9e8ed">
                     <ui:Target.TimeoutMS>
@@ -139,13 +139,13 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:Activate>
-              <ui:BrowserScope Browser="{x:Null}" BrowserType="Edge" ContinueOnError="{x:Null}" DisplayName="Attach Browser 'msedge.exe udemy.com/lo...'" sap:VirtualizedContainerService.HintSize="546,1353.3333333333333" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="44af69c634a53e6528f9d89f95c509d0" SearchScope="{x:Null}" Selector="&lt;html app='msedge.exe' title='Google' /&gt;" TimeoutMS="{x:Null}" UiBrowser="{x:Null}">
+              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe udemy.com/lo...'" sap:VirtualizedContainerService.HintSize="546,1234.6666666666667" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="44af69c634a53e6528f9d89f95c509d0" Selector="&lt;html app='msedge.exe' title='Google' /&gt;">
                 <ui:BrowserScope.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1183.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1064.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -207,15 +207,15 @@
                           </ui:Target>
                         </ui:Click.Target>
                       </ui:Click>
-                      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="450,464.6666666666667" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+                      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[not boolRelaod]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="450,346" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
                         <ui:InterruptibleDoWhile.Body>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,316.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="Sequence_5">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:UiElementExists DisplayName="Element Exists" Exists="[boolRelaod]" sap:VirtualizedContainerService.HintSize="354,119.33333333333333" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
+                            <ui:UiElementExists DisplayName="Element Exists" Exists="[boolRelaod]" sap:VirtualizedContainerService.HintSize="354,110" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
                               <ui:UiElementExists.Target>
                                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="15680409-5197-4b6c-a49d-d0f1653fab65" Selector="&lt;html app='msedge.exe' title='Online Courses *Udemy' /&gt;&lt;webctrl tag='IMG' aaname='Udemy' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;a&amp;gt;img' /&gt;">
                                   <ui:Target.TimeoutMS>
@@ -227,12 +227,8 @@
                                 </ui:Target>
                               </ui:UiElementExists.Target>
                             </ui:UiElementExists>
-                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="354,109.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[boolRelaod.ToString]" />
                           </Sequence>
                         </ui:InterruptibleDoWhile.Body>
-                        <ui:InterruptibleDoWhile.Condition>
-                          <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="not boolRelaod" />
-                        </ui:InterruptibleDoWhile.Condition>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -248,7 +244,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:LogMessage>
-                      <ui:UiElementExists ContinueOnError="{x:Null}" DisplayName="Element Exists Check if Login Bottom is Exists or not" Exists="[boolLogedin]" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="UiElementExists_1" Result="{x:Null}">
+                      <ui:UiElementExists DisplayName="Element Exists Check if Login Bottom is Exists or not" Exists="[boolLogedin]" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
                         <ui:UiElementExists.Target>
                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="26b6cc71-21d5-484b-b624-f43cdb58fce6" InformativeScreenshot="2996041032382e532885a2cea5471db3" Selector="&lt;webctrl aaname='Log in' innertext='Log in' /&gt;">
                             <ui:Target.TimeoutMS>
