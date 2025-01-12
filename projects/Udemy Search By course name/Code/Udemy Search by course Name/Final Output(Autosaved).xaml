@@ -1,11 +1,12 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="Final_Output" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="arrDicStrCources" Type="InArgument(scg:Dictionary(x:String, x:String)[])" />
+    <x:Property Name="trayAgain" Type="OutArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,750</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,454</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Final_Output_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -37,6 +38,11 @@
       <x:String>System.Runtime.Serialization</x:String>
       <x:String>System.Linq.Expressions</x:String>
       <x:String>System.Numerics</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Activities.System.Arrays</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -87,59 +93,47 @@
       <AssemblyReference>System.Linq.Parallel</AssemblyReference>
       <AssemblyReference>System.Collections.Immutable</AssemblyReference>
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Final_Output" sap:VirtualizedContainerService.HintSize="512,685.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Final_Output " sap:VirtualizedContainerService.HintSize="496,372" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="scg:List(x:Int32)" Name="listIntPrices" />
-      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)[]" Name="arrDicStrSorted" />
+      <Variable x:TypeArguments="scg:List(x:Double)" Name="listDoubelPrices" />
+      <Variable x:TypeArguments="scg:List(scg:Dictionary(x:String, x:String))" Name="listDicStrSorted" />
+      <Variable x:TypeArguments="x:Int32" Name="intIncrementer" />
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="DictionaryVar" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap:VirtualizedContainerService.HintSize="450,118" sap2010:WorkflowViewState.IdRef="Assign_5">
+    <Assign DisplayName="Assign Ordenon" sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_20">
       <Assign.To>
         <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)[]">[arrDicStrCources]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)[]" xml:space="preserve">[{ New Dictionary(Of String,String) From {{ "Name","" },{"Price","0"},{"Rating","0.0"},{"Author",""},{"href",""}},
-New Dictionary(Of String,String) From {{ "Name","" },{"Price","0"},{"Rating","0.0"},{"Author",""},{"href",""}},
-New Dictionary(Of String,String) From {{ "Name","" },{"Price","0"},{"Rating","0.0"},{"Author",""},{"href",""}}
-}]</InArgument>
+        <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)[]">[arrDicStrCources.OrderBy(Function(dic) Convert.ToDouble(dic("Price"))).ToArray()]</InArgument>
       </Assign.Value>
+    </Assign>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[arrDicStrCources(0)(&quot;Name&quot;)+Environment.NewLine +&#xA;arrDicStrCources(0)(&quot;Price&quot;)+Environment.NewLine +&#xA;arrDicStrCources(0)(&quot;Rating&quot;)+Environment.NewLine +&#xA;arrDicStrCources(0)(&quot;Author&quot;)+Environment.NewLine+&#xA;&quot;_______________________________________________________________________&quot;+&#xA;arrDicStrCources(1)(&quot;Name&quot;)+Environment.NewLine +&#xA;arrDicStrCources(1)(&quot;Price&quot;)+Environment.NewLine +&#xA;arrDicStrCources(1)(&quot;Rating&quot;)+Environment.NewLine+&#xA;arrDicStrCources(1)(&quot;Author&quot;)+Environment.NewLine+&#xA;&quot;__________________________________________________________________&quot;+&#xA;arrDicStrCources(2)(&quot;Name&quot;)+Environment.NewLine +&#xA;arrDicStrCources(2)(&quot;Price&quot;)+Environment.NewLine +&#xA;arrDicStrCources(2)(&quot;Rating&quot;)+Environment.NewLine+&#xA;arrDicStrCources(2)(&quot;Author&quot;)+Environment.NewLine]" />
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="434,48" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Do you have a nother Course Name" Title="More">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[trayAgain]</OutArgument>
+      </ui:InputDialog.Result>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-    </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="450,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_4">
-      <Assign.To>
-        <OutArgument x:TypeArguments="scg:List(x:Int32)">[listIntPrices]</OutArgument>
-      </Assign.To>
-      <Assign.Value>
-        <InArgument x:TypeArguments="scg:List(x:Int32)">[New List(Of Integer) From{1, 1, 3}]</InArgument>
-      </Assign.Value>
-    </Assign>
-    <ui:ForEach x:TypeArguments="scg:Dictionary(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each currentDictionaryOfTextAndText" sap:VirtualizedContainerService.HintSize="450,252.66666666666666" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[arrDicStrCources]">
-      <ui:ForEach.Body>
-        <ActivityAction x:TypeArguments="scg:Dictionary(x:String, x:String)">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="currentDictionaryOfTextAndText" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,104.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-          </Sequence>
-        </ActivityAction>
-      </ui:ForEach.Body>
-    </ui:ForEach>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="450,109.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[(listIntPrices.Max()).ToString]" />
+    </ui:InputDialog>
   </Sequence>
 </Activity>

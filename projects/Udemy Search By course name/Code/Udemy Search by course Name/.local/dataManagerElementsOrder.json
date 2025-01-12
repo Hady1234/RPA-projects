@@ -15,6 +15,7 @@
         "boolRelaod&Sequence_2"
       ],
       "ArgumentsSectionElementsOrder": [
+        "WantToLogin",
         "boolLogedin"
       ],
       "ConstantsSectionElementsOrder": [],
@@ -39,7 +40,10 @@
       "VariablesSectionElementsOrder": [
         "boollogedin&Flowchart_1",
         "courseName&Flowchart_1",
-        "userAcount&Flowchart_1"
+        "userAcount&Flowchart_1",
+        "arrDicStrCources&Flowchart_1",
+        "WantToLogin&Flowchart_1",
+        "trayAgain&Flowchart_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
@@ -60,6 +64,7 @@
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
+        "WantToLogin",
         "outUserAcount",
         "outCourseName"
       ],
@@ -70,18 +75,42 @@
       "Path": "Extract top three Courses.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "arrDicStrCources&Sequence_1",
+        "strLargText&Sequence_21",
+        "strTextExtracted&Sequence_15",
+        "doublePrices&Sequence_1",
+        "intIncrementer&Sequence_15",
         "strExtractid&Sequence_1"
       ],
-      "ArgumentsSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "arrDicStrCources"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
     {
       "Path": "test.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "testStin&Sequence_1",
+        "intArray&Sequence_1"
+      ],
       "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Final Output(Autosaved).xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "listDoubelPrices&Sequence_1",
+        "listDicStrSorted&Sequence_1",
+        "intIncrementer&Sequence_1",
+        "DictionaryVar&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "trayAgain",
+        "arrDicStrCources"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }
