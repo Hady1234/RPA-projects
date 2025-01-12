@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,454</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,554</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Final_Output_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -43,6 +43,10 @@
       <x:String>UiPath.UIAutomationCore.Contracts</x:String>
       <x:String>UiPath.Platform.SyncObjects</x:String>
       <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Persistence.Activities.Model.Task</x:String>
+      <x:String>UiPath.Persistence.Activities.FormTask</x:String>
+      <x:String>UiPath.Persistence.Activities.BaseTask</x:String>
+      <x:String>UiPath.Persistence.Activities</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -101,9 +105,10 @@
       <AssemblyReference>UiPath.Platform</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Persistence.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Final_Output " sap:VirtualizedContainerService.HintSize="496,372" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Final_Output " sap:VirtualizedContainerService.HintSize="496,489.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:List(x:Double)" Name="listDoubelPrices" />
       <Variable x:TypeArguments="scg:List(scg:Dictionary(x:String, x:String))" Name="listDicStrSorted" />
@@ -123,8 +128,16 @@
         <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)[]">[arrDicStrCources.OrderBy(Function(dic) Convert.ToDouble(dic("Price"))).ToArray()]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[arrDicStrCources(0)(&quot;Name&quot;)+Environment.NewLine +&#xA;arrDicStrCources(0)(&quot;Price&quot;)+Environment.NewLine +&#xA;arrDicStrCources(0)(&quot;Rating&quot;)+Environment.NewLine +&#xA;arrDicStrCources(0)(&quot;Author&quot;)+Environment.NewLine+&#xA;&quot;_______________________________________________________________________&quot;+&#xA;arrDicStrCources(1)(&quot;Name&quot;)+Environment.NewLine +&#xA;arrDicStrCources(1)(&quot;Price&quot;)+Environment.NewLine +&#xA;arrDicStrCources(1)(&quot;Rating&quot;)+Environment.NewLine+&#xA;arrDicStrCources(1)(&quot;Author&quot;)+Environment.NewLine+&#xA;&quot;__________________________________________________________________&quot;+&#xA;arrDicStrCources(2)(&quot;Name&quot;)+Environment.NewLine +&#xA;arrDicStrCources(2)(&quot;Price&quot;)+Environment.NewLine +&#xA;arrDicStrCources(2)(&quot;Rating&quot;)+Environment.NewLine+&#xA;arrDicStrCources(2)(&quot;Author&quot;)+Environment.NewLine]" />
-    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="434,48" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Do you have a nother Course Name" Title="More">
+    <Assign DisplayName="Assign Ordenon" sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_21">
+      <Assign.To>
+        <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)[]">[arrDicStrCources]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)[]">[arrDicStrCources.OrderByDescending(Function(dic) Convert.ToDouble(dic("Rating"))).ToArray()]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:MessageBox AutoCloseAfter="00:00:00" Buttons="{x:Null}" Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[&quot;Thes courses Is Presented in Order to Lower Price &amp; Higher Rate&quot;+Environment.NewLine+&#xA;Environment.NewLine+&#xA;&quot;Cource Name : &quot;+arrDicStrCources(0)(&quot;Name&quot;)+Environment.NewLine +&#xA;&quot;Cource Price : &quot;+arrDicStrCources(0)(&quot;Price&quot;)+Environment.NewLine +&#xA;&quot;Cource Rating : &quot;+arrDicStrCources(0)(&quot;Rating&quot;)+Environment.NewLine +&#xA;&quot;Cource Author : &quot;+arrDicStrCources(0)(&quot;Author&quot;)+Environment.NewLine+&#xA;Environment.NewLine+&quot;Link : https://www.udemy.com&quot;+arrDicStrCources(0)(&quot;href&quot;)+&#xA;Environment.NewLine+&#xA;&quot;_______________________________________________________________________&quot;+&#xA;Environment.NewLine+&#xA;&quot;Cource Name : &quot;+arrDicStrCources(1)(&quot;Name&quot;)+Environment.NewLine +&#xA;&quot;Cource Price : &quot;+arrDicStrCources(1)(&quot;Price&quot;)+Environment.NewLine +&#xA;&quot;Cource Rating : &quot;+arrDicStrCources(1)(&quot;Rating&quot;)+Environment.NewLine+&#xA;&quot;Cource Author : &quot;+arrDicStrCources(1)(&quot;Author&quot;)+Environment.NewLine+&#xA;Environment.NewLine+&quot;Link : https://www.udemy.com&quot;+arrDicStrCources(1)(&quot;href&quot;)]" TopMost="{x:Null}" />
+    <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="434,48" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Do you have a nother Course Name" OptionsString="Yes;No" Title="More">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[trayAgain]</OutArgument>
       </ui:InputDialog.Result>
