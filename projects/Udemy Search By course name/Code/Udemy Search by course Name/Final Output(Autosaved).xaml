@@ -10,52 +10,56 @@
   <sap2010:WorkflowViewState.IdRef>Final_Output_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
-      <x:String>System.Activities</x:String>
-      <x:String>System.Activities.Statements</x:String>
-      <x:String>System.Activities.Expressions</x:String>
-      <x:String>System.Activities.Validation</x:String>
-      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
       <x:String>Microsoft.VisualBasic</x:String>
       <x:String>Microsoft.VisualBasic.Activities</x:String>
       <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
       <x:String>System.Collections</x:String>
       <x:String>System.Collections.Generic</x:String>
       <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.ComponentModel</x:String>
       <x:String>System.Data</x:String>
       <x:String>System.Diagnostics</x:String>
       <x:String>System.Drawing</x:String>
       <x:String>System.IO</x:String>
       <x:String>System.Linq</x:String>
+      <x:String>System.Linq.Expressions</x:String>
       <x:String>System.Net.Mail</x:String>
-      <x:String>System.Xml</x:String>
-      <x:String>System.Xml.Linq</x:String>
-      <x:String>UiPath.Core</x:String>
-      <x:String>UiPath.Core.Activities</x:String>
-      <x:String>System.Windows.Markup</x:String>
-      <x:String>GlobalVariablesNamespace</x:String>
-      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Numerics</x:String>
       <x:String>System.Reflection</x:String>
       <x:String>System.Runtime.Serialization</x:String>
-      <x:String>System.Linq.Expressions</x:String>
-      <x:String>System.Numerics</x:String>
-      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
       <x:String>UiPath.Activities.System.Arrays</x:String>
-      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
       <x:String>UiPath.Platform.SyncObjects</x:String>
-      <x:String>UiPath.Excel.Activities</x:String>
-      <x:String>UiPath.Persistence.Activities.Model.Task</x:String>
-      <x:String>UiPath.Persistence.Activities.FormTask</x:String>
-      <x:String>UiPath.Persistence.Activities.BaseTask</x:String>
-      <x:String>UiPath.Persistence.Activities</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
     <sco:Collection x:TypeArguments="AssemblyReference">
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
       <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
       <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
       <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
       <AssemblyReference>System.Data.Common</AssemblyReference>
@@ -64,48 +68,34 @@
       <AssemblyReference>System.Drawing.Common</AssemblyReference>
       <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
       <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Net.Mail</AssemblyReference>
       <AssemblyReference>System.ObjectModel</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
       <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>System.Xml</AssemblyReference>
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
-      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
-      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
-      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
-      <AssemblyReference>System.Memory.Data</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Console</AssemblyReference>
-      <AssemblyReference>System.Security.Permissions</AssemblyReference>
-      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
-      <AssemblyReference>System.ComponentModel</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.Private.Uri</AssemblyReference>
-      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
-      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
-      <AssemblyReference>System.Linq.Async</AssemblyReference>
-      <AssemblyReference>System.Collections</AssemblyReference>
-      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
-      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
-      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
-      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
-      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
-      <AssemblyReference>PresentationFramework</AssemblyReference>
-      <AssemblyReference>WindowsBase</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
-      <AssemblyReference>UiPath.Platform</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
-      <AssemblyReference>UiPath.Persistence.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Final_Output " sap:VirtualizedContainerService.HintSize="496,489.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -120,15 +110,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign DisplayName="Assign Ordenon" sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_20">
-      <Assign.To>
-        <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)[]">[arrDicStrCources]</OutArgument>
-      </Assign.To>
-      <Assign.Value>
-        <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)[]">[arrDicStrCources.OrderBy(Function(dic) Convert.ToDouble(dic("Price"))).ToArray()]</InArgument>
-      </Assign.Value>
-    </Assign>
-    <Assign DisplayName="Assign Ordenon" sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_21">
+    <Assign DisplayName="Assign Ordenon Rate" sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_21">
       <Assign.To>
         <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)[]">[arrDicStrCources]</OutArgument>
       </Assign.To>
@@ -136,7 +118,15 @@
         <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)[]">[arrDicStrCources.OrderByDescending(Function(dic) Convert.ToDouble(dic("Rating"))).ToArray()]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:MessageBox AutoCloseAfter="00:00:00" Buttons="{x:Null}" Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[&quot;Thes courses Is Presented in Order to Lower Price &amp; Higher Rate&quot;+Environment.NewLine+&#xA;Environment.NewLine+&#xA;&quot;Cource Name : &quot;+arrDicStrCources(0)(&quot;Name&quot;)+Environment.NewLine +&#xA;&quot;Cource Price : &quot;+arrDicStrCources(0)(&quot;Price&quot;)+Environment.NewLine +&#xA;&quot;Cource Rating : &quot;+arrDicStrCources(0)(&quot;Rating&quot;)+Environment.NewLine +&#xA;&quot;Cource Author : &quot;+arrDicStrCources(0)(&quot;Author&quot;)+Environment.NewLine+&#xA;Environment.NewLine+&quot;Link : https://www.udemy.com&quot;+arrDicStrCources(0)(&quot;href&quot;)+&#xA;Environment.NewLine+&#xA;&quot;_______________________________________________________________________&quot;+&#xA;Environment.NewLine+&#xA;&quot;Cource Name : &quot;+arrDicStrCources(1)(&quot;Name&quot;)+Environment.NewLine +&#xA;&quot;Cource Price : &quot;+arrDicStrCources(1)(&quot;Price&quot;)+Environment.NewLine +&#xA;&quot;Cource Rating : &quot;+arrDicStrCources(1)(&quot;Rating&quot;)+Environment.NewLine+&#xA;&quot;Cource Author : &quot;+arrDicStrCources(1)(&quot;Author&quot;)+Environment.NewLine+&#xA;Environment.NewLine+&quot;Link : https://www.udemy.com&quot;+arrDicStrCources(1)(&quot;href&quot;)]" TopMost="{x:Null}" />
+    <Assign DisplayName="Assign Ordenon Price" sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_20">
+      <Assign.To>
+        <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)[]">[arrDicStrCources]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)[]">[arrDicStrCources.OrderBy(Function(dic) Convert.ToDouble(dic("Price"))).ToArray()]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[&quot;Thes courses Is Presented in Order to Lower Price &amp; Higher Rate&quot;+Environment.NewLine+&#xA;Environment.NewLine+&#xA;&quot;Cource Name : &quot;+arrDicStrCources(0)(&quot;Name&quot;)+Environment.NewLine +&#xA;&quot;Cource Price : &quot;+arrDicStrCources(0)(&quot;Price&quot;)+Environment.NewLine +&#xA;&quot;Cource Rating : &quot;+arrDicStrCources(0)(&quot;Rating&quot;)+Environment.NewLine +&#xA;&quot;Cource Author : &quot;+arrDicStrCources(0)(&quot;Author&quot;)+Environment.NewLine+&#xA;Environment.NewLine+&quot;Link : https://www.udemy.com&quot;+arrDicStrCources(0)(&quot;href&quot;)+&#xA;Environment.NewLine+&#xA;&quot;_______________________________________________________________________&quot;+&#xA;Environment.NewLine+&#xA;&quot;Cource Name : &quot;+arrDicStrCources(1)(&quot;Name&quot;)+Environment.NewLine +&#xA;&quot;Cource Price : &quot;+arrDicStrCources(1)(&quot;Price&quot;)+Environment.NewLine +&#xA;&quot;Cource Rating : &quot;+arrDicStrCources(1)(&quot;Rating&quot;)+Environment.NewLine+&#xA;&quot;Cource Author : &quot;+arrDicStrCources(1)(&quot;Author&quot;)+Environment.NewLine+&#xA;Environment.NewLine+&quot;Link : https://www.udemy.com&quot;+arrDicStrCources(1)(&quot;href&quot;)]" />
     <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="434,48" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Do you have a nother Course Name" OptionsString="Yes;No" Title="More">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[trayAgain]</OutArgument>

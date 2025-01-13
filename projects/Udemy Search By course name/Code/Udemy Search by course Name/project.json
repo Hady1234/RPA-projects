@@ -4,11 +4,7 @@
   "description": "Blank Process",
   "main": "Udemy Search Project.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.24.0-preview]",
-    "UiPath.Mail.Activities": "[1.23.11]",
-    "UiPath.Persistence.Activities": "[1.5.14-preview]",
     "UiPath.System.Activities": "[24.12.1-preview]",
-    "UiPath.Testing.Activities": "[24.10.0]",
     "UiPath.UIAutomation.Activities": "[24.11.1-preview]"
   },
   "webServices": [],

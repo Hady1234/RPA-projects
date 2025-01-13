@@ -75,11 +75,9 @@
       "Path": "Extract top three Courses.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "strLargText&Sequence_21",
-        "strTextExtracted&Sequence_15",
-        "doublePrices&Sequence_1",
-        "intIncrementer&Sequence_15",
-        "strExtractid&Sequence_1"
+        "strExtracted&Sequence_1",
+        "timeDelay&Sequence_1",
+        "doublePrices&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [
         "arrDicStrCources"
@@ -111,6 +109,21 @@
         "trayAgain",
         "arrDicStrCources"
       ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": ".templates/UdemySearchProjectTemplate.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boollogedin&Flowchart_1",
+        "courseName&Flowchart_1",
+        "userAcount&Flowchart_1",
+        "arrDicStrCources&Flowchart_1",
+        "WantToLogin&Flowchart_1",
+        "trayAgain&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }
