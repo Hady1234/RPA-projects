@@ -38,6 +38,7 @@
       "Path": "Udemy Search Project.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "LogOut&Flowchart_1",
         "boollogedin&Flowchart_1",
         "courseName&Flowchart_1",
         "userAcount&Flowchart_1",
@@ -64,6 +65,7 @@
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
+        "LogOut",
         "WantToLogin",
         "outUserAcount",
         "outCourseName"
@@ -89,8 +91,9 @@
       "Path": "test.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "intArray&Sequence_1",
         "testStin&Sequence_1",
-        "intArray&Sequence_1"
+        "boolRelaod&Sequence_2"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
@@ -122,6 +125,31 @@
         "arrDicStrCources&Flowchart_1",
         "WantToLogin&Flowchart_1",
         "trayAgain&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Extract top three courses V2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strExtracted&Sequence_2",
+        "doublePrices&Sequence_2",
+        "intInc2&Sequence_2",
+        "intInc1&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "arrDicStrCources"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Udemy LogOut.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolOut&Sequence_2"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
