@@ -1,17 +1,20 @@
 {
-  "name": "Udemy Search by course Name",
-  "projectId": "d273fe67-52d6-413b-9593-ba4029dff434",
+  "name": "Youtub",
+  "projectId": "2a5e59b9-a5e0-4026-9774-4f6fe7688585",
   "description": "Blank Process",
-  "main": "Main.xaml",
+  "main": "StateMachine.xaml",
   "dependencies": {
-    "UiPath.System.Activities": "[24.12.1-preview]",
+    "UiPath.Excel.Activities": "[2.24.0-preview]",
+    "UiPath.Mail.Activities": "[1.23.11]",
+    "UiPath.System.Activities": "[24.11.0-preview]",
+    "UiPath.Testing.Activities": "[24.10.0]",
     "UiPath.UIAutomation.Activities": "[24.11.1-preview]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "24.10.4.0",
-  "projectVersion": "1.0.1",
+  "projectVersion": "1.0.0",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -40,33 +43,26 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [
-      {
-        "templateType": "Generic",
-        "fileName": ".templates\\UdemySearchProjectTemplate.xaml"
-      }
-    ],
+    "fileInfoCollection": [],
     "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Udemy Open.xaml",
-      "uniqueId": "867bd342-725f-46de-9784-eb0ed6f5653a",
+      "filePath": "StateMachine.xaml",
+      "uniqueId": "39f7c7e3-3a10-46e0-938a-b14e5b07abcb",
       "input": [],
       "output": []
     },
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "b775cca4-30ca-4881-b8b5-97467c698861",
+      "filePath": "Youtub open.xaml",
+      "uniqueId": "799a6407-cf9b-4092-a5f2-12e793cd3990",
       "input": [],
       "output": []
     }
   ],
   "isTemplate": false,
   "templateProjectData": {},
-  "publishData": {
-    "iconUrl": ".package/Robot Emb.jpeg"
-  },
+  "publishData": {},
   "targetFramework": "Windows"
 }

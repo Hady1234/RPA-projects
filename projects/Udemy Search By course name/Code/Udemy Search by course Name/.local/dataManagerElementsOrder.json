@@ -35,16 +35,16 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "Udemy Search Project.xaml",
+      "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "LogOut&Flowchart_1",
         "boollogedin&Flowchart_1",
         "courseName&Flowchart_1",
         "userAcount&Flowchart_1",
         "arrDicStrCources&Flowchart_1",
         "WantToLogin&Flowchart_1",
-        "trayAgain&Flowchart_1"
+        "trayAgain&Flowchart_1",
+        "LogOut&Flowchart_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
@@ -152,6 +152,21 @@
         "boolOut&Sequence_2"
       ],
       "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Extract top three courses V2(Autosaved).xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strExtracted&Sequence_2",
+        "doublePrices&Sequence_2",
+        "intInc2&Sequence_2",
+        "intInc1&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "arrDicStrCources"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }
