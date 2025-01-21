@@ -22,7 +22,11 @@ The **Projects** folder contains all my RPA Robotic projects. Each project folde
    - This bot allows users to search Udemy for courses by name.  
    - It retrieves and displays the course price, author, and rating.  
    - Additionally, it highlights and presents the two most affordable courses.  
-
+3. **YouTube Playlist Scraper**:
+   - Keyword-Based Search: The bot prompts the user to input a keyword and uses it to perform a YouTube search.
+   - Playlist Navigation: It automatically identifies and navigates to the first playlist in the search results.
+   - Data Extraction: The bot retrieves the title and view count of each video in the playlist.
+   - User-Friendly Workflow: The process is fully automated, requiring minimal user interaction beyond entering the initial keyword.
 ### Certificates  
 The **Certificates** folder includes the following achievements:  
 1. **UiPath Business Analyst Automation Certificate**  
