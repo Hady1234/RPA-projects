@@ -1,0 +1,103 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Youtub open.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_strSearchWord"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "StateMachine.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strCourseName&StateMachine_1",
+        "boolEmptyCourseName&StateMachine_1",
+        "boolYoutubOpen&StateMachine_1",
+        "dicListCourses&StateMachine_1",
+        "strTrayAgain&StateMachine_1",
+        "strFolder&StateMachine_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Youtub Settings.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Play List Preperation.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Play List Excution.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strCourseTitle&Sequence_4",
+        "strCourseVeiws&Sequence_4",
+        "strCourseNumVedios&Sequence_4",
+        "incrementer&Sequence_3",
+        "intVedioIndex&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_dicListCourses"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Output.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strAllText&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strfolder",
+        "in_strCouseName",
+        "in_dicListCourses"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "test.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "User input.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "io_strfolder",
+        "strCourseName",
+        "boolEmptyCourseName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
