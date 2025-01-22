@@ -3,11 +3,12 @@
     <x:Property Name="in_dicListCourses" Type="InArgument(scg:List(scg:Dictionary(x:String, x:String)))" />
     <x:Property Name="in_strCouseName" Type="InArgument(x:String)" />
     <x:Property Name="in_strfolder" Type="InArgument(x:String)" />
+    <x:Property Name="in_strAllcourseDuration" Type="InArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,1948</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,2008.666666666667</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Notbad_starts_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -95,7 +96,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Notbad_starts" sap:VirtualizedContainerService.HintSize="688,1883.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Notbad_starts" sap:VirtualizedContainerService.HintSize="688,1944" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strAllText" />
     </Sequence.Variables>
@@ -105,23 +106,24 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign DisplayName="Set Titel text" sap:VirtualizedContainerService.HintSize="626,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_7">
+    <Assign DisplayName="Set Titel text" sap:VirtualizedContainerService.HintSize="626,118" sap2010:WorkflowViewState.IdRef="Assign_7">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[strAllText]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:String" xml:space="preserve">["                                                            "+in_dicListCourses(0)("Course Title")+" :Course Views = "+
+        <InArgument x:TypeArguments="x:String" xml:space="preserve">["                           Title  :     "+in_dicListCourses(0)("Course Title")+"        Course Views = "+
 in_dicListCourses(0)("Course Views")+
 "Num of Course Vedios : "+in_dicListCourses(0)("Num of Course Vedios")+
 Environment.NewLine+
- "_______________________________________________________________________________________________________"+
 Environment.NewLine+
 Environment.NewLine+
+Environment.NewLine+
+"The Total list Duration is  "+in_strAllcourseDuration+
 Environment.NewLine]</InArgument>
       </Assign.Value>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
@@ -175,8 +177,9 @@ Environment.NewLine]</InArgument>
                       </Assign.To>
                       <Assign.Value>
                         <InArgument x:TypeArguments="x:String" xml:space="preserve">[strAllText+Environment.NewLine+
-"Vedio Title : "+Coures("Vedio Title")+
-", Views : "+Coures("Vedio Views")+
+"Vedio Title : "+Coures("Vedio Title")+Environment.NewLine+
+"Views : "+Coures("Vedio Views")+Environment.NewLine+
+"Vedio duration Duration is  "+Coures("Vedio Duration")+
 Environment.NewLine+
 "_______________________________________________________________________________________________________"+
 Environment.NewLine]</InArgument>

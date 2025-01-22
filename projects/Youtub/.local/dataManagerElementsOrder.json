@@ -22,6 +22,7 @@
       "Path": "StateMachine.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "strAllcourseDuration&StateMachine_1",
         "strCourseName&StateMachine_1",
         "boolEmptyCourseName&StateMachine_1",
         "boolYoutubOpen&StateMachine_1",
@@ -53,6 +54,8 @@
       "Path": "Play List Excution.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "strListDuration&Sequence_7",
+        "dtCourseDuration&Sequence_1",
         "strCourseTitle&Sequence_4",
         "strCourseVeiws&Sequence_4",
         "strCourseNumVedios&Sequence_4",
@@ -60,6 +63,7 @@
         "intVedioIndex&Sequence_3"
       ],
       "ArgumentsSectionElementsOrder": [
+        "out_strAllcourseDuration",
         "out_dicListCourses"
       ],
       "ConstantsSectionElementsOrder": [],
@@ -72,6 +76,7 @@
         "strAllText&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [
+        "in_strAllcourseDuration",
         "in_strfolder",
         "in_strCouseName",
         "in_dicListCourses"
@@ -82,7 +87,10 @@
     {
       "Path": "test.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "Time&Sequence_1",
+        "dataTime&Sequence_1"
+      ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null

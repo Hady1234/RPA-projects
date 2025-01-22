@@ -89,7 +89,7 @@
         <av:PointCollection x:Key="ConnectorLocation">600,85 600,150</av:PointCollection>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <State x:Name="__ReferenceID0" DisplayName="User Input" sap:VirtualizedContainerService.HintSize="462.6666666666667,578" sap2010:WorkflowViewState.IdRef="State_1">
+    <State x:Name="__ReferenceID0" DisplayName="User Input" sap:VirtualizedContainerService.HintSize="300,120" sap2010:WorkflowViewState.IdRef="State_1">
       <State.Entry>
         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="User input - Invoke Workflow File (User input.xaml)" sap:VirtualizedContainerService.HintSize="334,178" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="User input.xaml">
           <ui:InvokeWorkflowFile.Arguments>
@@ -230,6 +230,7 @@
                                         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Play List Excution - Invoke Workflow File (Play List Excution.xaml)" sap:VirtualizedContainerService.HintSize="341.3333333333333,178" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Play List Excution.xaml">
                                           <ui:InvokeWorkflowFile.Arguments>
                                             <OutArgument x:TypeArguments="scg:List(scg:Dictionary(x:String, x:String))" x:Key="out_dicListCourses">[dicListCourses]</OutArgument>
+                                            <OutArgument x:TypeArguments="x:String" x:Key="out_strAllcourseDuration">[strAllcourseDuration]</OutArgument>
                                           </ui:InvokeWorkflowFile.Arguments>
                                         </ui:InvokeWorkflowFile>
                                       </State.Entry>
@@ -253,7 +254,7 @@
                                           </sap:WorkflowViewStateService.ViewState>
                                           <Transition.Condition>True</Transition.Condition>
                                           <Transition.To>
-                                            <State x:Name="__ReferenceID7" DisplayName="FinalOutput" sap:VirtualizedContainerService.HintSize="240,100" sap2010:WorkflowViewState.IdRef="State_9">
+                                            <State x:Name="__ReferenceID7" DisplayName="FinalOutput" sap:VirtualizedContainerService.HintSize="462.6666666666667,1021.3333333333335" sap2010:WorkflowViewState.IdRef="State_9">
                                               <State.Entry>
                                                 <Sequence sap:VirtualizedContainerService.HintSize="416,621.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_3">
                                                   <sap:WorkflowViewStateService.ViewState>
@@ -266,6 +267,7 @@
                                                       <InArgument x:TypeArguments="scg:List(scg:Dictionary(x:String, x:String))" x:Key="in_dicListCourses">[dicListCourses]</InArgument>
                                                       <InArgument x:TypeArguments="x:String" x:Key="in_strCouseName">[strCourseName]</InArgument>
                                                       <InArgument x:TypeArguments="x:String" x:Key="in_strfolder">[strFolder]</InArgument>
+                                                      <InArgument x:TypeArguments="x:String" x:Key="in_strAllcourseDuration">[strAllcourseDuration]</InArgument>
                                                     </ui:InvokeWorkflowFile.Arguments>
                                                   </ui:InvokeWorkflowFile>
                                                   <ui:InputDialog Label="{x:Null}" Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="354,323.3333333333333" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" OptionsString="Yes;No" Title="Do you have another thing?">
@@ -420,6 +422,7 @@
       <Variable x:TypeArguments="scg:List(scg:Dictionary(x:String, x:String))" Name="dicListCourses" />
       <Variable x:TypeArguments="x:String" Name="strTrayAgain" />
       <Variable x:TypeArguments="x:String" Name="strFolder" />
+      <Variable x:TypeArguments="x:String" Name="strAllcourseDuration" />
     </StateMachine.Variables>
   </StateMachine>
 </Activity>
