@@ -22,13 +22,13 @@
       "Path": "StateMachine.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "strAllcourseDuration&StateMachine_1",
         "strCourseName&StateMachine_1",
         "boolEmptyCourseName&StateMachine_1",
         "boolYoutubOpen&StateMachine_1",
         "dicListCourses&StateMachine_1",
         "strTrayAgain&StateMachine_1",
-        "strFolder&StateMachine_1"
+        "strFolder&StateMachine_1",
+        "strAllcourseDuration&StateMachine_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
@@ -88,6 +88,7 @@
       "Path": "test.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "text&Sequence_1",
         "Time&Sequence_1",
         "dataTime&Sequence_1"
       ],

@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,4048</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,4250</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Play_List_Excution_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -111,7 +111,7 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Play_List_Excution" sap:VirtualizedContainerService.HintSize="936,3983.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Play_List_Excution" sap:VirtualizedContainerService.HintSize="936,4185.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:DateTime" Name="dtCourseDuration" />
     </Sequence.Variables>
@@ -136,13 +136,13 @@
         <InArgument x:TypeArguments="s:DateTime">[New DateTime(2025,1,1,00,00,00)]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe (42)'" sap:VirtualizedContainerService.HintSize="874,3660.6666666666665" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="971ead55f8f247b4f356a1e3e97c96bc" Selector="&lt;html app='msedge.exe' url='https://www.youtube.com/playlist*' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe (42)'" sap:VirtualizedContainerService.HintSize="874,3862.6666666666665" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="971ead55f8f247b4f356a1e3e97c96bc" Selector="&lt;html app='msedge.exe' url='https://www.youtube.com/playlist*' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="840,3490.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="840,3692.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -167,7 +167,7 @@
               </sap:WorkflowViewStateService.ViewState>
             </ui:Activate>
             <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="778,57.333333333333336" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
-            <Sequence DisplayName="Course Data Extraction" sap:VirtualizedContainerService.HintSize="778,3196" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence DisplayName="Course Data Extraction" sap:VirtualizedContainerService.HintSize="778,3442" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="strCourseTitle" />
                 <Variable x:TypeArguments="x:String" Name="strCourseVeiws" />
@@ -230,14 +230,35 @@
                   <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(strCourseNumVedios ,"[^0-9.]","")]</InArgument>
                 </Assign.Value>
               </Assign>
-              <Sequence DisplayName="Vedio Data Extraction" sap:VirtualizedContainerService.HintSize="716,2540.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_DOWN" DisplayName="Double Click Image" sap:VirtualizedContainerService.HintSize="716,188.66666666666666" sap2010:WorkflowViewState.IdRef="ClickImage_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
+                <ui:ClickImage.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:ClickImage.CursorPosition>
+                <ui:ClickImage.Image>
+                  <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.5" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACwSURBVEhL7dLBCoJAEMZx32BBwQ0l3yCTzkp4MgqiklB6xX3I0TkIIRM6A7tI7OF/c78fugZKKXCRh8R5SJyHxG0DMsaIm28tvhE1shS1s+rTUWO/os5jq++IGp1HnZti/QzU+BT1/HcsCJMgGBvCuAgmgjAOgokhbv8FhVHkBtpnmRvokBduoLKq7UNxrOFyvduH8uMJHq/OLpSkKTTNDZ5tbw/SegfVuR6RDtr3BwZ8u+/J1USHHwAAAABJRU5ErkJggg==" />
+                </ui:ClickImage.Image>
+                <ui:ClickImage.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="7d573409-c396-466f-b3d3-257a5d9f20ee">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:ClickImage.Target>
+              </ui:ClickImage>
+              <Sequence DisplayName="Vedio Data Extraction" sap:VirtualizedContainerService.HintSize="716,2598" sap2010:WorkflowViewState.IdRef="Sequence_3">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:Int32" Name="incrementer" />
-                  <Variable x:TypeArguments="x:Int32" Name="intVedioIndex">
-                    <Variable.Default>
-                      <Literal x:TypeArguments="x:Int32" Value="3" />
-                    </Variable.Default>
-                  </Variable>
+                  <Variable x:TypeArguments="x:Int32" Name="intVedioIndex" />
                 </Sequence.Variables>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -261,7 +282,7 @@
                     <InArgument x:TypeArguments="x:Int32">0</InArgument>
                   </Assign.Value>
                 </Assign>
-                <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="654,2087.3333333333335" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+                <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While for each vedio" sap:VirtualizedContainerService.HintSize="654,2087.3333333333335" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
                   <ui:InterruptibleDoWhile.Body>
                     <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="620,1939.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_7">
                       <Sequence.Variables>
@@ -438,7 +459,7 @@
                     </Sequence>
                   </ui:InterruptibleDoWhile.Body>
                   <ui:InterruptibleDoWhile.Condition>
-                    <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="(incrementer&lt;( Convert.ToInt32(strCourseNumVedios) )) And ( incrementer&lt;100 )" />
+                    <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="(incrementer&lt;( Convert.ToInt32(strCourseNumVedios) ))" />
                   </ui:InterruptibleDoWhile.Condition>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -447,7 +468,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:InterruptibleDoWhile>
-                <Assign DisplayName="Catch All List duration in frist opject of list" sap:VirtualizedContainerService.HintSize="654,108" sap2010:WorkflowViewState.IdRef="Assign_17">
+                <Assign DisplayName="Catch All List duration in frist opject of list" sap:VirtualizedContainerService.HintSize="654,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_17">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">[out_strAllcourseDuration]</OutArgument>
                   </Assign.To>
@@ -455,9 +476,27 @@
                     <InArgument x:TypeArguments="x:String">[dtCourseDuration.ToString("hh:mm:ss")]</InArgument>
                   </Assign.Value>
                 </Assign>
+                <ui:CloseTab Browser="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="654,48" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
               </Sequence>
             </Sequence>
-            <ui:CloseWindow Selector="{x:Null}" TimeoutMS="{x:Null}" UseWindow="{x:Null}" DisplayName="Close Window" sap:VirtualizedContainerService.HintSize="778,92" sap2010:WorkflowViewState.IdRef="CloseWindow_1" WaitForReady="INTERACTIVE" />
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="778,48" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,180" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:CloseWindow Selector="{x:Null}" TimeoutMS="{x:Null}" UseWindow="{x:Null}" DisplayName="Close Window" sap:VirtualizedContainerService.HintSize="354,92" sap2010:WorkflowViewState.IdRef="CloseWindow_1" WaitForReady="INTERACTIVE" />
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
           </Sequence>
         </ActivityAction>
       </ui:BrowserScope.Body>

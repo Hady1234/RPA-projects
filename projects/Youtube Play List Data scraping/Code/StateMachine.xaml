@@ -129,25 +129,48 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <Transition.To>
-            <State x:Name="__ReferenceID1" DisplayName="Open Youtube" sap:VirtualizedContainerService.HintSize="310,110" sap2010:WorkflowViewState.IdRef="State_2">
+            <State x:Name="__ReferenceID1" DisplayName="Open Youtube" sap:VirtualizedContainerService.HintSize="558.6666666666666,1204.6666666666667" sap2010:WorkflowViewState.IdRef="State_2">
               <State.Entry>
-                <Sequence sap:VirtualizedContainerService.HintSize="416,428" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                <Sequence sap:VirtualizedContainerService.HintSize="512,804.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Youtub open - Invoke Workflow File (Youtub open.xaml)" sap:VirtualizedContainerService.HintSize="354,210" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Youtub open.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Youtub open - Invoke Workflow File (Youtub open.xaml)" sap:VirtualizedContainerService.HintSize="450,210" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Youtub open.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="x:String" x:Key="in_strSearchWord">[strCourseName]</InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <ui:UiElementExists DisplayName="Element Exists 'see if Youtube logo exists'" Exists="[boolYoutubOpen]" sap:VirtualizedContainerService.HintSize="354,130" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
-                    <ui:UiElementExists.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9a58eb4b-68e5-40a3-88e5-587b61e3711c" InformativeScreenshot="fe540661a1bd6543d92b8d2ece105ee5" Selector="&lt;html app='msedge.exe' title='(44) YouTube' /&gt;&lt;webctrl css-selector='body&amp;gt;ytd-app&amp;gt;div&amp;gt;div&amp;gt;ytd-masthead&amp;gt;div&amp;gt;div&amp;gt;ytd-topbar-logo-renderer&amp;gt;a&amp;gt;div&amp;gt;ytd-logo&amp;gt;yt-icon&amp;gt;span&amp;gt;div' /&gt;" TimeoutMS="20000" WaitForReady="COMPLETE" />
-                    </ui:UiElementExists.Target>
-                  </ui:UiElementExists>
+                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="450,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_9" Text="[&quot;check if opend&quot;]" />
+                  <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe (51)'" sap:VirtualizedContainerService.HintSize="450,388" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="4bf6e4f4b7e788b1bd95c85850e2f11f" Selector="&lt;html app='msedge.exe' url='https://www.youtube.com/results?search_query=*' /&gt;">
+                    <ui:BrowserScope.Body>
+                      <ActivityAction x:TypeArguments="x:Object">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:UiElementExists DisplayName="Element Exists 'see if Youtube logo exists'" Exists="[boolYoutubOpen]" sap:VirtualizedContainerService.HintSize="354,130" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                            <ui:UiElementExists.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9a58eb4b-68e5-40a3-88e5-587b61e3711c" InformativeScreenshot="fe540661a1bd6543d92b8d2ece105ee5" Selector="&lt;html app='msedge.exe' url='https://www.youtube.com/results?search_query=*' /&gt;&lt;webctrl css-selector='body&amp;gt;ytd-app&amp;gt;div&amp;gt;div&amp;gt;ytd-masthead&amp;gt;div&amp;gt;div&amp;gt;ytd-topbar-logo-renderer&amp;gt;a&amp;gt;div&amp;gt;ytd-logo&amp;gt;yt-icon&amp;gt;span&amp;gt;div' /&gt;" TimeoutMS="20000" WaitForReady="COMPLETE" />
+                            </ui:UiElementExists.Target>
+                          </ui:UiElementExists>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:BrowserScope.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:BrowserScope>
                 </Sequence>
               </State.Entry>
               <sap:WorkflowViewStateService.ViewState>
@@ -171,7 +194,7 @@
                   <Transition.To>
                     <State x:Name="__ReferenceID2" DisplayName="Youtube Settings" sap:VirtualizedContainerService.HintSize="300,110" sap2010:WorkflowViewState.IdRef="State_3">
                       <State.Entry>
-                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Youtub Settings - Invoke Workflow File (Youtub Settings.xaml)" sap:VirtualizedContainerService.HintSize="334,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Youtub Settings.xaml">
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Youtub Settings - Invoke Workflow File (Youtub Settings.xaml)" sap:VirtualizedContainerService.HintSize="336,178" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Youtub Settings.xaml">
                           <ui:InvokeWorkflowFile.Arguments>
                             <scg:Dictionary x:TypeArguments="x:String, Argument" />
                           </ui:InvokeWorkflowFile.Arguments>
@@ -316,7 +339,7 @@
                                                 <Transition DisplayName="Go to User input" sap:VirtualizedContainerService.HintSize="451.3333333333333,531.3333333333334" sap2010:WorkflowViewState.IdRef="Transition_12">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                      <av:PointCollection x:Key="ConnectorLocation">1000,1120 1197.0350664712735,1120 1197.0350664712735,216 750,216</av:PointCollection>
+                                                      <av:PointCollection x:Key="ConnectorLocation">1000,1120 1060,1120 1060,216 750,216</av:PointCollection>
                                                       <x:Int32 x:Key="SrcConnectionPointIndex">44</x:Int32>
                                                       <x:Int32 x:Key="DestConnectionPointIndex">40</x:Int32>
                                                     </scg:Dictionary>
@@ -393,7 +416,7 @@
         <Transition DisplayName="if Course Name Null" sap:VirtualizedContainerService.HintSize="451.3333333333333,502" sap2010:WorkflowViewState.IdRef="Transition_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:PointCollection x:Key="ConnectorLocation">480,270 480,314.02 383.3333333333333,314.02 383.3333333333333,210 450,210</av:PointCollection>
+              <av:PointCollection x:Key="ConnectorLocation">480,270 480,300 420,300 420,210 450,210</av:PointCollection>
               <x:Int32 x:Key="SrcConnectionPointIndex">7</x:Int32>
               <x:Int32 x:Key="DestConnectionPointIndex">37</x:Int32>
             </scg:Dictionary>
