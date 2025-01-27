@@ -4,11 +4,14 @@
     <x:Property Name="in_strCouseName" Type="InArgument(x:String)" />
     <x:Property Name="in_strfolder" Type="InArgument(x:String)" />
     <x:Property Name="in_strAllcourseDuration" Type="InArgument(x:String)" />
+    <x:Property Name="in_intIncrementer" Type="InArgument(x:Int32)" />
+    <x:Property Name="intNumName" Type="InArgument(x:Int32)" />
+    <x:Property Name="Link" Type="InArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,2008.666666666667</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,2240</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Notbad_starts_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -43,6 +46,7 @@
       <x:String>UiPath.UIAutomationCore.Contracts</x:String>
       <x:String>UiPath.Platform.ResourceHandling</x:String>
       <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Numerics</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -94,11 +98,13 @@
       <AssemblyReference>System.CodeDom</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Notbad_starts" sap:VirtualizedContainerService.HintSize="688,1944" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Notbad_starts" sap:VirtualizedContainerService.HintSize="688,2175.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strAllText" />
+      <Variable x:TypeArguments="x:String" Name="strNewFolder" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -113,13 +119,17 @@
       <Assign.Value>
         <InArgument x:TypeArguments="x:String" xml:space="preserve">["                           Title  :     "+in_dicListCourses(0)("Course Title")+"        Course Views = "+
 in_dicListCourses(0)("Course Views")+
-"Num of Course Vedios : "+in_dicListCourses(0)("Num of Course Vedios")+
+"   Num of Course Vedios : "+in_dicListCourses(0)("Num of Course Vedios")+
 Environment.NewLine+
 Environment.NewLine+
 Environment.NewLine+
 Environment.NewLine+
-"The Total list Duration is  "+in_strAllcourseDuration+
-Environment.NewLine]</InArgument>
+"The Total list Duration is  "+in_strAllcourseDuration+"  Hours "+
+Environment.NewLine+
+"Cource Link : "+Link+
+Environment.NewLine+Environment.NewLine+
+"_______________________________________________________________________________________________________"+
+Environment.NewLine+Environment.NewLine+Environment.NewLine]</InArgument>
       </Assign.Value>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -128,6 +138,15 @@ Environment.NewLine]</InArgument>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="626,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_8">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[strNewFolder]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String" xml:space="preserve">[in_strfolder+"\"+in_strCouseName+Now.ToString("  MM_dd_yy ")]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="626,114" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[strNewFolder]" />
     <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open Application 'notepad.exe Untitled'" FileName="C:\Windows\System32\notepad.exe" sap:VirtualizedContainerService.HintSize="626,1690" sap2010:WorkflowViewState.IdRef="OpenApplication_4" InformativeScreenshot="00a482f9d65b0759677a6ce80becad4a">
       <ui:OpenApplication.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -135,6 +154,9 @@ Environment.NewLine]</InArgument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
           <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,1510.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Int32" Name="index" />
+            </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -159,7 +181,7 @@ Environment.NewLine]</InArgument>
               </sap:WorkflowViewStateService.ViewState>
             </ui:Activate>
             <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="530,57.333333333333336" sap2010:WorkflowViewState.IdRef="MaximizeWindow_2" />
-            <ui:ForEach x:TypeArguments="scg:Dictionary(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each Coures" sap:VirtualizedContainerService.HintSize="530,344.6666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[in_dicListCourses]">
+            <ui:ForEach x:TypeArguments="scg:Dictionary(x:String, x:String)" CurrentIndex="[index]" DisplayName="For Each Coures" sap:VirtualizedContainerService.HintSize="530,344.6666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[in_dicListCourses]">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="scg:Dictionary(x:String, x:String)">
                   <ActivityAction.Argument>
@@ -176,7 +198,7 @@ Environment.NewLine]</InArgument>
                         <OutArgument x:TypeArguments="x:String">[strAllText]</OutArgument>
                       </Assign.To>
                       <Assign.Value>
-                        <InArgument x:TypeArguments="x:String" xml:space="preserve">[strAllText+Environment.NewLine+
+                        <InArgument x:TypeArguments="x:String" xml:space="preserve">[strAllText+Environment.NewLine+( index+1 ).ToString+Environment.NewLine+
 "Vedio Title : "+Coures("Vedio Title")+Environment.NewLine+
 "Views : "+Coures("Vedio Views")+Environment.NewLine+
 "Vedio duration Duration is  "+Coures("Vedio Duration")+
@@ -257,7 +279,7 @@ Environment.NewLine]</InArgument>
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="354,189.33333333333334" sap2010:WorkflowViewState.IdRef="TypeInto_8" SimulateType="True" Text="[in_strfolder+&quot;\&quot;+in_strCouseName+Now.ToString(&quot;  MM_dd_yy ( hh , mm )&quot;)+&quot; .txt&quot;]">
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="354,189.33333333333334" sap2010:WorkflowViewState.IdRef="TypeInto_8" SimulateType="True" Text="[strNewFolder+&quot;\&quot;+in_strCouseName+&quot;  &quot;+intNumName.ToString+&quot; .txt&quot;]">
                       <ui:TypeInto.Target>
                         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9dbe49f4-0401-4fe1-866c-7adb43f1ef61" InformativeScreenshot="708ecc42b1e2ff0a6eb21278730a2c8d" Selector="&lt;wnd aaname='Explorer Pane' /&gt;&lt;wnd aaname='File name:' /&gt;">
                           <ui:Target.TimeoutMS>
@@ -310,7 +332,7 @@ Environment.NewLine]</InArgument>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:OpenApplication>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="546,48" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="626,48" sap2010:WorkflowViewState.IdRef="CommentOut_2">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,136" sap2010:WorkflowViewState.IdRef="Sequence_8">
           <sap:WorkflowViewStateService.ViewState>

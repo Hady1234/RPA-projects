@@ -12,9 +12,7 @@
       "Path": "Youtub open.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": [
-        "in_strSearchWord"
-      ],
+      "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
@@ -22,13 +20,19 @@
       "Path": "StateMachine.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "intRn&StateMachine_1",
+        "strLink&StateMachine_1",
+        "arrStrHref&StateMachine_1",
         "strCourseName&StateMachine_1",
         "boolEmptyCourseName&StateMachine_1",
         "boolYoutubOpen&StateMachine_1",
         "dicListCourses&StateMachine_1",
         "strTrayAgain&StateMachine_1",
         "strFolder&StateMachine_1",
-        "strAllcourseDuration&StateMachine_1"
+        "strAllcourseDuration&StateMachine_1",
+        "incrementer&StateMachine_1",
+        "repeter&Sequence_5",
+        "intplayNum&Sequence_3"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
@@ -45,8 +49,13 @@
     {
       "Path": "Play List Preperation.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "incrementer&Sequence_2",
+        "Link&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "arrStrHref"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
@@ -54,13 +63,15 @@
       "Path": "Play List Excution.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "strListDuration&Sequence_7",
         "dtCourseDuration&Sequence_1",
+        "boolExists&Sequence_1",
         "strCourseTitle&Sequence_4",
         "strCourseVeiws&Sequence_4",
         "strCourseNumVedios&Sequence_4",
         "incrementer&Sequence_3",
-        "intVedioIndex&Sequence_3"
+        "intVedioIndex&Sequence_3",
+        "intNextVedioindex&Sequence_3",
+        "strListDuration&Sequence_7"
       ],
       "ArgumentsSectionElementsOrder": [
         "out_strAllcourseDuration",
@@ -73,9 +84,14 @@
       "Path": "Output.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "strAllText&Sequence_1"
+        "strAllText&Sequence_1",
+        "strNewFolder&Sequence_1",
+        "index&Sequence_5"
       ],
       "ArgumentsSectionElementsOrder": [
+        "Link",
+        "intNumName",
+        "in_intIncrementer",
         "in_strAllcourseDuration",
         "in_strfolder",
         "in_strCouseName",
@@ -88,9 +104,9 @@
       "Path": "test.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "text&Sequence_1",
         "Time&Sequence_1",
-        "dataTime&Sequence_1"
+        "strT2&Sequence_1",
+        "strT1&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
@@ -99,11 +115,24 @@
     {
       "Path": "User input.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "strRn&Sequence_1"
+      ],
       "ArgumentsSectionElementsOrder": [
+        "Rn",
         "io_strfolder",
         "strCourseName",
         "boolEmptyCourseName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Yoytube Search.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_strSearchWord"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null

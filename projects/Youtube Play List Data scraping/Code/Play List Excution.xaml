@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Play_List_Excution" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uasa="clr-namespace:UiPath.Activities.System.Arrays;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Play_List_Excution" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uasa="clr-namespace:UiPath.Activities.System.Arrays;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="out_dicListCourses" Type="OutArgument(scg:List(scg:Dictionary(x:String, x:String)))" />
     <x:Property Name="out_strAllcourseDuration" Type="OutArgument(x:String)" />
@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,4250</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1442,3414.6666666666665</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Play_List_Excution_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -111,16 +111,17 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Play_List_Excution" sap:VirtualizedContainerService.HintSize="936,4185.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Play_List_Excution" sap:VirtualizedContainerService.HintSize="1452,3350" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="s:DateTime" Name="dtCourseDuration" />
+      <Variable x:TypeArguments="x:TimeSpan" Name="dtCourseDuration" />
+      <Variable x:TypeArguments="x:Boolean" Name="boolExists" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap:VirtualizedContainerService.HintSize="874,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap:VirtualizedContainerService.HintSize="1390,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="scg:List(scg:Dictionary(x:String, x:String))">[out_dicListCourses]</OutArgument>
       </Assign.To>
@@ -128,27 +129,27 @@
         <InArgument x:TypeArguments="scg:List(scg:Dictionary(x:String, x:String))">[New List(Of Dictionary( Of String,String ))]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="874,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_15">
+    <Assign sap:VirtualizedContainerService.HintSize="1390,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_15">
       <Assign.To>
-        <OutArgument x:TypeArguments="s:DateTime">[dtCourseDuration]</OutArgument>
+        <OutArgument x:TypeArguments="x:TimeSpan">[dtCourseDuration]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="s:DateTime">[New DateTime(2025,1,1,00,00,00)]</InArgument>
+        <InArgument x:TypeArguments="x:TimeSpan">[New timeSpan()]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe (42)'" sap:VirtualizedContainerService.HintSize="874,3862.6666666666665" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="971ead55f8f247b4f356a1e3e97c96bc" Selector="&lt;html app='msedge.exe' url='https://www.youtube.com/playlist*' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe (42)'" sap:VirtualizedContainerService.HintSize="1390,3027.3333333333335" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="971ead55f8f247b4f356a1e3e97c96bc" Selector="&lt;html app='msedge.exe' url='https://www.youtube.com/playlist*' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="840,3692.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1356,2857.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:Activate DelayBefore="{x:Null}" DelayMS="{x:Null}" sap:VirtualizedContainerService.HintSize="778,57.333333333333336" sap2010:WorkflowViewState.IdRef="Activate_1">
+            <ui:Activate DelayBefore="{x:Null}" DelayMS="{x:Null}" sap:VirtualizedContainerService.HintSize="1294,57.333333333333336" sap2010:WorkflowViewState.IdRef="Activate_1">
               <ui:Activate.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="9bc0121f-ba65-471e-9d66-12bffaf34064">
                   <ui:Target.TimeoutMS>
@@ -166,8 +167,8 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:Activate>
-            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="778,57.333333333333336" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
-            <Sequence DisplayName="Course Data Extraction" sap:VirtualizedContainerService.HintSize="778,3442" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="1294,57.333333333333336" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+            <Sequence DisplayName="Course Data Extraction" sap:VirtualizedContainerService.HintSize="1294,2654.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="strCourseTitle" />
                 <Variable x:TypeArguments="x:String" Name="strCourseVeiws" />
@@ -178,7 +179,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'Course Title'" sap:VirtualizedContainerService.HintSize="716,139.33333333333334" sap2010:WorkflowViewState.IdRef="GetValue_1">
+              <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'Course Title'" sap:VirtualizedContainerService.HintSize="1232,57.333333333333336" sap2010:WorkflowViewState.IdRef="GetValue_1">
                 <ui:GetValue.Target>
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4898c8f8-6d43-49f5-acfe-bde73bc6a7cd" InformativeScreenshot="1e35cdf063dcae260937af570529cb6b" Selector="&lt;webctrl css-selector='body&amp;gt;ytd-app&amp;gt;div&amp;gt;ytd-page-manager&amp;gt;ytd-browse&amp;gt;yt-page-header-renderer&amp;gt;yt-page-header-view-model&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;yt-dynamic-text-view-model&amp;gt;h1&amp;gt;span' /&gt;" WaitForReady="INTERACTIVE">
                     <ui:Target.TimeoutMS>
@@ -189,8 +190,14 @@
                 <ui:GetValue.Value>
                   <OutArgument x:TypeArguments="x:String">[strCourseTitle]</OutArgument>
                 </ui:GetValue.Value>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
               </ui:GetValue>
-              <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'Course Views'" sap:VirtualizedContainerService.HintSize="716,139.33333333333334" sap2010:WorkflowViewState.IdRef="GetValue_2">
+              <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'Course Views'" sap:VirtualizedContainerService.HintSize="1232,57.333333333333336" sap2010:WorkflowViewState.IdRef="GetValue_2">
                 <ui:GetValue.Target>
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="74b2561e-020a-4c3c-9b11-0785ea182319" InformativeScreenshot="b42afddf30041d77cb8edace36fb5769" Selector="&lt;webctrl aaname='*views' class='yt-core-attributed-string yt-content-metadata-view-model-wiz__metadata-text yt-core-attributed-string--white-space-pre-wrap yt-core-attributed-string--link-inherit-color' idx='2' /&gt;" WaitForReady="INTERACTIVE">
                     <ui:Target.TimeoutMS>
@@ -201,8 +208,14 @@
                 <ui:GetValue.Value>
                   <OutArgument x:TypeArguments="x:String">[strCourseVeiws]</OutArgument>
                 </ui:GetValue.Value>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
               </ui:GetValue>
-              <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'Num of Course Vdeios'" sap:VirtualizedContainerService.HintSize="716,139.33333333333334" sap2010:WorkflowViewState.IdRef="GetValue_3">
+              <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'Num of Course Vdeios'" sap:VirtualizedContainerService.HintSize="1232,57.333333333333336" sap2010:WorkflowViewState.IdRef="GetValue_3">
                 <ui:GetValue.Target>
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="74b2561e-020a-4c3c-9b11-0785ea182319" InformativeScreenshot="0e4c97f542018075fbe43d511150abe3" WaitForReady="INTERACTIVE">
                     <ui:Target.Selector>
@@ -221,8 +234,14 @@
                 <ui:GetValue.Value>
                   <OutArgument x:TypeArguments="x:String">[strCourseNumVedios]</OutArgument>
                 </ui:GetValue.Value>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
               </ui:GetValue>
-              <Assign DisplayName="Clear unanted Char in numeric Decimal of Num of Course Vdeios" sap:VirtualizedContainerService.HintSize="716,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign DisplayName="Clear unanted Char in numeric Decimal of Num of Course Vdeios" sap:VirtualizedContainerService.HintSize="1232,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_3">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[strCourseNumVedios]</OutArgument>
                 </Assign.To>
@@ -230,35 +249,11 @@
                   <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(strCourseNumVedios ,"[^0-9.]","")]</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_DOWN" DisplayName="Double Click Image" sap:VirtualizedContainerService.HintSize="716,188.66666666666666" sap2010:WorkflowViewState.IdRef="ClickImage_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
-                <ui:ClickImage.CursorPosition>
-                  <ui:CursorPosition Position="Center">
-                    <ui:CursorPosition.OffsetX>
-                      <InArgument x:TypeArguments="x:Int32" />
-                    </ui:CursorPosition.OffsetX>
-                    <ui:CursorPosition.OffsetY>
-                      <InArgument x:TypeArguments="x:Int32" />
-                    </ui:CursorPosition.OffsetY>
-                  </ui:CursorPosition>
-                </ui:ClickImage.CursorPosition>
-                <ui:ClickImage.Image>
-                  <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.5" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAACwSURBVEhL7dLBCoJAEMZx32BBwQ0l3yCTzkp4MgqiklB6xX3I0TkIIRM6A7tI7OF/c78fugZKKXCRh8R5SJyHxG0DMsaIm28tvhE1shS1s+rTUWO/os5jq++IGp1HnZti/QzU+BT1/HcsCJMgGBvCuAgmgjAOgokhbv8FhVHkBtpnmRvokBduoLKq7UNxrOFyvduH8uMJHq/OLpSkKTTNDZ5tbw/SegfVuR6RDtr3BwZ8u+/J1USHHwAAAABJRU5ErkJggg==" />
-                </ui:ClickImage.Image>
-                <ui:ClickImage.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="7d573409-c396-466f-b3d3-257a5d9f20ee">
-                    <ui:Target.TimeoutMS>
-                      <InArgument x:TypeArguments="x:Int32" />
-                    </ui:Target.TimeoutMS>
-                    <ui:Target.WaitForReady>
-                      <InArgument x:TypeArguments="ui:WaitForReady" />
-                    </ui:Target.WaitForReady>
-                  </ui:Target>
-                </ui:ClickImage.Target>
-              </ui:ClickImage>
-              <Sequence DisplayName="Vedio Data Extraction" sap:VirtualizedContainerService.HintSize="716,2598" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence DisplayName="Vedio Data Extraction" sap:VirtualizedContainerService.HintSize="1232,2254.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_3">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:Int32" Name="incrementer" />
                   <Variable x:TypeArguments="x:Int32" Name="intVedioIndex" />
+                  <Variable x:TypeArguments="x:Int32" Name="intNextVedioindex" />
                 </Sequence.Variables>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -266,7 +261,7 @@
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Assign sap:VirtualizedContainerService.HintSize="654,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_13">
+                <Assign sap:VirtualizedContainerService.HintSize="1170,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_13">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:Int32">[intVedioIndex]</OutArgument>
                   </Assign.To>
@@ -274,7 +269,7 @@
                     <InArgument x:TypeArguments="x:Int32">1</InArgument>
                   </Assign.Value>
                 </Assign>
-                <Assign sap:VirtualizedContainerService.HintSize="654,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_14">
+                <Assign sap:VirtualizedContainerService.HintSize="1170,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_14">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:Int32">[incrementer]</OutArgument>
                   </Assign.To>
@@ -282,9 +277,17 @@
                     <InArgument x:TypeArguments="x:Int32">0</InArgument>
                   </Assign.Value>
                 </Assign>
-                <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While for each vedio" sap:VirtualizedContainerService.HintSize="654,2087.3333333333335" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+                <Assign sap:VirtualizedContainerService.HintSize="1170,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_23">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Int32">[intNextVedioindex]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Int32">2</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[(incrementer&lt;( Convert.ToInt32(strCourseNumVedios) )) AndAlso boolExists]" DisplayName="Do While for each vedio" sap:VirtualizedContainerService.HintSize="1170,1684" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
                   <ui:InterruptibleDoWhile.Body>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="620,1939.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1136,1536" sap2010:WorkflowViewState.IdRef="Sequence_7">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="scg:List(x:String)" Name="strListDuration" />
                       </Sequence.Variables>
@@ -293,174 +296,248 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Sequence DisplayName="Sequance of each Vedio" sap:VirtualizedContainerService.HintSize="558,1334" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <Parallel sap:VirtualizedContainerService.HintSize="1074,466" sap2010:WorkflowViewState.IdRef="Parallel_1">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uasa:AppendItemToList x:TypeArguments="scg:Dictionary(x:String, x:String)" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="496,168" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_4" ItemToAppend="[New Dictionary(Of String,String ) From{ {&quot;Course Title&quot;,&quot;&quot;},{&quot;Course Views&quot;,&quot;0.0&quot;},{&quot;Num of Course Vedios&quot;,&quot;0&quot;},{&quot;Vedio Title&quot;,&quot;&quot;},{&quot;Vedio Views&quot;,&quot;0,0&quot;} ,{&quot;Vedio Duration&quot;,&quot;&quot;} }]" List="[out_dicListCourses]" />
-                        <Assign DisplayName="Assign to set Course Title " sap:VirtualizedContainerService.HintSize="496,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_8">
-                          <Assign.To>
-                            <OutArgument x:TypeArguments="x:String">[out_dicListCourses(incrementer)("Course Title")]</OutArgument>
-                          </Assign.To>
-                          <Assign.Value>
-                            <InArgument x:TypeArguments="x:String">[strCourseTitle]</InArgument>
-                          </Assign.Value>
+                        <Sequence sap:VirtualizedContainerService.HintSize="490,386.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_24">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                        </Assign>
-                        <Assign DisplayName="Assign to set Course Views" sap:VirtualizedContainerService.HintSize="496,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_9">
-                          <Assign.To>
-                            <OutArgument x:TypeArguments="x:String">[out_dicListCourses(incrementer)("Course Views")]</OutArgument>
-                          </Assign.To>
-                          <Assign.Value>
-                            <InArgument x:TypeArguments="x:String">[strCourseVeiws]</InArgument>
-                          </Assign.Value>
+                          <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" Activate="True" DelayBetweenKeys="1000" DisplayName="Send Scrroll down Hold " sap:VirtualizedContainerService.HintSize="388,188.66666666666666" sap2010:WorkflowViewState.IdRef="SendHotkey_5" Key="pgdn" KeyModifiers="None" SendWindowMessages="True" SpecialKey="True">
+                            <ui:SendHotkey.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b869043a-9d37-4e39-823f-2555a91d0122" InformativeScreenshot="f533db8041e104c900e2ff1694bc7b74" Selector="&lt;webctrl css-selector='body&amp;gt;ytd-app&amp;gt;div&amp;gt;ytd-page-manager&amp;gt;ytd-browse&amp;gt;ytd-two-column-browse-results-renderer&amp;gt;div&amp;gt;ytd-section-list-renderer&amp;gt;div&amp;gt;ytd-item-section-renderer&amp;gt;div' id='contents' /&gt;" WaitForReady="INTERACTIVE">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                              </ui:Target>
+                            </ui:SendHotkey.Target>
+                          </ui:SendHotkey>
+                          <ui:UiElementExists DisplayName="Element Exists" Exists="[boolExists]" sap:VirtualizedContainerService.HintSize="388,110" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                            <ui:UiElementExists.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="50c5b7c7-7897-4ecf-b1c0-060f97acdfb0" Selector="[string.Format(&quot;&lt;webctrl css-selector='body&amp;gt;ytd-app&amp;gt;div&amp;gt;ytd-page-manager&amp;gt;ytd-browse&amp;gt;ytd-two-column-browse-results-renderer&amp;gt;div&amp;gt;ytd-section-list-renderer&amp;gt;div&amp;gt;ytd-item-section-renderer&amp;gt;div&amp;gt;ytd-playlist-video-list-renderer&amp;gt;div&amp;gt;ytd-playlist-video-renderer&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;h3&amp;gt;a' idx='{0}' /&gt;&quot;, intNextVedioindex)]" TimeoutMS="1000">
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:UiElementExists.Target>
+                          </ui:UiElementExists>
+                        </Sequence>
+                        <Sequence DisplayName="Sequance of each Vedio" sap:VirtualizedContainerService.HintSize="490,386.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_8">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                        </Assign>
-                        <Assign DisplayName="Assign Num of Course vedios" sap:VirtualizedContainerService.HintSize="496,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_21">
-                          <Assign.To>
-                            <OutArgument x:TypeArguments="x:String">[out_dicListCourses(incrementer)("Num of Course Vedios")]</OutArgument>
-                          </Assign.To>
-                          <Assign.Value>
-                            <InArgument x:TypeArguments="x:String">[strCourseNumVedios]</InArgument>
-                          </Assign.Value>
-                        </Assign>
-                        <Sequence DisplayName="Get and Set" sap:VirtualizedContainerService.HintSize="496,694" sap2010:WorkflowViewState.IdRef="Sequence_10">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text ' video-title'" sap:VirtualizedContainerService.HintSize="434,139.33333333333334" sap2010:WorkflowViewState.IdRef="GetValue_4">
-                            <ui:GetValue.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0715b0ad-f3b1-4152-afc2-af8275bc87d2" InformativeScreenshot="b5ca1cfa69f42dd1823f18d9773b113a" Selector="[string.Format(&quot;&lt;webctrl css-selector='body&amp;gt;ytd-app&amp;gt;div&amp;gt;ytd-page-manager&amp;gt;ytd-browse&amp;gt;ytd-two-column-browse-results-renderer&amp;gt;div&amp;gt;ytd-section-list-renderer&amp;gt;div&amp;gt;ytd-item-section-renderer&amp;gt;div&amp;gt;ytd-playlist-video-list-renderer&amp;gt;div&amp;gt;ytd-playlist-video-renderer&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;h3&amp;gt;a' idx='{0}' /&gt;&quot;, intVedioIndex)]">
-                                <ui:Target.TimeoutMS>
-                                  <InArgument x:TypeArguments="x:Int32" />
-                                </ui:Target.TimeoutMS>
-                                <ui:Target.WaitForReady>
-                                  <InArgument x:TypeArguments="ui:WaitForReady" />
-                                </ui:Target.WaitForReady>
-                              </ui:Target>
-                            </ui:GetValue.Target>
-                            <ui:GetValue.Value>
-                              <OutArgument x:TypeArguments="x:String">[out_dicListCourses(incrementer)("Vedio Title")]</OutArgument>
-                            </ui:GetValue.Value>
-                          </ui:GetValue>
-                          <Assign DisplayName="Edit ' video-title'" sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_11">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:String">[out_dicListCourses(incrementer)("Vedio Title")]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:String" xml:space="preserve">[out_dicListCourses(incrementer)("Vedio Title").Replace("  ","")]</InArgument>
-                            </Assign.Value>
-                          </Assign>
-                          <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'Vedio Views'" sap:VirtualizedContainerService.HintSize="434,139.33333333333334" sap2010:WorkflowViewState.IdRef="GetValue_5">
-                            <ui:GetValue.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a404f278-d670-4185-9003-fcda6c284ca2" InformativeScreenshot="5fca50f88d8d2b32b304b248862956a4" Selector="[string.Format(&quot;&lt;webctrl aaname='*views' css-selector='body&amp;gt;ytd-app&amp;gt;div&amp;gt;ytd-page-manager&amp;gt;ytd-browse&amp;gt;ytd-two-column-browse-results-renderer&amp;gt;div&amp;gt;ytd-section-list-renderer&amp;gt;div&amp;gt;ytd-item-section-renderer&amp;gt;div&amp;gt;ytd-playlist-video-list-renderer&amp;gt;div&amp;gt;ytd-playlist-video-renderer&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ytd-video-meta-block&amp;gt;div&amp;gt;div&amp;gt;yt-formatted-string&amp;gt;span' idx='{0}' /&gt;&quot;, intVedioIndex)]">
-                                <ui:Target.TimeoutMS>
-                                  <InArgument x:TypeArguments="x:Int32" />
-                                </ui:Target.TimeoutMS>
-                                <ui:Target.WaitForReady>
-                                  <InArgument x:TypeArguments="ui:WaitForReady" />
-                                </ui:Target.WaitForReady>
-                              </ui:Target>
-                            </ui:GetValue.Target>
-                            <ui:GetValue.Value>
-                              <OutArgument x:TypeArguments="x:String">[out_dicListCourses(incrementer)("Vedio Views")]</OutArgument>
-                            </ui:GetValue.Value>
-                          </ui:GetValue>
-                          <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'Get Vedio Duration '" sap:VirtualizedContainerService.HintSize="434,139.33333333333334" sap2010:WorkflowViewState.IdRef="GetValue_6">
-                            <ui:GetValue.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a5f246fe-e862-4dcc-9f70-721f6b4365ee" InformativeScreenshot="a73bb0ec227b5415765716c4d070cf40" Selector="[string.Format(&quot;&lt;webctrl css-selector='body&amp;gt;ytd-app&amp;gt;div&amp;gt;ytd-page-manager&amp;gt;ytd-browse&amp;gt;ytd-two-column-browse-results-renderer&amp;gt;div&amp;gt;ytd-section-list-renderer&amp;gt;div&amp;gt;ytd-item-section-renderer&amp;gt;div&amp;gt;ytd-playlist-video-list-renderer&amp;gt;div&amp;gt;ytd-playlist-video-renderer&amp;gt;div&amp;gt;div&amp;gt;ytd-thumbnail&amp;gt;a&amp;gt;div&amp;gt;ytd-thumbnail-overlay-time-status-renderer&amp;gt;div&amp;gt;badge-shape&amp;gt;div' idx='{0}' /&gt;&quot;, intVedioIndex)]">
-                                <ui:Target.TimeoutMS>
-                                  <InArgument x:TypeArguments="x:Int32" />
-                                </ui:Target.TimeoutMS>
-                                <ui:Target.WaitForReady>
-                                  <InArgument x:TypeArguments="ui:WaitForReady" />
-                                </ui:Target.WaitForReady>
-                              </ui:Target>
-                            </ui:GetValue.Target>
-                            <ui:GetValue.Value>
-                              <OutArgument x:TypeArguments="x:String">[out_dicListCourses(incrementer)("Vedio Duration")]</OutArgument>
-                            </ui:GetValue.Value>
-                          </ui:GetValue>
-                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,48" sap2010:WorkflowViewState.IdRef="CommentOut_2">
-                            <ui:CommentOut.Body>
-                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,197.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_12">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="354,109.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot; textt extracted &quot;+ out_dicListCourses(incrementer)(&quot;Vedio Duration&quot;)]" />
-                              </Sequence>
-                            </ui:CommentOut.Body>
+                          <uasa:AppendItemToList x:TypeArguments="scg:Dictionary(x:String, x:String)" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_4" ItemToAppend="[New Dictionary(Of String,String ) From{ {&quot;Course Title&quot;,&quot;&quot;},{&quot;Course Views&quot;,&quot;0.0&quot;},{&quot;Num of Course Vedios&quot;,&quot;0&quot;},{&quot;Vedio Title&quot;,&quot;&quot;},{&quot;Vedio Views&quot;,&quot;0,0&quot;} ,{&quot;Vedio Duration&quot;,&quot;&quot;} }]" List="[out_dicListCourses]">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                          </ui:CommentOut>
+                          </uasa:AppendItemToList>
+                          <Assign DisplayName="Assign to set Course Title " sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_8">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[out_dicListCourses(incrementer)("Course Title")]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[strCourseTitle]</InArgument>
+                            </Assign.Value>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Assign>
+                          <Assign DisplayName="Assign to set Course Views" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_9">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[out_dicListCourses(incrementer)("Course Views")]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[strCourseVeiws]</InArgument>
+                            </Assign.Value>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Assign>
+                          <Assign DisplayName="Assign Num of Course vedios" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_21">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[out_dicListCourses(incrementer)("Num of Course Vedios")]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[strCourseNumVedios]</InArgument>
+                            </Assign.Value>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Assign>
+                          <Sequence DisplayName="Get and Set" sap:VirtualizedContainerService.HintSize="450,330.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text ' video-title'" sap:VirtualizedContainerService.HintSize="388,57.333333333333336" sap2010:WorkflowViewState.IdRef="GetValue_4">
+                              <ui:GetValue.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0715b0ad-f3b1-4152-afc2-af8275bc87d2" InformativeScreenshot="b5ca1cfa69f42dd1823f18d9773b113a" Selector="[string.Format(&quot;&lt;webctrl css-selector='body&amp;gt;ytd-app&amp;gt;div&amp;gt;ytd-page-manager&amp;gt;ytd-browse&amp;gt;ytd-two-column-browse-results-renderer&amp;gt;div&amp;gt;ytd-section-list-renderer&amp;gt;div&amp;gt;ytd-item-section-renderer&amp;gt;div&amp;gt;ytd-playlist-video-list-renderer&amp;gt;div&amp;gt;ytd-playlist-video-renderer&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;h3&amp;gt;a' idx='{0}' /&gt;&quot;, intVedioIndex)]">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:GetValue.Target>
+                              <ui:GetValue.Value>
+                                <OutArgument x:TypeArguments="x:String">[out_dicListCourses(incrementer)("Vedio Title")]</OutArgument>
+                              </ui:GetValue.Value>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:GetValue>
+                            <Assign DisplayName="Edit ' video-title'" sap:VirtualizedContainerService.HintSize="388,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_11">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[out_dicListCourses(incrementer)("Vedio Title")]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String" xml:space="preserve">[out_dicListCourses(incrementer)("Vedio Title").Replace("  ","")]</InArgument>
+                              </Assign.Value>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Assign>
+                            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'Vedio Views'" sap:VirtualizedContainerService.HintSize="388,57.333333333333336" sap2010:WorkflowViewState.IdRef="GetValue_5">
+                              <ui:GetValue.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a404f278-d670-4185-9003-fcda6c284ca2" InformativeScreenshot="5fca50f88d8d2b32b304b248862956a4" Selector="[string.Format(&quot;&lt;webctrl aaname='*views' css-selector='body&amp;gt;ytd-app&amp;gt;div&amp;gt;ytd-page-manager&amp;gt;ytd-browse&amp;gt;ytd-two-column-browse-results-renderer&amp;gt;div&amp;gt;ytd-section-list-renderer&amp;gt;div&amp;gt;ytd-item-section-renderer&amp;gt;div&amp;gt;ytd-playlist-video-list-renderer&amp;gt;div&amp;gt;ytd-playlist-video-renderer&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ytd-video-meta-block&amp;gt;div&amp;gt;div&amp;gt;yt-formatted-string&amp;gt;span' idx='{0}' /&gt;&quot;, intVedioIndex)]">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:GetValue.Target>
+                              <ui:GetValue.Value>
+                                <OutArgument x:TypeArguments="x:String">[out_dicListCourses(incrementer)("Vedio Views")]</OutArgument>
+                              </ui:GetValue.Value>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:GetValue>
+                            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'Get Vedio Duration '" sap:VirtualizedContainerService.HintSize="388,48" sap2010:WorkflowViewState.IdRef="GetValue_6">
+                              <ui:GetValue.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a5f246fe-e862-4dcc-9f70-721f6b4365ee" InformativeScreenshot="a73bb0ec227b5415765716c4d070cf40" Selector="[string.Format(&quot;&lt;webctrl css-selector='body&amp;gt;ytd-app&amp;gt;div&amp;gt;ytd-page-manager&amp;gt;ytd-browse&amp;gt;ytd-two-column-browse-results-renderer&amp;gt;div&amp;gt;ytd-section-list-renderer&amp;gt;div&amp;gt;ytd-item-section-renderer&amp;gt;div&amp;gt;ytd-playlist-video-list-renderer&amp;gt;div&amp;gt;ytd-playlist-video-renderer&amp;gt;div&amp;gt;div&amp;gt;ytd-thumbnail&amp;gt;a&amp;gt;div&amp;gt;ytd-thumbnail-overlay-time-status-renderer&amp;gt;div&amp;gt;badge-shape&amp;gt;div' idx='{0}' /&gt;&quot;, intVedioIndex)]">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:GetValue.Target>
+                              <ui:GetValue.Value>
+                                <OutArgument x:TypeArguments="x:String">[out_dicListCourses(incrementer)("Vedio Duration")]</OutArgument>
+                              </ui:GetValue.Value>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:GetValue>
+                          </Sequence>
                         </Sequence>
-                      </Sequence>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="558,57.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[out_dicListCourses(incrementer)(&quot;Vedio Title&quot;)+&#xA;Environment.NewLine+out_dicListCourses(incrementer)(&quot;Vedio Views&quot;)]">
+                      </Parallel>
+                      <Sequence sap:VirtualizedContainerService.HintSize="1074,982" sap2010:WorkflowViewState.IdRef="Sequence_23">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                      </ui:LogMessage>
-                      <Assign sap:VirtualizedContainerService.HintSize="558,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_18">
-                        <Assign.To>
-                          <OutArgument x:TypeArguments="scg:List(x:String)">[strListDuration]</OutArgument>
-                        </Assign.To>
-                        <Assign.Value>
-                          <InArgument x:TypeArguments="scg:List(x:String)">[New List(Of String)(out_dicListCourses(incrementer)("Vedio Duration").Split(":"))]</InArgument>
-                        </Assign.Value>
-                      </Assign>
-                      <Assign sap:VirtualizedContainerService.HintSize="558,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_19">
-                        <Assign.To>
-                          <OutArgument x:TypeArguments="s:DateTime">[dtCourseDuration]</OutArgument>
-                        </Assign.To>
-                        <Assign.Value>
-                          <InArgument x:TypeArguments="s:DateTime" xml:space="preserve">[If(  strListDuration.Count =2, dtCourseDuration.Add(  TimeSpan.Parse( "00:"+out_dicListCourses(incrementer)("Vedio Duration")  ) ) , dtCourseDuration.Add(  TimeSpan.Parse( out_dicListCourses(incrementer)("Vedio Duration")  )   )  )]</InArgument>
-                        </Assign.Value>
-                      </Assign>
-                      <Assign sap:VirtualizedContainerService.HintSize="558,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_7">
-                        <Assign.To>
-                          <OutArgument x:TypeArguments="x:Int32">[incrementer]</OutArgument>
-                        </Assign.To>
-                        <Assign.Value>
-                          <InArgument x:TypeArguments="x:Int32">[incrementer+1]</InArgument>
-                        </Assign.Value>
-                      </Assign>
-                      <Assign sap:VirtualizedContainerService.HintSize="558,108" sap2010:WorkflowViewState.IdRef="Assign_10">
-                        <Assign.To>
-                          <OutArgument x:TypeArguments="x:Int32">[intVedioIndex]</OutArgument>
-                        </Assign.To>
-                        <Assign.Value>
-                          <InArgument x:TypeArguments="x:Int32">[intVedioIndex+1]</InArgument>
-                        </Assign.Value>
-                      </Assign>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[out_dicListCourses(incrementer)(&quot;Vedio Title&quot;)+&#xA;Environment.NewLine+out_dicListCourses(incrementer)(&quot;Vedio Views&quot;)]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:LogMessage>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_18">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="scg:List(x:String)">[strListDuration]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="scg:List(x:String)">[New List(Of String)(out_dicListCourses(incrementer)("Vedio Duration").Split(":"))]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_19">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:TimeSpan">[dtCourseDuration]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:TimeSpan" xml:space="preserve">[If(  strListDuration.Count =2, dtCourseDuration.Add(  TimeSpan.Parse( "00:"+out_dicListCourses(incrementer)("Vedio Duration")  ) ) , dtCourseDuration.Add(  TimeSpan.Parse( out_dicListCourses(incrementer)("Vedio Duration")  )   )  )]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_7">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Int32">[incrementer]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Int32">[incrementer+1]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_10">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Int32">[intVedioIndex]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Int32">[intVedioIndex+1]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_24">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Int32">[intNextVedioindex]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Int32">[intNextVedioindex+1]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_25">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[out_dicListCourses(0)("Num of Course Vedios")]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[incrementer.ToString]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
                     </Sequence>
                   </ui:InterruptibleDoWhile.Body>
-                  <ui:InterruptibleDoWhile.Condition>
-                    <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="(incrementer&lt;( Convert.ToInt32(strCourseNumVedios) ))" />
-                  </ui:InterruptibleDoWhile.Condition>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -468,35 +545,16 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:InterruptibleDoWhile>
-                <Assign DisplayName="Catch All List duration in frist opject of list" sap:VirtualizedContainerService.HintSize="654,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_17">
+                <Assign DisplayName="Catch All List duration in frist opject of list" sap:VirtualizedContainerService.HintSize="1170,108" sap2010:WorkflowViewState.IdRef="Assign_17">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">[out_strAllcourseDuration]</OutArgument>
                   </Assign.To>
                   <Assign.Value>
-                    <InArgument x:TypeArguments="x:String">[dtCourseDuration.ToString("hh:mm:ss")]</InArgument>
+                    <InArgument x:TypeArguments="x:String" xml:space="preserve">[(  Math.Round(Convert.ToDouble( dtCourseDuration.TotalHours),2)   ).ToString()]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <ui:CloseTab Browser="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="654,48" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
               </Sequence>
             </Sequence>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="778,48" sap2010:WorkflowViewState.IdRef="CommentOut_3">
-              <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,180" sap2010:WorkflowViewState.IdRef="Sequence_13">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ui:CloseWindow Selector="{x:Null}" TimeoutMS="{x:Null}" UseWindow="{x:Null}" DisplayName="Close Window" sap:VirtualizedContainerService.HintSize="354,92" sap2010:WorkflowViewState.IdRef="CloseWindow_1" WaitForReady="INTERACTIVE" />
-                </Sequence>
-              </ui:CommentOut.Body>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:CommentOut>
           </Sequence>
         </ActivityAction>
       </ui:BrowserScope.Body>
