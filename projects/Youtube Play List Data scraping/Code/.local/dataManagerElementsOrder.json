@@ -20,9 +20,6 @@
       "Path": "StateMachine.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "intRn&StateMachine_1",
-        "strLink&StateMachine_1",
-        "arrStrHref&StateMachine_1",
         "strCourseName&StateMachine_1",
         "boolEmptyCourseName&StateMachine_1",
         "boolYoutubOpen&StateMachine_1",
@@ -31,6 +28,9 @@
         "strFolder&StateMachine_1",
         "strAllcourseDuration&StateMachine_1",
         "incrementer&StateMachine_1",
+        "arrStrHref&StateMachine_1",
+        "strLink&StateMachine_1",
+        "intRn&StateMachine_1",
         "repeter&Sequence_5",
         "intplayNum&Sequence_3"
       ],
@@ -104,9 +104,8 @@
       "Path": "test.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "Time&Sequence_1",
-        "strT2&Sequence_1",
-        "strT1&Sequence_1"
+        "Au&Sequence_1",
+        "text&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

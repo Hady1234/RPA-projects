@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Final_Output" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Final_Output" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="arrDicStrCources" Type="InArgument(scg:Dictionary(x:String, x:String)[])" />
     <x:Property Name="trayAgain" Type="OutArgument(x:String)" />
@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,916.6666666666666</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,611.3333333333334</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Final_Output_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -98,7 +98,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Final_Output " sap:VirtualizedContainerService.HintSize="514.6666666666666,852" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Final_Output " sap:VirtualizedContainerService.HintSize="496,546.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:List(x:Double)" Name="listDoubelPrices" />
       <Variable x:TypeArguments="scg:List(scg:Dictionary(x:String, x:String))" Name="listDicStrSorted" />
@@ -110,32 +110,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452.6666666666667,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-      <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,197.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_2">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="354,109.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_9" Text="[&quot;Thes courses &quot;+Environment.NewLine+&#xD;&#xA;Environment.NewLine+&#xD;&#xA;&quot;Cource Name : &quot;+arrDicStrCources(0)(&quot;Name&quot;)+Environment.NewLine +&#xD;&#xA;&quot;Cource Price : &quot;+arrDicStrCources(0)(&quot;Price&quot;)+Environment.NewLine +&#xD;&#xA;&quot;Cource Rating : &quot;+arrDicStrCources(0)(&quot;Rating&quot;)+Environment.NewLine +&#xD;&#xA;&quot;Cource Author : &quot;+arrDicStrCources(0)(&quot;Author&quot;)+Environment.NewLine+&#xD;&#xA;Environment.NewLine+&quot;Link : https://www.udemy.com&quot;+arrDicStrCources(0)(&quot;href&quot;)+&#xD;&#xA;Environment.NewLine+&#xD;&#xA;&quot;_______________________________________________________________________&quot;+&#xD;&#xA;Environment.NewLine+&#xD;&#xA;&quot;Cource Name : &quot;+arrDicStrCources(1)(&quot;Name&quot;)+Environment.NewLine +&#xD;&#xA;&quot;Cource Price : &quot;+arrDicStrCources(1)(&quot;Price&quot;)+Environment.NewLine +&#xD;&#xA;&quot;Cource Rating : &quot;+arrDicStrCources(1)(&quot;Rating&quot;)+Environment.NewLine+&#xD;&#xA;&quot;Cource Author : &quot;+arrDicStrCources(1)(&quot;Author&quot;)+Environment.NewLine+&#xD;&#xA;Environment.NewLine+&quot;Link : https://www.udemy.com&quot;+arrDicStrCources(1)(&quot;href&quot;)]">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-          </ui:MessageBox>
-        </Sequence>
-      </ui:CommentOut.Body>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-    </ui:CommentOut>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452.6666666666667,57.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Thes courses &quot;+Environment.NewLine+&#xD;&#xA;Environment.NewLine+&#xD;&#xA;&quot;Cource Price1 : &quot;+arrDicStrCources(0)(&quot;Price&quot;)+Environment.NewLine +&#xD;&#xA;Environment.NewLine+&#xD;&#xA;Environment.NewLine+&#xD;&#xA;&quot;Cource Price2 : &quot;+arrDicStrCources(1)(&quot;Price&quot;)+Environment.NewLine +&#xD;&#xA;Environment.NewLine+&#xD;&#xA;Environment.NewLine+&#xD;&#xA;&quot;Cource Price3 : &quot;+arrDicStrCources(2)(&quot;Price&quot;)+Environment.NewLine +&#xD;&#xA;Environment.NewLine]">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Thes courses &quot;+Environment.NewLine+&#xA;Environment.NewLine+&#xA;&quot;Cource Price1 : &quot;+arrDicStrCources(0)(&quot;Price&quot;)+Environment.NewLine +&#xA;Environment.NewLine+&#xA;Environment.NewLine+&#xA;&quot;Cource Price2 : &quot;+arrDicStrCources(1)(&quot;Price&quot;)+Environment.NewLine +&#xA;Environment.NewLine+&#xA;Environment.NewLine+&#xA;&quot;Cource Price3 : &quot;+arrDicStrCources(2)(&quot;Price&quot;)+Environment.NewLine +&#xA;Environment.NewLine]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -143,71 +118,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452.6666666666667,248" sap2010:WorkflowViewState.IdRef="CommentOut_2">
-      <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,136" sap2010:WorkflowViewState.IdRef="Sequence_7">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ui:ForEach x:TypeArguments="scg:Dictionary(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each Course" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[arrDicStrCources]">
-            <ui:ForEach.Body>
-              <ActivityAction x:TypeArguments="scg:Dictionary(x:String, x:String)">
-                <ActivityAction.Argument>
-                  <DelegateInArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="Course" />
-                </ActivityAction.Argument>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,428.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_6">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ui:IfElseIfV2 Condition="[Course(&quot;Price&quot;)=&quot;&quot;]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="450,340.6666666666667" sap2010:WorkflowViewState.IdRef="IfElseIfV2_1">
-                    <ui:IfElseIfV2.Else>
-                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_5">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[Course(&quot;Price&quot;)]" />
-                      </Sequence>
-                    </ui:IfElseIfV2.Else>
-                    <ui:IfElseIfV2.ElseIfs>
-                      <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True" />
-                    </ui:IfElseIfV2.ElseIfs>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ui:IfElseIfV2.Then>
-                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,104.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                      </Sequence>
-                    </ui:IfElseIfV2.Then>
-                  </ui:IfElseIfV2>
-                </Sequence>
-              </ActivityAction>
-            </ui:ForEach.Body>
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-          </ui:ForEach>
-        </Sequence>
-      </ui:CommentOut.Body>
-    </ui:CommentOut>
-    <Assign DisplayName="Assign Ordenon Rate" sap:VirtualizedContainerService.HintSize="452.6666666666667,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_21">
+    <Assign DisplayName="Assign Ordenon Rate" sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_21">
       <Assign.To>
         <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)[]">[arrDicStrCources]</OutArgument>
       </Assign.To>
@@ -215,7 +126,7 @@
         <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)[]">[arrDicStrCources.OrderByDescending(Function(dic) Convert.ToDouble(dic("Rating"))).ToArray()]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign DisplayName="Assign Ordenon Price" sap:VirtualizedContainerService.HintSize="452.6666666666667,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_20">
+    <Assign DisplayName="Assign Ordenon Price" sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_20">
       <Assign.To>
         <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)[]">[arrDicStrCources]</OutArgument>
       </Assign.To>
@@ -223,8 +134,8 @@
         <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)[]">[arrDicStrCources.OrderBy(Function(dic) Convert.ToDouble(dic("Price"))).ToArray()]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:MessageBox AutoCloseAfter="00:00:00" Buttons="{x:Null}" Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="452.6666666666667,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[&quot;Thes courses Is Presented in Order to Lower Price &amp; Higher Rate&quot;+Environment.NewLine+&#xA;Environment.NewLine+&#xA;&quot;Cource Name : &quot;+arrDicStrCources(0)(&quot;Name&quot;)+Environment.NewLine +&#xA;&quot;Cource Price : &quot;+arrDicStrCources(0)(&quot;Price&quot;)+Environment.NewLine +&#xA;&quot;Cource Rating : &quot;+arrDicStrCources(0)(&quot;Rating&quot;)+Environment.NewLine +&#xA;&quot;Cource Author : &quot;+arrDicStrCources(0)(&quot;Author&quot;)+Environment.NewLine+&#xA;Environment.NewLine+&quot;Link : https://www.udemy.com&quot;+arrDicStrCources(0)(&quot;href&quot;)+&#xA;Environment.NewLine+&#xA;&quot;_______________________________________________________________________&quot;+&#xA;Environment.NewLine+&#xA;&quot;Cource Name : &quot;+arrDicStrCources(1)(&quot;Name&quot;)+Environment.NewLine +&#xA;&quot;Cource Price : &quot;+arrDicStrCources(1)(&quot;Price&quot;)+Environment.NewLine +&#xA;&quot;Cource Rating : &quot;+arrDicStrCources(1)(&quot;Rating&quot;)+Environment.NewLine+&#xA;&quot;Cource Author : &quot;+arrDicStrCources(1)(&quot;Author&quot;)+Environment.NewLine+&#xA;Environment.NewLine+&quot;Link : https://www.udemy.com&quot;+arrDicStrCources(1)(&quot;href&quot;)]" TopMost="{x:Null}" />
-    <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="452.6666666666667,48" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Do you have a nother Course Name" OptionsString="Yes;No" Title="More">
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[&quot;Thes courses Is Presented in Order to Lower Price &amp; Higher Rate&quot;+Environment.NewLine+&#xA;Environment.NewLine+&#xA;&quot;Cource Name : &quot;+arrDicStrCources(0)(&quot;Name&quot;)+Environment.NewLine +&#xA;&quot;Cource Price : &quot;+arrDicStrCources(0)(&quot;Price&quot;)+Environment.NewLine +&#xA;&quot;Cource Rating : &quot;+arrDicStrCources(0)(&quot;Rating&quot;)+Environment.NewLine +&#xA;&quot;Cource Author : &quot;+arrDicStrCources(0)(&quot;Author&quot;)+Environment.NewLine+&#xA;Environment.NewLine+&quot;Link : https://www.udemy.com&quot;+arrDicStrCources(0)(&quot;href&quot;)+&#xA;Environment.NewLine+&#xA;&quot;_______________________________________________________________________&quot;+&#xA;Environment.NewLine+&#xA;&quot;Cource Name : &quot;+arrDicStrCources(1)(&quot;Name&quot;)+Environment.NewLine +&#xA;&quot;Cource Price : &quot;+arrDicStrCources(1)(&quot;Price&quot;)+Environment.NewLine +&#xA;&quot;Cource Rating : &quot;+arrDicStrCources(1)(&quot;Rating&quot;)+Environment.NewLine+&#xA;&quot;Cource Author : &quot;+arrDicStrCources(1)(&quot;Author&quot;)+Environment.NewLine+&#xA;Environment.NewLine+&quot;Link : https://www.udemy.com&quot;+arrDicStrCources(1)(&quot;href&quot;)]" />
+    <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="434,48" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Do you have a nother Course Name" OptionsString="Yes;No" Title="More">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[trayAgain]</OutArgument>
       </ui:InputDialog.Result>
