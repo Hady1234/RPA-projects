@@ -28,6 +28,11 @@ The **Projects** folder contains all my RPA Robotic projects. Each project folde
    - Data Extraction: The bot retrieves the title and view count of each video in the playlist.
    - User-Friendly Workflow: The process is fully automated, requiring minimal user interaction beyond entering the initial keyword.
    - Structured output: Output will be text files saved in Location which spacifde from user.
+ 4. **IMDB Scraper**:
+   - High-Speed Scraping – Extracts large amounts of data in minimal time.
+   - Automated Workflow – Eliminates manual effort with UiPath automation.
+   - Scalable & Efficient – Handles large datasets with ease.
+   - Customizable – Modify search parameters to target specific movie Deuration, production Year, or ratings.
 ### Certificates  
 The **Certificates** folder includes the following achievements:  
 1. **UiPath Business Analyst Automation Certificate**  
