@@ -46,10 +46,66 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "strTry&Flowchart_1",
+        "strFolder&Flowchart_1",
+        "strMovies&Flowchart_1",
+        "strMovieData&Flowchart_1",
         "boolOpened&Flowchart_1",
         "intNumper&Flowchart_1"
       ],
       "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "IMDB Data Scraping.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "strMovieData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "IMDB Represent output.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strDataStructed&Sequence_1",
+        "intIncrementer&Sequence_1",
+        "strRate&Sequence_1",
+        "strDuration&Sequence_1",
+        "strMovieYear&Sequence_1",
+        "strMovieName&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Out_strMovies",
+        "in_intMany",
+        "in_strDataStructed"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "IMDB final Output.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Folder",
+        "in_strMoviesDataPrint"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Ask for location.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "intIcrementer&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_Folder"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }
