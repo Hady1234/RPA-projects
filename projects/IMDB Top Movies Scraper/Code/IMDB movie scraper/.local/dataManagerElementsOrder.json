@@ -11,7 +11,9 @@
     {
       "Path": "open browser.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "boolExist&Sequence_1"
+      ],
       "ArgumentsSectionElementsOrder": [
         "in_boolOpened",
         "intNumper"
@@ -22,7 +24,9 @@
     {
       "Path": "Is OPened Browser.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "boolExist&Sequence_2"
+      ],
       "ArgumentsSectionElementsOrder": [
         "out_boolOpend"
       ],
@@ -46,12 +50,13 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "strTry&Flowchart_1",
-        "strFolder&Flowchart_1",
-        "strMovies&Flowchart_1",
-        "strMovieData&Flowchart_1",
+        "boolExist&Sequence_3",
+        "intNumper&Flowchart_1",
         "boolOpened&Flowchart_1",
-        "intNumper&Flowchart_1"
+        "strMovieData&Flowchart_1",
+        "strMovies&Flowchart_1",
+        "strFolder&Flowchart_1",
+        "strTry&Flowchart_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
@@ -60,7 +65,9 @@
     {
       "Path": "IMDB Data Scraping.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "boolExist&Sequence_1"
+      ],
       "ArgumentsSectionElementsOrder": [
         "strMovieData"
       ],
