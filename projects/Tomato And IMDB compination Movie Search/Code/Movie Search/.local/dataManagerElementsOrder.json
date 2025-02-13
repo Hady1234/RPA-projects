@@ -35,15 +35,14 @@
       "Path": "Tomaten Files integration.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "dicMovieData&Flowchart_1",
-        "boolValidData&Flowchart_1",
-        "strMovieName&Flowchart_1",
         "strUrl&Flowchart_1",
         "intNumberOfRetry&Flowchart_1",
-        "tsRetryDuration&Flowchart_1"
+        "tsRetryDuration&Flowchart_1",
+        "boolValidData&Flowchart_1"
       ],
       "ArgumentsSectionElementsOrder": [
-        "in_boolTryAgain"
+        "io_dicTomatoMovieData",
+        "in_strMovieName"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
@@ -132,6 +131,105 @@
       "ArgumentsSectionElementsOrder": [
         "in_boolTryAgain"
       ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "IMDB open.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolIMDBopend&TryCatch_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strIMDBLink",
+        "in_tsRetryDeuration",
+        "in_intNumberOfRetry"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "IMDB integration File.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "intNumberOfRetry&Flowchart_1",
+        "tsRetryDeuration&Flowchart_1",
+        "strIMDBLink&Flowchart_1",
+        "boolNotFound&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strMovieName",
+        "io_dicIdbmMovieData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "IMDB Movie Search.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolSearchSucced&Sequence_14",
+        "boolIMDBopend&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_boolNotFound",
+        "in_strMovieName",
+        "in_tsRetryDeuration",
+        "in_intNumberOfRetry"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "IMDB Click on Frist Movie.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolPostCondetion&Sequence_6",
+        "boolSearchSucced&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_tsRetryDeuration",
+        "in_intNumberOfRetry"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "IMDB Movie Data Extraction.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolPreCondetion&Sequence_14"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_dicMovieData",
+        "in_intNumberOfRetry",
+        "in_tsRetryDeuration"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Test.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "text&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "All Project Intgration(Main).xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strMovieName&Flowchart_1",
+        "dicIdbmMovieData&Flowchart_1",
+        "dicTomatoMovieData&Flowchart_1",
+        "strTryMore&Flowchart_1",
+        "intNumberOfRetry&Flowchart_1",
+        "tsRetryDuration&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }

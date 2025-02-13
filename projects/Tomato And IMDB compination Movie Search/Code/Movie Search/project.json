@@ -2,7 +2,7 @@
   "name": "Movie Search",
   "projectId": "9191cd02-ffa8-4bd6-bb4c-62c9beba65d7",
   "description": "Blank Process",
-  "main": "Main.xaml",
+  "main": "All Project Intgration(Main).xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.24.0-preview]",
     "UiPath.Mail.Activities": "[1.23.11]",
@@ -51,6 +51,12 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "a046ca9c-cbbe-4f61-a157-e1cca2db3a61",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "All Project Intgration(Main).xaml",
+      "uniqueId": "c2512151-608b-4791-8c9f-9d179adaade0",
       "input": [],
       "output": []
     }
