@@ -50,13 +50,13 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "boolExist&Sequence_3",
         "intNumper&Flowchart_1",
         "boolOpened&Flowchart_1",
         "strMovieData&Flowchart_1",
         "strMovies&Flowchart_1",
         "strFolder&Flowchart_1",
-        "strTry&Flowchart_1"
+        "strTry&Flowchart_1",
+        "boolExist&Sequence_3"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

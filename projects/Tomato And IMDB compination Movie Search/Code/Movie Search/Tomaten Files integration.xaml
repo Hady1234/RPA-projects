@@ -91,24 +91,25 @@
       <Variable x:TypeArguments="x:Int32" Default="3" Name="intNumberOfRetry" />
       <Variable x:TypeArguments="x:TimeSpan" Default="00:00:03" Name="tsRetryDuration" />
       <Variable x:TypeArguments="x:Boolean" Name="boolValidData" />
+      <Variable x:TypeArguments="x:Boolean" Name="boolTomatoIsOpened" />
     </Flowchart.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <av:Size x:Key="ShapeSize">50,50</av:Size>
         <av:Point x:Key="ShapeLocation">575,65</av:Point>
-        <av:PointCollection x:Key="ConnectorLocation">600,115 600,165</av:PointCollection>
+        <av:PointCollection x:Key="ConnectorLocation">600,115 600,145</av:PointCollection>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
-      <x:Reference>__ReferenceID5</x:Reference>
+      <x:Reference>__ReferenceID7</x:Reference>
     </Flowchart.StartNode>
-    <FlowStep x:Name="__ReferenceID5">
+    <FlowStep x:Name="__ReferenceID5" sap2010:WorkflowViewState.IdRef="FlowStep_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">545,165</av:Point>
+          <av:Point x:Key="ShapeLocation">265,325</av:Point>
           <av:Size x:Key="ShapeSize">110,70</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">600,235 600,375</av:PointCollection>
+          <av:PointCollection x:Key="ConnectorLocation">320,395 320,540 545,540</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Open Tomato - Invoke Workflow File (Open Tomato.xaml)" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Open Tomato.xaml">
@@ -127,9 +128,9 @@
         <FlowStep x:Name="__ReferenceID0">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:Point x:Key="ShapeLocation">545,375</av:Point>
+              <av:Point x:Key="ShapeLocation">545,505</av:Point>
               <av:Size x:Key="ShapeSize">110,70</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">600,445 600,470 600.3333333333334,470</av:PointCollection>
+              <av:PointCollection x:Key="ConnectorLocation">600,575 600,600 600.3333333333334,600</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Tomaten Search - Invoke Workflow File (Tomaten Search.xaml)" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Tomaten Search.xaml">
@@ -150,19 +151,19 @@
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <av:Point x:Key="ShapeLocation">570,470</av:Point>
+                  <av:Point x:Key="ShapeLocation">570,600</av:Point>
                   <av:Size x:Key="ShapeSize">60.666666666666664,60.666666666666664</av:Size>
-                  <av:PointCollection x:Key="FalseConnector">570,500.3333333333333 539.9999999999999,500.3333333333333 539.9999999999999,500 345,500</av:PointCollection>
-                  <av:PointCollection x:Key="TrueConnector">600.3333333333334,530.6666666666666 600,530.6666666666666 600,555</av:PointCollection>
+                  <av:PointCollection x:Key="FalseConnector">570,630.3333333333334 540,630.3333333333334 540,630 345,630</av:PointCollection>
+                  <av:PointCollection x:Key="TrueConnector">600.3333333333334,660.6666666666666 600,660.6666666666666 600,685</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <FlowDecision.True>
                 <FlowStep x:Name="__ReferenceID3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:Point x:Key="ShapeLocation">545,555</av:Point>
+                      <av:Point x:Key="ShapeLocation">545,685</av:Point>
                       <av:Size x:Key="ShapeSize">110,70</av:Size>
-                      <av:PointCollection x:Key="ConnectorLocation">600,625 600,665</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">600,755 600,795</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Tometen Click on the Target Movie info - Invoke Workflow File (Tometen Click on the Target Movie info.xaml)" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Tometen Click on the Target Movie info.xaml">
@@ -180,11 +181,11 @@
                     <FlowStep x:Name="__ReferenceID4">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <av:Point x:Key="ShapeLocation">545,665</av:Point>
+                          <av:Point x:Key="ShapeLocation">545,795</av:Point>
                           <av:Size x:Key="ShapeSize">110,70</av:Size>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="tomato Movie Data Extraction - Invoke Workflow File (tomato Movie Data Extraction.xaml)" sap:VirtualizedContainerService.HintSize="334,178" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="tomato Movie Data Extraction.xaml">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="tomato Movie Data Extraction - Invoke Workflow File (tomato Movie Data Extraction.xaml)" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="tomato Movie Data Extraction.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
                           <InArgument x:TypeArguments="x:Int32" x:Key="in_intNumberOfRetry">[intNumberOfRetry]</InArgument>
                           <InArgument x:TypeArguments="x:TimeSpan" x:Key="in_tsRetryDeuration">[tsRetryDuration]</InArgument>
@@ -204,7 +205,7 @@
                 <FlowStep x:Name="__ReferenceID1" sap2010:WorkflowViewState.IdRef="FlowStep_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:Point x:Key="ShapeLocation">235,465</av:Point>
+                      <av:Point x:Key="ShapeLocation">235,595</av:Point>
                       <av:Size x:Key="ShapeSize">110,70</av:Size>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
@@ -227,5 +228,51 @@
     <x:Reference>__ReferenceID2</x:Reference>
     <x:Reference>__ReferenceID3</x:Reference>
     <x:Reference>__ReferenceID4</x:Reference>
+    <FlowStep x:Name="__ReferenceID7" sap2010:WorkflowViewState.IdRef="FlowStep_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">545,145</av:Point>
+          <av:Size x:Key="ShapeSize">110,70</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">600,215 600,245 600.3333333333334,245 600.3333333333334,250</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Tomato Cheack If Opened - Invoke Workflow File (Tomato Cheack If Opened.xaml)" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Tomato Cheack If Opened.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:Int32" x:Key="in_intNumberOfRetry">[intNumberOfRetry]</InArgument>
+          <InArgument x:TypeArguments="x:TimeSpan" x:Key="in_tsRetryDeuration">[tsRetryDuration]</InArgument>
+          <OutArgument x:TypeArguments="x:Boolean" x:Key="out_boolTomatoesOpened">[boolTomatoIsOpened]</OutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InvokeWorkflowFile>
+      <FlowStep.Next>
+        <FlowDecision x:Name="__ReferenceID6" DisplayName="Tomato Opened ?" sap:VirtualizedContainerService.HintSize="60.666666666666664,60.666666666666664" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
+          <FlowDecision.Condition>
+            <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="boolTomatoIsOpened" />
+          </FlowDecision.Condition>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <av:Point x:Key="ShapeLocation">570,250</av:Point>
+              <av:Size x:Key="ShapeSize">60.666666666666664,60.666666666666664</av:Size>
+              <av:PointCollection x:Key="TrueConnector">600.3333333333334,310.6666666666667 600.3333333333334,340.6666666666667 600,340.6666666666667 600,505</av:PointCollection>
+              <av:PointCollection x:Key="FalseConnector">570,280.3333333333333 320,280.3333333333333 320,325</av:PointCollection>
+              <x:String x:Key="TrueLabel">Opened</x:String>
+              <x:String x:Key="FalseLabel">Not Opened</x:String>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <FlowDecision.True>
+            <x:Reference>__ReferenceID0</x:Reference>
+          </FlowDecision.True>
+          <FlowDecision.False>
+            <x:Reference>__ReferenceID5</x:Reference>
+          </FlowDecision.False>
+        </FlowDecision>
+      </FlowStep.Next>
+    </FlowStep>
+    <x:Reference>__ReferenceID6</x:Reference>
   </Flowchart>
 </Activity>
