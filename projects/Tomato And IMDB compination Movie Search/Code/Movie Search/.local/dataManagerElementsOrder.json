@@ -35,6 +35,7 @@
       "Path": "Tomaten Files integration.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "boolTomatoIsOpened&Flowchart_1",
         "strUrl&Flowchart_1",
         "intNumberOfRetry&Flowchart_1",
         "tsRetryDuration&Flowchart_1",
@@ -152,13 +153,15 @@
       "Path": "IMDB integration File.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "strAllMovieData&Flowchart_1",
         "intNumberOfRetry&Flowchart_1",
         "tsRetryDeuration&Flowchart_1",
         "strIMDBLink&Flowchart_1",
-        "boolNotFound&Flowchart_1"
+        "boolNotFound&Flowchart_1",
+        "boolIMDBopen&Flowchart_1"
       ],
       "ArgumentsSectionElementsOrder": [
-        "in_strMovieName",
+        "io_strMovieName",
         "io_dicIdbmMovieData"
       ],
       "ConstantsSectionElementsOrder": [],
@@ -168,6 +171,7 @@
       "Path": "IMDB Movie Search.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "boolMovieButton&Sequence_10",
         "boolSearchSucced&Sequence_14",
         "boolIMDBopend&Sequence_7"
       ],
@@ -198,10 +202,11 @@
       "Path": "IMDB Movie Data Extraction.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "strRate&Sequence_20",
         "boolPreCondetion&Sequence_14"
       ],
       "ArgumentsSectionElementsOrder": [
-        "out_dicMovieData",
+        "out_strAllMovieData",
         "in_intNumberOfRetry",
         "in_tsRetryDeuration"
       ],
@@ -223,11 +228,65 @@
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "strMovieName&Flowchart_1",
+        "intNumberOfRetry&Flowchart_1",
+        "tsRetryDuration&Flowchart_1",
         "dicIdbmMovieData&Flowchart_1",
         "dicTomatoMovieData&Flowchart_1",
-        "strTryMore&Flowchart_1",
-        "intNumberOfRetry&Flowchart_1",
-        "tsRetryDuration&Flowchart_1"
+        "strTryMore&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "IMDB Check if Is opend.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_tsRetryDeuration",
+        "in_intNumberOfRetry",
+        "out_boolMdbOpened"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "IMDB Data Representation.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolExixts&Sequence_6",
+        "boolPreCondetion&Sequence_6",
+        "boolPostCondetion&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_tsRetryDeuration",
+        "in_intNumberOfRetry",
+        "in_strMovieData",
+        "out_dicMovieData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tomato Cheack If Opened.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolOpend&Sequence_2",
+        "boolAlreadyOpen&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_boolTomatoesOpened",
+        "in_tsRetryDeuration",
+        "in_intNumberOfRetry"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "State Machine All Fiels Integration.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "t&StateMachine_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

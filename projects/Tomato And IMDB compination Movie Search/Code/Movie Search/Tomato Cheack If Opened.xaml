@@ -95,7 +95,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="Action : This File Check if Tomato Opened Or Not .&#xA;&#xA;Pre Condetion : N/A .&#xA;post Condetion : N/A&#xA;&#xA;In Arg : &#xA;in_intNumberOfRetry&#xA;in_tsRetryDeuration&#xD;&#xA;out Arg : &#xD;&#xA;out_boolTomatoesOpened" DisplayName="Tomato_Cheack_If_Opened" sap:VirtualizedContainerService.HintSize="654.6666666666666,1526.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap2010:Annotation.AnnotationText="Action : This File Check if Tomato Opened Or Not .&#xA;&#xA;Pre Condetion : N/A .&#xA;post Condetion : N/A&#xA;&#xA;In Arg : &#xA;in_intNumberOfRetry&#xA;in_tsRetryDeuration&#xA;out Arg : &#xA;out_boolTomatoesOpened" DisplayName="Tomato_Cheack_If_Opened" sap:VirtualizedContainerService.HintSize="654.6666666666666,1526.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Boolean" Name="boolOpend" />
       </Sequence.Variables>
@@ -151,10 +151,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                     <ui:UiElementExists DisplayName="Element Exists 'Tomato Icon'" Exists="[out_boolTomatoesOpened]" sap:VirtualizedContainerService.HintSize="388,130" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
                       <ui:UiElementExists.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e46c9aab-3619-4348-b331-2de37a54ca6d" InformativeScreenshot="4d8ded5cc6b1a2213dd0dd53de30b81f" Selector="&lt;html app='msedge.exe' title='*Rotten Tomatoes' /&gt;&lt;webctrl aaname='Rotten Tomatoes' /&gt;">
-                          <ui:Target.TimeoutMS>
-                            <InArgument x:TypeArguments="x:Int32" />
-                          </ui:Target.TimeoutMS>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e46c9aab-3619-4348-b331-2de37a54ca6d" InformativeScreenshot="4d8ded5cc6b1a2213dd0dd53de30b81f" Selector="&lt;html app='msedge.exe' title='*Rotten Tomatoes' /&gt;&lt;webctrl aaname='Rotten Tomatoes' /&gt;" TimeoutMS="5000">
                           <ui:Target.WaitForReady>
                             <InArgument x:TypeArguments="ui:WaitForReady" />
                           </ui:Target.WaitForReady>
