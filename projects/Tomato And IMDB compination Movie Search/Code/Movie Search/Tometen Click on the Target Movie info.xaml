@@ -246,10 +246,13 @@
                               </ui:CursorPosition>
                             </ui:Click.CursorPosition>
                             <ui:Click.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="54e725cb-607b-4063-a965-110b15a61d0e" InformativeScreenshot="7f366a55f5b545b7b397c6a02f4cb543" Selector="&lt;webctrl parentid='search-results' css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;search-page-result&amp;gt;ul&amp;gt;search-page-media-row&amp;gt;a' idx='2' /&gt;" WaitForReady="INTERACTIVE">
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="54e725cb-607b-4063-a965-110b15a61d0e" InformativeScreenshot="7f366a55f5b545b7b397c6a02f4cb543" Selector="&lt;webctrl parentid='search-results' css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;search-page-result&amp;gt;ul&amp;gt;search-page-media-row&amp;gt;a' idx='2' /&gt;">
                                 <ui:Target.TimeoutMS>
                                   <InArgument x:TypeArguments="x:Int32" />
                                 </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
                               </ui:Target>
                             </ui:Click.Target>
                           </ui:Click>

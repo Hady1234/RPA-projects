@@ -224,7 +224,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "All Project Intgration(Main).xaml",
+      "Path": "All Project Intgration.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "strMovieName&Flowchart_1",
@@ -283,10 +283,23 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "State Machine All Fiels Integration.xaml",
+      "Path": "State Machine All Fiels Integration(Main).xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "t&StateMachine_1"
+        "strUrl&StateMachine_1",
+        "strHowOpened&StateMachine_1",
+        "tsRetryDeuration&StateMachine_1",
+        "intNumberOfRetry&StateMachine_1",
+        "strMovieName&StateMachine_1",
+        "strSearchSource&StateMachine_1",
+        "boolTomatoIsOpened&StateMachine_1",
+        "dicTomatoMovieData&StateMachine_1",
+        "boolIMDBopen&StateMachine_1",
+        "strAllMovieData&StateMachine_1",
+        "dicIdbmMovieData&StateMachine_1",
+        "strTryMore&StateMachine_1",
+        "boolNotFound&State_19",
+        "boolNotValidData&State_10"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

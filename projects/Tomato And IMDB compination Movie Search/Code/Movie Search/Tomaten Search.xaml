@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,3374.6666666666665</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,3454.6666666666665</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Tomaten_Search_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -98,7 +98,7 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="File Avtion : Search in Tomaten website by movie name&#xA;&#xA;pre condetion :&#xA;&#xA;post Condetion :&#xA;&#xA;In_Arg : &#xA;in_intNumberOfRetry&#xA;in_tsRetryDeuration&#xA;&#xA;out_Arg" DisplayName="Tomaten Search" sap:VirtualizedContainerService.HintSize="716.6666666666666,3310" sap2010:WorkflowViewState.IdRef="Sequence_5">
+  <Sequence sap2010:Annotation.AnnotationText="File Avtion : Search in Tomaten website by movie name&#xA;&#xA;pre condetion :&#xA;&#xA;post Condetion :&#xA;&#xA;In_Arg : &#xA;in_intNumberOfRetry&#xA;in_tsRetryDeuration&#xA;&#xA;out_Arg" DisplayName="Tomaten Search" sap:VirtualizedContainerService.HintSize="716.6666666666666,3390" sap2010:WorkflowViewState.IdRef="Sequence_5">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -106,7 +106,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="654.6666666666666,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Tomaten Search&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="654.6666666666666,2878" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="654.6666666666666,2958" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -114,7 +114,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <ui:RetryScope DisplayName="Tomaten Search Body" sap:VirtualizedContainerService.HintSize="616,2583.3333333333335" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+        <ui:RetryScope DisplayName="Tomaten Search Body" sap:VirtualizedContainerService.HintSize="616,2663.3333333333335" sap2010:WorkflowViewState.IdRef="RetryScope_1">
           <ui:RetryScope.ActivityBody>
             <ActivityAction>
               <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="574,2404.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_12">
@@ -143,7 +143,11 @@
                   </ui:LogMessage>
                   <ui:UiElementExists DisplayName="Element Exists 'Tomaten Logo'" Exists="[boolOpend]" sap:VirtualizedContainerService.HintSize="450,139.33333333333334" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
                     <ui:UiElementExists.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ab4668f2-a3a4-4d58-a458-045d73314f39" InformativeScreenshot="fe95db66fd3b00b0c5f849111cf0aa21" Selector="&lt;html app='msedge.exe' title='*Rotten Tomatoes' /&gt;&lt;webctrl aaname='Rotten Tomatoes' /&gt;" TimeoutMS="5000" WaitForReady="INTERACTIVE" />
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ab4668f2-a3a4-4d58-a458-045d73314f39" InformativeScreenshot="fe95db66fd3b00b0c5f849111cf0aa21" Selector="&lt;html app='msedge.exe' title='*Rotten Tomatoes' /&gt;&lt;webctrl aaname='Rotten Tomatoes' /&gt;" TimeoutMS="5000">
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
                     </ui:UiElementExists.Target>
                   </ui:UiElementExists>
                   <If Condition="[boolOpend]" sap:VirtualizedContainerService.HintSize="450,492" sap2010:WorkflowViewState.IdRef="If_2">
@@ -218,10 +222,13 @@
                           </sap:WorkflowViewStateService.ViewState>
                           <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type Into 'Search'" sap:VirtualizedContainerService.HintSize="354,189.33333333333334" sap2010:WorkflowViewState.IdRef="TypeInto_2" SimulateType="True" Text="[in_strMovieName]">
                             <ui:TypeInto.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fc9af89d-7015-433c-953c-2de4b16fa66b" InformativeScreenshot="a25612d7171890dccab8b52a2d68bd75" Selector="&lt;webctrl placeholder='Search' /&gt;" WaitForReady="INTERACTIVE">
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fc9af89d-7015-433c-953c-2de4b16fa66b" InformativeScreenshot="a25612d7171890dccab8b52a2d68bd75" Selector="&lt;webctrl placeholder='Search' /&gt;">
                                 <ui:Target.TimeoutMS>
                                   <InArgument x:TypeArguments="x:Int32" />
                                 </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
                               </ui:Target>
                             </ui:TypeInto.Target>
                           </ui:TypeInto>
@@ -237,10 +244,13 @@
                               </ui:CursorPosition>
                             </ui:Click.CursorPosition>
                             <ui:Click.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b0523eb1-d289-4a49-b37b-e314d7283f82" InformativeScreenshot="d80f13cb4202c1aee742beae68115c92" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;rt-header&amp;gt;search-results-nav&amp;gt;search-results-controls&amp;gt;rt-link&amp;gt;rt-icon' /&gt;&lt;webctrl shadowhostid='' idx='3' /&gt;" WaitForReady="INTERACTIVE">
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b0523eb1-d289-4a49-b37b-e314d7283f82" InformativeScreenshot="d80f13cb4202c1aee742beae68115c92" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;rt-header&amp;gt;search-results-nav&amp;gt;search-results-controls&amp;gt;rt-link&amp;gt;rt-icon' /&gt;&lt;webctrl shadowhostid='' idx='3' /&gt;">
                                 <ui:Target.TimeoutMS>
                                   <InArgument x:TypeArguments="x:Int32" />
                                 </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
                               </ui:Target>
                             </ui:Click.Target>
                           </ui:Click>

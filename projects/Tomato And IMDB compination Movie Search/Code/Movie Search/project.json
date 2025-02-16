@@ -2,7 +2,7 @@
   "name": "Movie Search",
   "projectId": "9191cd02-ffa8-4bd6-bb4c-62c9beba65d7",
   "description": "Blank Process",
-  "main": "State Machine All Fiels Integration.xaml",
+  "main": "State Machine All Fiels Integration(Main).xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.24.0-preview]",
     "UiPath.Mail.Activities": "[1.23.11]",
@@ -55,14 +55,14 @@
       "output": []
     },
     {
-      "filePath": "All Project Intgration(Main).xaml",
-      "uniqueId": "c2512151-608b-4791-8c9f-9d179adaade0",
+      "filePath": "State Machine All Fiels Integration(Main).xaml",
+      "uniqueId": "d86261b9-6392-4606-909a-7cac054633e2",
       "input": [],
       "output": []
     },
     {
-      "filePath": "State Machine All Fiels Integration.xaml",
-      "uniqueId": "b6a6660b-6f40-42c8-be82-b38ef77ad24d",
+      "filePath": "All Project Intgration.xaml",
+      "uniqueId": "97e956e5-bb52-4ce9-8ff9-dff287f60595",
       "input": [],
       "output": []
     }

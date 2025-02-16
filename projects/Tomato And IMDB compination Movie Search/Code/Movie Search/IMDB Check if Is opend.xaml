@@ -41,6 +41,7 @@
       <x:String>System.Linq.Expressions</x:String>
       <x:String>UiPath.UIAutomationCore.Contracts</x:String>
       <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -88,6 +89,7 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence sap2010:Annotation.AnnotationText="File Avtion : This file checks if IMDB Eebsite is opend or not.&#xA;&#xA;pre condetion : N/A&#xA;&#xA;post Condetion :N/A&#xA;&#xA;In_Arg : &#xA;in_intNumberOfRetry&#xA;in_tsRetryDeuration&#xA;&#xA;out_Arg&#xA;out_boolMdbOpened" DisplayName="IMDB_Check_if_Is_opend" sap:VirtualizedContainerService.HintSize="654.6666666666666,1446" sap2010:WorkflowViewState.IdRef="Sequence_16">
@@ -118,13 +120,9 @@
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:UiElementExists DisplayName="Element Exists 'imdb Icon'" Exists="[out_boolMdbOpened]" sap:VirtualizedContainerService.HintSize="388,130" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                  <ui:UiElementExists DisplayName="Element Exists 'imdb Icon'" Exists="[out_boolMdbOpened]" sap:VirtualizedContainerService.HintSize="388,130" sap2010:WorkflowViewState.IdRef="UiElementExists_4">
                     <ui:UiElementExists.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7293107c-598f-45f7-a04c-393e2411fd5c" InformativeScreenshot="fc6e5c10a4a517966257af8cca350e80" Selector="&lt;html app='msedge.exe' title='*IMDb*' /&gt;&lt;webctrl id='home_img_holder' tag='A' /&gt;" TimeoutMS="5000">
-                        <ui:Target.WaitForReady>
-                          <InArgument x:TypeArguments="ui:WaitForReady" />
-                        </ui:Target.WaitForReady>
-                      </ui:Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7293107c-598f-45f7-a04c-393e2411fd5c" InformativeScreenshot="fc6e5c10a4a517966257af8cca350e80" Selector="&lt;html app='msedge.exe' title='IMDb*' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;nav&amp;gt;div&amp;gt;a' idx='1' /&gt;" TimeoutMS="5000" WaitForReady="NONE" />
                     </ui:UiElementExists.Target>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">

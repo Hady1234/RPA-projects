@@ -98,7 +98,7 @@
     </sap:WorkflowViewStateService.ViewState>
     <State x:Name="__ReferenceID19" DisplayName="Get User Movie name State" sap:VirtualizedContainerService.HintSize="250,60.666666666666664" sap2010:WorkflowViewState.IdRef="State_5">
       <State.Entry>
-        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Get user Input_MovieName - Invoke Workflow File (Get user Input_MovieName.xaml)" sap:VirtualizedContainerService.HintSize="340.6666666666667,178" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Get user Input_MovieName.xaml">
+        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Get user Input_MovieName - Invoke Workflow File (Get user Input_MovieName.xaml)" sap:VirtualizedContainerService.HintSize="336,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Get user Input_MovieName.xaml">
           <ui:InvokeWorkflowFile.Arguments>
             <OutArgument x:TypeArguments="x:String" x:Key="out_strMovieName">[strMovieName]</OutArgument>
             <InArgument x:TypeArguments="x:Int32" x:Key="in_intNumberOfRetry">[intNumberOfRetry]</InArgument>
@@ -116,10 +116,10 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <State.Exit>
-        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Get User Movie name State Exit&quot;]" />
+        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Get User Movie name State Exit&quot;]" />
       </State.Exit>
       <State.Transitions>
-        <Transition DisplayName="Valide Movie Name" sap:VirtualizedContainerService.HintSize="451.3333333333333,536.6666666666666" sap2010:WorkflowViewState.IdRef="Transition_1">
+        <Transition DisplayName="Valide Movie Name" sap:VirtualizedContainerService.HintSize="451.3333333333333,531.3333333333334" sap2010:WorkflowViewState.IdRef="Transition_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:PointCollection x:Key="ConnectorLocation">575,173.36666666666667 720,173.36666666666667 720,285</av:PointCollection>
@@ -149,7 +149,7 @@
                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Get User Search Desission State Exit&quot;]" />
               </State.Exit>
               <State.Transitions>
-                <Transition DisplayName="Go to IMDB Check if Opend State" sap:VirtualizedContainerService.HintSize="451.3333333333333,536.6666666666666" sap2010:WorkflowViewState.IdRef="Transition_4">
+                <Transition DisplayName="Go to IMDB Check if Opend State" sap:VirtualizedContainerService.HintSize="601.3333333333334,758.6666666666665" sap2010:WorkflowViewState.IdRef="Transition_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <av:PointCollection x:Key="ConnectorLocation">590,320 310,320 310,450</av:PointCollection>
@@ -197,7 +197,7 @@
                           <Transition.To>
                             <State x:Name="__ReferenceID12" DisplayName=" Open IMDB" sap:VirtualizedContainerService.HintSize="150,60.666666666666664" sap2010:WorkflowViewState.IdRef="State_18">
                               <State.Entry>
-                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="IMDB open - Invoke Workflow File (IMDB open.xaml)" sap:VirtualizedContainerService.HintSize="334,178" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="IMDB open.xaml">
+                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="IMDB open - Invoke Workflow File (IMDB open.xaml)" sap:VirtualizedContainerService.HintSize="334.6666666666667,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="IMDB open.xaml">
                                   <ui:InvokeWorkflowFile.Arguments>
                                     <InArgument x:TypeArguments="x:Int32" x:Key="in_intNumberOfRetry">[intNumberOfRetry]</InArgument>
                                     <InArgument x:TypeArguments="x:TimeSpan" x:Key="in_tsRetryDeuration">[tsRetryDeuration]</InArgument>
@@ -220,7 +220,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                               <State.Exit>
-                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="Info" Message="[&quot; Open IMDB&quot;]" />
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="Info" Message="[&quot; Open IMDB&quot;]" />
                               </State.Exit>
                               <State.Transitions>
                                 <Transition DisplayName="Go To Movie Search State" sap:VirtualizedContainerService.HintSize="451.3333333333333,536.6666666666666" sap2010:WorkflowViewState.IdRef="Transition_15">
@@ -269,9 +269,7 @@
                                               <x:Int32 x:Key="DestConnectionPointIndex">30</x:Int32>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <Transition.Condition>
-                                            <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="Not boolNotFound" />
-                                          </Transition.Condition>
+                                          <Transition.Condition>[Not boolNotFound]</Transition.Condition>
                                           <Transition.To>
                                             <State x:Name="__ReferenceID14" DisplayName="IMDB Click On frist Movie" sap:VirtualizedContainerService.HintSize="190,80" sap2010:WorkflowViewState.IdRef="State_21">
                                               <State.Entry>
@@ -386,7 +384,7 @@
                                                                   <Transition.To>
                                                                     <State x:Name="__ReferenceID17" DisplayName="Data Print" sap:VirtualizedContainerService.HintSize="150,60.666666666666664" sap2010:WorkflowViewState.IdRef="State_26">
                                                                       <State.Entry>
-                                                                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,86.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[&quot;Movie Nam &quot;+dicIdbmMovieData(&quot;Movie Nam&quot;)+Environment.NewLine+&#xD;&#xA;&quot;Releas Yeer &quot;+dicIdbmMovieData(&quot;Releas Yeer&quot;)+Environment.NewLine+&#xD;&#xA;&quot;Movie Certificate &quot;+dicIdbmMovieData(&quot;Movie Certificate&quot;)+Environment.NewLine+&#xD;&#xA;&quot;Deuration &quot;+dicIdbmMovieData(&quot;Deuration&quot;)+Environment.NewLine+&#xD;&#xA;&quot;Rate &quot;+dicIdbmMovieData(&quot;Rate&quot;)+Environment.NewLine]" />
+                                                                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,86.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[&quot;Movie Nam &quot;+dicIdbmMovieData(&quot;Movie Nam&quot;)+Environment.NewLine+&#xA;&quot;Releas Yeer &quot;+dicIdbmMovieData(&quot;Releas Yeer&quot;)+Environment.NewLine+&#xA;&quot;Movie Certificate &quot;+dicIdbmMovieData(&quot;Movie Certificate&quot;)+Environment.NewLine+&#xA;&quot;Deuration &quot;+dicIdbmMovieData(&quot;Deuration&quot;)+Environment.NewLine+&#xA;&quot;Rate &quot;+dicIdbmMovieData(&quot;Rate&quot;)+Environment.NewLine]" />
                                                                       </State.Entry>
                                                                       <sap:WorkflowViewStateService.ViewState>
                                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -431,7 +429,7 @@
                                                                                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_33" Level="Info" Message="[&quot;Try More state Exit&quot;]" />
                                                                               </State.Exit>
                                                                               <State.Transitions>
-                                                                                <Transition DisplayName="T3" sap:VirtualizedContainerService.HintSize="713.3333333333334,2807.3333333333335" sap2010:WorkflowViewState.IdRef="Transition_26">
+                                                                                <Transition DisplayName="T3" sap:VirtualizedContainerService.HintSize="713.3333333333334,2311.3333333333335" sap2010:WorkflowViewState.IdRef="Transition_26">
                                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                       <av:PointCollection x:Key="ConnectorLocation">1040,1270.6666666666667 1040,1300.666666666667 1042,1300.666666666667 1042,1415</av:PointCollection>
@@ -463,38 +461,14 @@
                                                                                     </State>
                                                                                   </Transition.To>
                                                                                   <Transition.Action>
-                                                                                    <Sequence sap:VirtualizedContainerService.HintSize="608,2419.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                                                                    <Sequence sap:VirtualizedContainerService.HintSize="608,1923.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_7">
                                                                                       <sap:WorkflowViewStateService.ViewState>
                                                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                         </scg:Dictionary>
                                                                                       </sap:WorkflowViewStateService.ViewState>
                                                                                       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="546,175.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_34" Level="Info" Message="[&quot;To Final State&quot;]" />
-                                                                                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Tomato Cheack If Opened - Invoke Workflow File (Tomato Cheack If Opened.xaml)" sap:VirtualizedContainerService.HintSize="546,208" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_14" UnSafe="False" WorkflowFileName="Tomato Cheack If Opened.xaml">
-                                                                                        <ui:InvokeWorkflowFile.Arguments>
-                                                                                          <InArgument x:TypeArguments="x:Int32" x:Key="in_intNumberOfRetry">[intNumberOfRetry]</InArgument>
-                                                                                          <InArgument x:TypeArguments="x:TimeSpan" x:Key="in_tsRetryDeuration">[tsRetryDeuration]</InArgument>
-                                                                                          <OutArgument x:TypeArguments="x:Boolean" x:Key="out_boolTomatoesOpened">[boolTomatoIsOpened]</OutArgument>
-                                                                                        </ui:InvokeWorkflowFile.Arguments>
-                                                                                        <sap:WorkflowViewStateService.ViewState>
-                                                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                                                          </scg:Dictionary>
-                                                                                        </sap:WorkflowViewStateService.ViewState>
-                                                                                      </ui:InvokeWorkflowFile>
-                                                                                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="IMDB Check if Is opend - Invoke Workflow File (IMDB Check if Is opend.xaml)" sap:VirtualizedContainerService.HintSize="546,208" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="IMDB Check if Is opend.xaml">
-                                                                                        <ui:InvokeWorkflowFile.Arguments>
-                                                                                          <OutArgument x:TypeArguments="x:Boolean" x:Key="out_boolMdbOpened">[boolIMDBopen]</OutArgument>
-                                                                                          <InArgument x:TypeArguments="x:Int32" x:Key="in_intNumberOfRetry">[intNumberOfRetry]</InArgument>
-                                                                                          <InArgument x:TypeArguments="x:TimeSpan" x:Key="in_tsRetryDeuration">[tsRetryDeuration]</InArgument>
-                                                                                        </ui:InvokeWorkflowFile.Arguments>
-                                                                                        <sap:WorkflowViewStateService.ViewState>
-                                                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                                                          </scg:Dictionary>
-                                                                                        </sap:WorkflowViewStateService.ViewState>
-                                                                                      </ui:InvokeWorkflowFile>
-                                                                                      <ui:IfElseIfV2 Condition="[boolTomatoIsOpened]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="546,1740" sap2010:WorkflowViewState.IdRef="IfElseIfV2_1">
+                                                                                      <ui:IfElseIfV2 Condition="[strHowOpened=&quot;TO&quot;]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="546,1660" sap2010:WorkflowViewState.IdRef="IfElseIfV2_1">
                                                                                         <ui:IfElseIfV2.Else>
                                                                                           <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,254" sap2010:WorkflowViewState.IdRef="Sequence_9">
                                                                                             <sap:WorkflowViewStateService.ViewState>
@@ -507,15 +481,15 @@
                                                                                         </ui:IfElseIfV2.Else>
                                                                                         <ui:IfElseIfV2.ElseIfs>
                                                                                           <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
-                                                                                            <ui:IfElseIfBlock BlockType="ElseIf" Condition="[boolIMDBopen]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_1">
+                                                                                            <ui:IfElseIfBlock BlockType="ElseIf" Condition="[strHowOpened=&quot;IM&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_1">
                                                                                               <ui:IfElseIfBlock.Then>
-                                                                                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,610.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                                                                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,570.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_10">
                                                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                                     </scg:Dictionary>
                                                                                                   </sap:WorkflowViewStateService.ViewState>
-                                                                                                  <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe IMDb:'" sap:VirtualizedContainerService.HintSize="450,522.6666666666666" sap2010:WorkflowViewState.IdRef="BrowserScope_3" InformativeScreenshot="ff1465c0fb623312bff6bfe42f235925" Selector="&lt;html app='msedge.exe' title='*IMDb*' /&gt;">
+                                                                                                  <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe IMDb:'" sap:VirtualizedContainerService.HintSize="450,482.6666666666667" sap2010:WorkflowViewState.IdRef="BrowserScope_3" InformativeScreenshot="ff1465c0fb623312bff6bfe42f235925" Selector="&lt;html app='msedge.exe' title='*IMDb*' /&gt;">
                                                                                                     <ui:BrowserScope.Body>
                                                                                                       <ActivityAction x:TypeArguments="x:Object">
                                                                                                         <ActivityAction.Argument>
@@ -551,13 +525,13 @@
                                                                                           </sc:BindingList>
                                                                                         </ui:IfElseIfV2.ElseIfs>
                                                                                         <ui:IfElseIfV2.Then>
-                                                                                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="512,610.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                                                                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="512,570.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_8">
                                                                                             <sap:WorkflowViewStateService.ViewState>
                                                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                               </scg:Dictionary>
                                                                                             </sap:WorkflowViewStateService.ViewState>
-                                                                                            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe Rotten'" sap:VirtualizedContainerService.HintSize="450,522.6666666666666" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="4096fd3a9ecf8977b712a957e678719a" Selector="&lt;html app='msedge.exe' title='*Rotten Tomatoes*' /&gt;">
+                                                                                            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe Rotten'" sap:VirtualizedContainerService.HintSize="450,482.6666666666667" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="4096fd3a9ecf8977b712a957e678719a" Selector="&lt;html app='msedge.exe' title='*Rotten Tomatoes*' /&gt;">
                                                                                               <ui:BrowserScope.Body>
                                                                                                 <ActivityAction x:TypeArguments="x:Object">
                                                                                                   <ActivityAction.Argument>
@@ -599,10 +573,10 @@
                                                                                     </Sequence>
                                                                                   </Transition.Action>
                                                                                   <Transition.Condition>
-                                                                                    <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="strTryMore=&quot;No&quot;" />
+                                                                                    <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="strTryMore=&quot;No&quot;" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_2" />
                                                                                   </Transition.Condition>
                                                                                 </Transition>
-                                                                                <Transition DisplayName="repeat Proccess" sap:VirtualizedContainerService.HintSize="617.3333333333334,1686.6666666666667" sap2010:WorkflowViewState.IdRef="Transition_27">
+                                                                                <Transition DisplayName="repeat Proccess" sap:VirtualizedContainerService.HintSize="521.3333333333334,696" sap2010:WorkflowViewState.IdRef="Transition_27">
                                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                       <av:PointCollection x:Key="ConnectorLocation">1115,1237.3 1730,1237.3 1730,586 1460,586</av:PointCollection>
@@ -768,9 +742,7 @@
                                                                                                   <Transition.Action>
                                                                                                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="Info" Message="[&quot;Tomato Data Extraction &quot;]" />
                                                                                                   </Transition.Action>
-                                                                                                  <Transition.Condition>
-                                                                                                    <Literal x:TypeArguments="x:Boolean" DisplayName="Literal" Value="True" />
-                                                                                                  </Transition.Condition>
+                                                                                                  <Transition.Condition>True</Transition.Condition>
                                                                                                 </Transition>
                                                                                               </State.Transitions>
                                                                                             </State>
@@ -778,9 +750,7 @@
                                                                                           <Transition.Action>
                                                                                             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="Info" Message="[&quot;Go to Click Sate&quot;]" />
                                                                                           </Transition.Action>
-                                                                                          <Transition.Condition>
-                                                                                            <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="Not boolNotValidData" />
-                                                                                          </Transition.Condition>
+                                                                                          <Transition.Condition>[Not boolNotValidData]</Transition.Condition>
                                                                                         </Transition>
                                                                                         <Transition DisplayName="Go to invalid Message" sap:VirtualizedContainerService.HintSize="451.33333333333326,531.3333333333334" sap2010:WorkflowViewState.IdRef="Transition_10">
                                                                                           <sap:WorkflowViewStateService.ViewState>
@@ -815,9 +785,7 @@
                                                                                           <Transition.Action>
                                                                                             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="Info" Message="[&quot;Go to INvalid Message State&quot;]" />
                                                                                           </Transition.Action>
-                                                                                          <Transition.Condition>
-                                                                                            <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="boolNotValidData" />
-                                                                                          </Transition.Condition>
+                                                                                          <Transition.Condition>[boolNotValidData]</Transition.Condition>
                                                                                         </Transition>
                                                                                       </State.Transitions>
                                                                                       <State.Variables>
@@ -826,31 +794,38 @@
                                                                                     </State>
                                                                                   </Transition.To>
                                                                                   <Transition.Action>
-                                                                                    <Sequence sap:VirtualizedContainerService.HintSize="512,1298.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                                                                                    <Sequence sap:VirtualizedContainerService.HintSize="416,308" sap2010:WorkflowViewState.IdRef="Sequence_2">
                                                                                       <sap:WorkflowViewStateService.ViewState>
                                                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                         </scg:Dictionary>
                                                                                       </sap:WorkflowViewStateService.ViewState>
-                                                                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,175.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_35" Level="Info" Message="[&quot;To repeat Tomato Proccess &quot;]" />
-                                                                                      <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="450,275.3333333333333" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Title="Pleas Enter Movie Name">
+                                                                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,57.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_35" Level="Info" Message="[&quot;To repeat Tomato Proccess &quot;]">
+                                                                                        <sap:WorkflowViewStateService.ViewState>
+                                                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                                          </scg:Dictionary>
+                                                                                        </sap:WorkflowViewStateService.ViewState>
+                                                                                      </ui:LogMessage>
+                                                                                      <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="354,57.333333333333336" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Title="Pleas Enter Movie Name">
                                                                                         <ui:InputDialog.Result>
                                                                                           <OutArgument x:TypeArguments="x:String">[strMovieName]</OutArgument>
                                                                                         </ui:InputDialog.Result>
-                                                                                      </ui:InputDialog>
-                                                                                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="IMDB Check if Is opend - Invoke Workflow File (IMDB Check if Is opend.xaml)" sap:VirtualizedContainerService.HintSize="450,208" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" UnSafe="False" WorkflowFileName="IMDB Check if Is opend.xaml">
-                                                                                        <ui:InvokeWorkflowFile.Arguments>
-                                                                                          <OutArgument x:TypeArguments="x:Boolean" x:Key="out_boolMdbOpened">[boolIMDBopen]</OutArgument>
-                                                                                          <InArgument x:TypeArguments="x:Int32" x:Key="in_intNumberOfRetry">[intNumberOfRetry]</InArgument>
-                                                                                          <InArgument x:TypeArguments="x:TimeSpan" x:Key="in_tsRetryDeuration">[tsRetryDeuration]</InArgument>
-                                                                                        </ui:InvokeWorkflowFile.Arguments>
                                                                                         <sap:WorkflowViewStateService.ViewState>
                                                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                                           </scg:Dictionary>
                                                                                         </sap:WorkflowViewStateService.ViewState>
-                                                                                      </ui:InvokeWorkflowFile>
-                                                                                      <If Condition="[boolIMDBopen]" sap:VirtualizedContainerService.HintSize="450,552" sap2010:WorkflowViewState.IdRef="If_1">
+                                                                                      </ui:InputDialog>
+                                                                                      <If Condition="[strHowOpened=&quot;IM&quot;]" DisplayName="Close IMDB If Opend " sap:VirtualizedContainerService.HintSize="354,57.333333333333336" sap2010:WorkflowViewState.IdRef="If_1">
+                                                                                        <sap:WorkflowViewStateService.ViewState>
+                                                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                                          </scg:Dictionary>
+                                                                                        </sap:WorkflowViewStateService.ViewState>
                                                                                         <If.Then>
                                                                                           <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,136" sap2010:WorkflowViewState.IdRef="Sequence_13">
                                                                                             <sap:WorkflowViewStateService.ViewState>
@@ -907,13 +882,67 @@
                                                                                           </Sequence>
                                                                                         </If.Else>
                                                                                       </If>
+                                                                                      <If Condition="[Not ( strHowOpened=&quot;TO&quot; )]" DisplayName="Open Tomato If it isnt" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="If_3">
+                                                                                        <sap:WorkflowViewStateService.ViewState>
+                                                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                                          </scg:Dictionary>
+                                                                                        </sap:WorkflowViewStateService.ViewState>
+                                                                                        <If.Then>
+                                                                                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,403.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                                                                            <sap:WorkflowViewStateService.ViewState>
+                                                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                              </scg:Dictionary>
+                                                                                            </sap:WorkflowViewStateService.ViewState>
+                                                                                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Open Tomato - Invoke Workflow File (Open Tomato.xaml)" sap:VirtualizedContainerService.HintSize="434,208" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_18" UnSafe="False" WorkflowFileName="Open Tomato.xaml">
+                                                                                              <ui:InvokeWorkflowFile.Arguments>
+                                                                                                <InArgument x:TypeArguments="x:String" x:Key="in_strWebSiltLink">[strUrl]</InArgument>
+                                                                                                <InArgument x:TypeArguments="x:Int32" x:Key="in_intNumberOfRetry">[intNumberOfRetry]</InArgument>
+                                                                                                <InArgument x:TypeArguments="x:TimeSpan" x:Key="in_tsRetryDeuration">[tsRetryDeuration]</InArgument>
+                                                                                              </ui:InvokeWorkflowFile.Arguments>
+                                                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                                </scg:Dictionary>
+                                                                                              </sap:WorkflowViewStateService.ViewState>
+                                                                                            </ui:InvokeWorkflowFile>
+                                                                                            <Assign sap:VirtualizedContainerService.HintSize="434,107.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                                                                              <Assign.To>
+                                                                                                <OutArgument x:TypeArguments="x:String">[strHowOpened]</OutArgument>
+                                                                                              </Assign.To>
+                                                                                              <Assign.Value>
+                                                                                                <InArgument x:TypeArguments="x:String">TO</InArgument>
+                                                                                              </Assign.Value>
+                                                                                            </Assign>
+                                                                                          </Sequence>
+                                                                                        </If.Then>
+                                                                                        <If.Else>
+                                                                                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,136" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                                                                            <sap:WorkflowViewStateService.ViewState>
+                                                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                              </scg:Dictionary>
+                                                                                            </sap:WorkflowViewStateService.ViewState>
+                                                                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="LogMessage_41" Level="Info" Message="[&quot;Tomato Already Opend&quot;]">
+                                                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                                                </scg:Dictionary>
+                                                                                              </sap:WorkflowViewStateService.ViewState>
+                                                                                            </ui:LogMessage>
+                                                                                          </Sequence>
+                                                                                        </If.Else>
+                                                                                      </If>
                                                                                     </Sequence>
                                                                                   </Transition.Action>
                                                                                   <Transition.Condition>
-                                                                                    <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="strTryMore=&quot;Yes Tomaten&quot;" />
+                                                                                    <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="strTryMore=&quot;Yes Tomaten&quot;" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_3" />
                                                                                   </Transition.Condition>
                                                                                 </Transition>
-                                                                                <Transition DisplayName="T4" sap:VirtualizedContainerService.HintSize="617.3333333333334,1686.6666666666667" sap2010:WorkflowViewState.IdRef="Transition_28">
+                                                                                <Transition DisplayName="T4" sap:VirtualizedContainerService.HintSize="697.3333333333334,1652.6666666666667" sap2010:WorkflowViewState.IdRef="Transition_28">
                                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                       <av:PointCollection x:Key="ConnectorLocation">965,1243.3666666666666 883.8067017850316,1243.3666666666666 883.8067017850316,656.0936701688688 717.8624670966042,656.0936701688688 717.8624670966042,474 413,474</av:PointCollection>
@@ -925,34 +954,22 @@
                                                                                     <x:Reference>__ReferenceID1</x:Reference>
                                                                                   </Transition.To>
                                                                                   <Transition.Action>
-                                                                                    <Sequence sap:VirtualizedContainerService.HintSize="512,1298.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                                                                    <Sequence sap:VirtualizedContainerService.HintSize="592,1264.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
                                                                                       <sap:WorkflowViewStateService.ViewState>
                                                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                         </scg:Dictionary>
                                                                                       </sap:WorkflowViewStateService.ViewState>
-                                                                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,175.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_37" Level="Info" Message="[&quot;To Search in IMDB&quot;]" />
-                                                                                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Tomato Cheack If Opened - Invoke Workflow File (Tomato Cheack If Opened.xaml)" sap:VirtualizedContainerService.HintSize="450,208" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_17" UnSafe="False" WorkflowFileName="Tomato Cheack If Opened.xaml">
-                                                                                        <ui:InvokeWorkflowFile.Arguments>
-                                                                                          <InArgument x:TypeArguments="x:Int32" x:Key="in_intNumberOfRetry">[intNumberOfRetry]</InArgument>
-                                                                                          <InArgument x:TypeArguments="x:TimeSpan" x:Key="in_tsRetryDeuration">[tsRetryDeuration]</InArgument>
-                                                                                          <OutArgument x:TypeArguments="x:Boolean" x:Key="out_boolTomatoesOpened">[boolTomatoIsOpened]</OutArgument>
-                                                                                        </ui:InvokeWorkflowFile.Arguments>
-                                                                                        <sap:WorkflowViewStateService.ViewState>
-                                                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                                                          </scg:Dictionary>
-                                                                                        </sap:WorkflowViewStateService.ViewState>
-                                                                                      </ui:InvokeWorkflowFile>
-                                                                                      <If Condition="[boolTomatoIsOpened]" sap:VirtualizedContainerService.HintSize="450,561.3333333333334" sap2010:WorkflowViewState.IdRef="If_2">
+                                                                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="530,175.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_37" Level="Info" Message="[&quot;To Search in IMDB&quot;]" />
+                                                                                      <If Condition="[strHowOpened=&quot;TO&quot;]" sap:VirtualizedContainerService.HintSize="530,735.3333333333334" sap2010:WorkflowViewState.IdRef="If_2">
                                                                                         <If.Then>
-                                                                                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,136" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                                                                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,310" sap2010:WorkflowViewState.IdRef="Sequence_15">
                                                                                             <sap:WorkflowViewStateService.ViewState>
                                                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                               </scg:Dictionary>
                                                                                             </sap:WorkflowViewStateService.ViewState>
-                                                                                            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe Rotten'" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="4096fd3a9ecf8977b712a957e678719a" Selector="&lt;html app='msedge.exe' title='*Rotten Tomatoes*' /&gt;">
+                                                                                            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'msedge.exe Rotten'" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="4096fd3a9ecf8977b712a957e678719a" Selector="&lt;html app='msedge.exe' title='*Rotten Tomatoes*' /&gt;">
                                                                                               <ui:BrowserScope.Body>
                                                                                                 <ActivityAction x:TypeArguments="x:Object">
                                                                                                   <ActivityAction.Argument>
@@ -988,6 +1005,27 @@
                                                                                                 </scg:Dictionary>
                                                                                               </sap:WorkflowViewStateService.ViewState>
                                                                                             </ui:BrowserScope>
+                                                                                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="IMDB open - Invoke Workflow File (IMDB open.xaml)" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_19" UnSafe="False" WorkflowFileName="IMDB open.xaml">
+                                                                                              <ui:InvokeWorkflowFile.Arguments>
+                                                                                                <InArgument x:TypeArguments="x:Int32" x:Key="in_intNumberOfRetry">[intNumberOfRetry]</InArgument>
+                                                                                                <InArgument x:TypeArguments="x:TimeSpan" x:Key="in_tsRetryDeuration">[tsRetryDeuration]</InArgument>
+                                                                                                <InArgument x:TypeArguments="x:String" x:Key="in_strIMDBLink">https://www.imdb.com/</InArgument>
+                                                                                              </ui:InvokeWorkflowFile.Arguments>
+                                                                                              <sap:WorkflowViewStateService.ViewState>
+                                                                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                                                </scg:Dictionary>
+                                                                                              </sap:WorkflowViewStateService.ViewState>
+                                                                                            </ui:InvokeWorkflowFile>
+                                                                                            <Assign sap:VirtualizedContainerService.HintSize="434,107.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                                                                              <Assign.To>
+                                                                                                <OutArgument x:TypeArguments="x:String">[strHowOpened]</OutArgument>
+                                                                                              </Assign.To>
+                                                                                              <Assign.Value>
+                                                                                                <InArgument x:TypeArguments="x:String">IM</InArgument>
+                                                                                              </Assign.Value>
+                                                                                            </Assign>
                                                                                           </Sequence>
                                                                                         </If.Then>
                                                                                         <If.Else>
@@ -1001,16 +1039,14 @@
                                                                                           </Sequence>
                                                                                         </If.Else>
                                                                                       </If>
-                                                                                      <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="450,266" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Title="Pleas Enter Movie Name">
+                                                                                      <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="530,266" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Title="Pleas Enter Movie Name">
                                                                                         <ui:InputDialog.Result>
                                                                                           <OutArgument x:TypeArguments="x:String">[strMovieName]</OutArgument>
                                                                                         </ui:InputDialog.Result>
                                                                                       </ui:InputDialog>
                                                                                     </Sequence>
                                                                                   </Transition.Action>
-                                                                                  <Transition.Condition>
-                                                                                    <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="strTryMore=&quot;Yes IMDB&quot;" />
-                                                                                  </Transition.Condition>
+                                                                                  <Transition.Condition>[strTryMore="Yes IMDB"]</Transition.Condition>
                                                                                 </Transition>
                                                                               </State.Transitions>
                                                                             </State>
@@ -1026,9 +1062,7 @@
                                                           <Transition.Action>
                                                             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_29" Level="Info" Message="[&quot;Data Maniupilation&quot;]" />
                                                           </Transition.Action>
-                                                          <Transition.Condition>
-                                                            <Literal x:TypeArguments="x:Boolean" DisplayName="Literal" Value="True" />
-                                                          </Transition.Condition>
+                                                          <Transition.Condition>True</Transition.Condition>
                                                         </Transition>
                                                       </State.Transitions>
                                                     </State>
@@ -1036,9 +1070,7 @@
                                                   <Transition.Action>
                                                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_26" Level="Info" Message="[&quot;Go to Data Extraction State&quot;]" />
                                                   </Transition.Action>
-                                                  <Transition.Condition>
-                                                    <Literal x:TypeArguments="x:Boolean" DisplayName="Literal" Value="True" />
-                                                  </Transition.Condition>
+                                                  <Transition.Condition>True</Transition.Condition>
                                                 </Transition>
                                               </State.Transitions>
                                             </State>
@@ -1052,9 +1084,7 @@
                                               <x:Int32 x:Key="DestConnectionPointIndex">42</x:Int32>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <Transition.Condition>
-                                            <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="boolNotFound" />
-                                          </Transition.Condition>
+                                          <Transition.Condition>[boolNotFound]</Transition.Condition>
                                           <Transition.To>
                                             <State x:Name="__ReferenceID13" DisplayName="Results Not Found" sap:VirtualizedContainerService.HintSize="190,70" sap2010:WorkflowViewState.IdRef="State_20" IsFinal="True">
                                               <State.Entry>
@@ -1081,9 +1111,7 @@
                                   <Transition.Action>
                                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_23" Level="Info" Message="[&quot;Go To Movie Search State&quot;]" />
                                   </Transition.Action>
-                                  <Transition.Condition>
-                                    <Literal x:TypeArguments="x:Boolean" DisplayName="Literal" Value="True" />
-                                  </Transition.Condition>
+                                  <Transition.Condition>True</Transition.Condition>
                                 </Transition>
                               </State.Transitions>
                             </State>
@@ -1091,9 +1119,7 @@
                           <Transition.Action>
                             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="Info" Message="[&quot;Go to Open IMDB State&quot;]" />
                           </Transition.Action>
-                          <Transition.Condition>
-                            <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="Not boolIMDBopen" />
-                          </Transition.Condition>
+                          <Transition.Condition>[Not boolIMDBopen]</Transition.Condition>
                         </Transition>
                         <Transition DisplayName="From Check To Movie Search State" sap:VirtualizedContainerService.HintSize="451.3333333333333,502" sap2010:WorkflowViewState.IdRef="Transition_17">
                           <sap:WorkflowViewStateService.ViewState>
@@ -1106,21 +1132,32 @@
                           <Transition.To>
                             <x:Reference>__ReferenceID2</x:Reference>
                           </Transition.To>
-                          <Transition.Condition>
-                            <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="boolIMDBopen" />
-                          </Transition.Condition>
+                          <Transition.Condition>[boolIMDBopen]</Transition.Condition>
                         </Transition>
                       </State.Transitions>
                     </State>
                   </Transition.To>
                   <Transition.Action>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Go to IMDB Check if Opend State&quot;]" />
+                    <Sequence sap:VirtualizedContainerService.HintSize="496,370.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,175.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Go to IMDB Check if Opend State&quot;]" />
+                      <Assign sap:VirtualizedContainerService.HintSize="434,107.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_3">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[strHowOpened]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">IM</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
                   </Transition.Action>
-                  <Transition.Condition>
-                    <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="strSearchSource=&quot;IMDB&quot;" />
-                  </Transition.Condition>
+                  <Transition.Condition>[strSearchSource="IMDB"]</Transition.Condition>
                 </Transition>
-                <Transition DisplayName="Go to Tomaten State" sap:VirtualizedContainerService.HintSize="451.3333333333333,536.6666666666666" sap2010:WorkflowViewState.IdRef="Transition_3">
+                <Transition DisplayName="Go to Tomaten State" sap:VirtualizedContainerService.HintSize="601.3333333333334,758.6666666666665" sap2010:WorkflowViewState.IdRef="Transition_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <av:PointCollection x:Key="ConnectorLocation">850,313 1007,313 1007,445</av:PointCollection>
@@ -1168,7 +1205,7 @@
                           <Transition.To>
                             <State x:Name="__ReferenceID6" DisplayName="Is Not Opened" sap:VirtualizedContainerService.HintSize="220,80" sap2010:WorkflowViewState.IdRef="State_11">
                               <State.Entry>
-                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Open Tomato - Invoke Workflow File (Open Tomato.xaml)" sap:VirtualizedContainerService.HintSize="334,178" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Open Tomato.xaml">
+                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Open Tomato - Invoke Workflow File (Open Tomato.xaml)" sap:VirtualizedContainerService.HintSize="336,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Open Tomato.xaml">
                                   <ui:InvokeWorkflowFile.Arguments>
                                     <InArgument x:TypeArguments="x:String" x:Key="in_strWebSiltLink">[strUrl]</InArgument>
                                     <InArgument x:TypeArguments="x:Int32" x:Key="in_intNumberOfRetry">[intNumberOfRetry]</InArgument>
@@ -1205,26 +1242,15 @@
                                   <Transition.Action>
                                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[&quot;From Tomato Is Not Opened to Tomato Is Opened&quot;]" />
                                   </Transition.Action>
-                                  <Transition.Condition>
-                                    <Literal x:TypeArguments="x:Boolean" DisplayName="Literal" Value="True" />
-                                  </Transition.Condition>
+                                  <Transition.Condition>True</Transition.Condition>
                                 </Transition>
                               </State.Transitions>
-                              <State.Variables>
-                                <Variable x:TypeArguments="x:String" Name="strUrl">
-                                  <Variable.Default>
-                                    <Literal x:TypeArguments="x:String">https://www.rottentomatoes.com/</Literal>
-                                  </Variable.Default>
-                                </Variable>
-                              </State.Variables>
                             </State>
                           </Transition.To>
                           <Transition.Action>
                             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Go to Is Not Opened State&quot;]" />
                           </Transition.Action>
-                          <Transition.Condition>
-                            <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="Not boolTomatoIsOpened" />
-                          </Transition.Condition>
+                          <Transition.Condition>[Not boolTomatoIsOpened]</Transition.Condition>
                         </Transition>
                         <Transition DisplayName="Go to Is Opened State" sap:VirtualizedContainerService.HintSize="451.3333333333333,536.6666666666666" sap2010:WorkflowViewState.IdRef="Transition_8">
                           <sap:WorkflowViewStateService.ViewState>
@@ -1240,19 +1266,30 @@
                           <Transition.Action>
                             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;Go Is Opened State&quot;]" />
                           </Transition.Action>
-                          <Transition.Condition>
-                            <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="boolTomatoIsOpened" />
-                          </Transition.Condition>
+                          <Transition.Condition>[boolTomatoIsOpened]</Transition.Condition>
                         </Transition>
                       </State.Transitions>
                     </State>
                   </Transition.To>
                   <Transition.Action>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Go to Tomaten State&quot;]" />
+                    <Sequence sap:VirtualizedContainerService.HintSize="496,370.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,175.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Go to Tomaten State&quot;]" />
+                      <Assign sap:VirtualizedContainerService.HintSize="434,107.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_4">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[strHowOpened]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">TO</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
                   </Transition.Action>
-                  <Transition.Condition>
-                    <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="strSearchSource=&quot;Tomaten&quot;" />
-                  </Transition.Condition>
+                  <Transition.Condition>[strSearchSource="Tomaten"]</Transition.Condition>
                 </Transition>
                 <Transition DisplayName="in Valid Input" sap:VirtualizedContainerService.HintSize="451.3333333333333,536.6666666666666" sap2010:WorkflowViewState.IdRef="Transition_5">
                   <sap:WorkflowViewStateService.ViewState>
@@ -1268,18 +1305,16 @@
                   <Transition.Action>
                     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Go to Get User Decission Again&quot;]" />
                   </Transition.Action>
-                  <Transition.Condition>
-                    <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="strSearchSource=&quot;&quot;" />
-                  </Transition.Condition>
+                  <Transition.Condition>[strSearchSource=""]</Transition.Condition>
                 </Transition>
               </State.Transitions>
             </State>
           </Transition.To>
           <Transition.Action>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Go to Get User Search Desission State Tomaten Or IMDB&quot;]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Go to Get User Search Desission State Tomaten Or IMDB&quot;]" />
           </Transition.Action>
           <Transition.Condition>
-            <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="Not (strMovieName = &quot;&quot;)" />
+            <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="Not (strMovieName = &quot;&quot;)" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
           </Transition.Condition>
         </Transition>
         <Transition DisplayName="Movie Name is Empety " sap:VirtualizedContainerService.HintSize="451.3333333333333,536.6666666666666" sap2010:WorkflowViewState.IdRef="Transition_2">
@@ -1315,9 +1350,7 @@
           <Transition.Action>
             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Not Valid Movie Name Transaction&quot;]" />
           </Transition.Action>
-          <Transition.Condition>
-            <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="strMovieName = &quot;&quot;" />
-          </Transition.Condition>
+          <Transition.Condition>[strMovieName = ""]</Transition.Condition>
         </Transition>
       </State.Transitions>
     </State>
@@ -1341,16 +1374,8 @@
     <x:Reference>__ReferenceID18</x:Reference>
     <x:Reference>__ReferenceID0</x:Reference>
     <StateMachine.Variables>
-      <Variable x:TypeArguments="x:TimeSpan" Name="tsRetryDeuration">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:TimeSpan" Value="00:00:03" />
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:Int32" Name="intNumberOfRetry">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="3" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:TimeSpan" Default="00:00:03" Name="tsRetryDeuration" />
+      <Variable x:TypeArguments="x:Int32" Default="3" Name="intNumberOfRetry" />
       <Variable x:TypeArguments="x:String" Name="strMovieName" />
       <Variable x:TypeArguments="x:String" Name="strSearchSource" />
       <Variable x:TypeArguments="x:Boolean" Name="boolTomatoIsOpened" />
@@ -1359,6 +1384,8 @@
       <Variable x:TypeArguments="x:String" Name="strAllMovieData" />
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="dicIdbmMovieData" />
       <Variable x:TypeArguments="x:String" Name="strTryMore" />
+      <Variable x:TypeArguments="x:String" Name="strHowOpened" />
+      <Variable x:TypeArguments="x:String" Default="https://www.rottentomatoes.com/" Name="strUrl" />
     </StateMachine.Variables>
   </StateMachine>
 </Activity>
