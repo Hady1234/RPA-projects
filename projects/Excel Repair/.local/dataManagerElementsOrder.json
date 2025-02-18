@@ -1,0 +1,138 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "test.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dtData&Sequence_1",
+        "strText&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strFilePath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Excel Read.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolFileExists&Sequence_25",
+        "boolPreCondetion&Sequence_16",
+        "boolPostCondetion&Sequence_17"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_dtAvilableData",
+        "in_strFilePath",
+        "in_tsRetryDeuration",
+        "in_intNumberOfRetry"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Excel Data Maniupolation.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strDataText&Sequence_6",
+        "strText&Sequence_20",
+        "intIncrementer&Sequence_10",
+        "strIncidentCost&Sequence_6",
+        "strDepartment&Sequence_6",
+        "strDaysLost&Sequence_6",
+        "strAgeGroup&Sequence_6",
+        "strGender&Sequence_6",
+        "strDate&Sequence_6",
+        "boolPreCondetion&Sequence_8",
+        "boolPostCondetion&Sequence_9"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_strManiupolatedDataText",
+        "in_dtAvilableData",
+        "in_tsRetryDeuration",
+        "in_intNumberOfRetry"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Template.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolExixts&Sequence_5",
+        "boolPreCondetion&Sequence_5",
+        "boolPostCondetion&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Excel File Integration.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dtAvilableData&Flowchart_1",
+        "strSourceFilePath&Flowchart_1",
+        "tsRetryDeuration&Flowchart_1",
+        "intNumberOfRetry&Flowchart_1",
+        "strManiupolatedDataText&Flowchart_1",
+        "strOutFolderPath&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Excil write Rang.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "intIncrementer&Sequence_11",
+        "dtFinalData&Sequence_5",
+        "boolFileExists&Sequence_2",
+        "boolPreCondetion&Sequence_3",
+        "boolPostCondetion&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strAllData",
+        "in_strFilePath",
+        "in_tsRetryDeuration",
+        "in_intNumberOfRetry"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Get User input.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolExixts&Sequence_5",
+        "boolPreCondetion&Sequence_5",
+        "boolPostCondetion&Sequence_6"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_strOutFolderLocation",
+        "out_strSourceFileLocation",
+        "in_tsRetryDeuration",
+        "in_intNumberOfRetry"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

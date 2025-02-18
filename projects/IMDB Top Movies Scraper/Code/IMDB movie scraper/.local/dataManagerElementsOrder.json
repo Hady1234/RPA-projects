@@ -3,7 +3,14 @@
     {
       "Path": null,
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "strMovieName&",
+        "strMovieYear&",
+        "strDuration&",
+        "strRate&",
+        "intIncrementer&",
+        "strDataStructed&"
+      ],
       "ArgumentsSectionElementsOrder": null,
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null

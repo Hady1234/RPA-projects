@@ -219,7 +219,9 @@
       "VariablesSectionElementsOrder": [
         "text&Sequence_1"
       ],
-      "ArgumentsSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "out_boolMdbOpened"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
@@ -286,8 +288,6 @@
       "Path": "State Machine All Fiels Integration(Main).xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "strUrl&StateMachine_1",
-        "strHowOpened&StateMachine_1",
         "tsRetryDeuration&StateMachine_1",
         "intNumberOfRetry&StateMachine_1",
         "strMovieName&StateMachine_1",
@@ -298,8 +298,22 @@
         "strAllMovieData&StateMachine_1",
         "dicIdbmMovieData&StateMachine_1",
         "strTryMore&StateMachine_1",
+        "strHowOpened&StateMachine_1",
+        "strUrl&StateMachine_1",
         "boolNotFound&State_19",
         "boolNotValidData&State_10"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": ".templates/TemplateTemplate.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolExixts&Sequence_5",
+        "boolPreCondetion&Sequence_5",
+        "boolPostCondetion&Sequence_3"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

@@ -1,8 +1,8 @@
 {
-  "name": "Movie Search",
-  "projectId": "9191cd02-ffa8-4bd6-bb4c-62c9beba65d7",
+  "name": "Excel Modification",
+  "projectId": "9a167b3b-f4aa-44cb-ac2d-2c7f373ff1cf",
   "description": "Blank Process",
-  "main": "State Machine All Fiels Integration(Main).xaml",
+  "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.24.0-preview]",
     "UiPath.Mail.Activities": "[1.23.11]",
@@ -43,31 +43,14 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [
-      {
-        "templateType": "Generic",
-        "fileName": ".templates\\TemplateTemplate.xaml"
-      }
-    ],
+    "fileInfoCollection": [],
     "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "a046ca9c-cbbe-4f61-a157-e1cca2db3a61",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "State Machine All Fiels Integration(Main).xaml",
-      "uniqueId": "d86261b9-6392-4606-909a-7cac054633e2",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "All Project Intgration.xaml",
-      "uniqueId": "97e956e5-bb52-4ce9-8ff9-dff287f60595",
+      "uniqueId": "ffdc0e49-59f9-49b0-85b1-ff1e4bcbee73",
       "input": [],
       "output": []
     }
