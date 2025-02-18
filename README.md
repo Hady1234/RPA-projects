@@ -9,16 +9,14 @@ The **Projects** folder contains all my RPA Robotic projects. Each project folde
 - **Project Code**: The actual implementation of the RPA solution.  
 
 #### Project Descriptions:  
-1. **COVID-19 Cases Tracker Bot**:  
-   - This bot prompts the user to enter a country name.  
-   - It navigates to the Worldometer COVID-19 page and retrieves the latest data for the specified country.  
-   - Finally, it generates an Excel report, complete with detailed process notes and visually appealing formatting.  
+ 1. **IMDB Scraper**:
+   - High-Speed Scraping – Extracts large amounts of data in minimal time.
+   - Automated Workflow – Eliminates manual effort with UiPath automation.
+   - Scalable & Efficient – Handles large datasets with ease.
+   - Customizable – Modify search parameters to target specific movie Deuration, production Year, or ratings.
+   
 
-2. **Random Weather Generator Bot**:  
-   - This bot fetches weather information from the Random Weather Generator website.  
-   - It provides users with personalized clothing recommendations based on the retrieved weather conditions.  
-
-3. **Udemy Course Search Bot**:  
+2. **Udemy Course Search Bot**:  
    - This bot allows users to search Udemy for courses by name.  
    - It retrieves and displays the course price, author, and rating.  
    - Additionally, it highlights and presents the two most affordable courses.  
@@ -27,12 +25,17 @@ The **Projects** folder contains all my RPA Robotic projects. Each project folde
    - Playlist Navigation: It automatically identifies and navigates to the playlists in the search results.
    - Data Extraction: The bot retrieves the title and view count of each video in the playlist.
    - User-Friendly Workflow: The process is fully automated, requiring minimal user interaction beyond entering the initial keyword.
-   - Structured output: Output will be text files saved in Location which spacifde from user.
- 4. **IMDB Scraper**:
-   - High-Speed Scraping – Extracts large amounts of data in minimal time.
-   - Automated Workflow – Eliminates manual effort with UiPath automation.
-   - Scalable & Efficient – Handles large datasets with ease.
-   - Customizable – Modify search parameters to target specific movie Deuration, production Year, or ratings.
+   - Structured output: Output will be text files saved in Location which spacifde from user.    
+4. **COVID-19 Cases Tracker Bot**:  
+   - This bot prompts the user to enter a country name.  
+   - It navigates to the Worldometer COVID-19 page and retrieves the latest data for the specified country.  
+   - Finally, it generates an Excel report, complete with detailed process notes and visually appealing formatting.  
+
+5. **Random Weather Generator Bot**:  
+   - This bot fetches weather information from the Random Weather Generator website.  
+   - It provides users with personalized clothing recommendations based on the retrieved weather conditions.  
+
+
 ### Certificates  
 The **Certificates** folder includes the following achievements:  
 1. **UiPath Business Analyst Automation Certificate**  
