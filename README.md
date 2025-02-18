@@ -35,7 +35,13 @@ The **Projects** folder contains all my RPA Robotic projects. Each project folde
    - This bot fetches weather information from the Random Weather Generator website.  
    - It provides users with personalized clothing recommendations based on the retrieved weather conditions.  
 
-
+6. **Excel Repair**
+   - Extracts and processes data with Zero loss.
+   - Allows users to select output location.
+   - Fast, efficient, and easy to use.
+   - User provides a corrupted Excel file.
+   - The bot repairs and manipulates the data.
+   - The cleaned file is saved in the selected destination.
 ### Certificates  
 The **Certificates** folder includes the following achievements:  
 1. **UiPath Business Analyst Automation Certificate**  
