@@ -2,7 +2,7 @@
   "name": "Excel Modification",
   "projectId": "9a167b3b-f4aa-44cb-ac2d-2c7f373ff1cf",
   "description": "Blank Process",
-  "main": "Main.xaml",
+  "main": "Excel File Integration.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.24.0-preview]",
     "UiPath.Mail.Activities": "[1.23.11]",
@@ -49,8 +49,8 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "ffdc0e49-59f9-49b0-85b1-ff1e4bcbee73",
+      "filePath": "Excel File Integration.xaml",
+      "uniqueId": "beaf46e0-d00f-41c3-b507-b36edb389026",
       "input": [],
       "output": []
     }
