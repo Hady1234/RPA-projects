@@ -1,0 +1,118 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "PDF git user input.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolExixts&Sequence_5",
+        "boolPreCondetion&Sequence_5",
+        "boolPostCondetion&Sequence_6"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_strMissionType",
+        "in_intNumberOfRetry",
+        "in_tsRetryDeuration",
+        "out_strFolderpath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "PDF convertion.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strText&Sequence_20",
+        "boolExixts&Sequence_8",
+        "boolPreCondetion&Sequence_8",
+        "boolPostCondetion&Sequence_9"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strDestnationFolder",
+        "in_strSourceFolder",
+        "in_tsRetryDeuration",
+        "in_intNumberOfRetry"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "PDF integration.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strFolderpath&Flowchart_1",
+        "intNumberOfRetry&Flowchart_1",
+        "tsRetryDeuration&Flowchart_1",
+        "strOutputfolder&Flowchart_1",
+        "strMissionType&Flowchart_1",
+        "strTryAgain&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "test.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "info&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "PDF Creat out folder.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolExixts&Sequence_5",
+        "boolPreCondetion&Sequence_5",
+        "boolFolderExist&Sequence_8",
+        "boolPostCondetion&Sequence_6"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_intNumberOfRetry",
+        "in_tsRetryDeuration",
+        "in_strFolderpath",
+        "out_strOutputfolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Invoices.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolPostCondetion&Sequence_16",
+        "strTempData&Sequence_3",
+        "strData&TryCatch_1",
+        "strText&Sequence_13",
+        "boolExixts&Sequence_2",
+        "boolPreCondetion&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_intNumberOfRetry",
+        "in_strSourceFolder",
+        "in_strDestnationFolder",
+        "in_tsRetryDeuration"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

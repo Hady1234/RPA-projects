@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,1432.6666666666667</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,1449.3333333333333</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Get_User_input_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -87,7 +87,7 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="File Avtion :&#xA;&#xA;pre condetion : N/A&#xA;&#xA;post Condetion :&#xA;&#xA;In_Arg : &#xA;in_intNumberOfRetry&#xA;in_tsRetryDeuration&#xA;&#xA;out_Arg&#xD;&#xA;out_strFileLocation" DisplayName="Get_User_input" sap:VirtualizedContainerService.HintSize="654.6666666666666,1368" sap2010:WorkflowViewState.IdRef="Sequence_7">
+  <Sequence sap2010:Annotation.AnnotationText="File Avtion :&#xA;&#xA;pre condetion : N/A&#xA;&#xA;post Condetion : Make Sure that the input is not Empety&#xA;&#xA;In_Arg : &#xA;in_intNumberOfRetry&#xA;in_tsRetryDeuration&#xA;&#xA;out_Arg&#xA;out_strSourceFileLocation&#xD;&#xA;out_strOutFolderLocation" DisplayName="Get_User_input" sap:VirtualizedContainerService.HintSize="654.6666666666666,1384.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_7">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>

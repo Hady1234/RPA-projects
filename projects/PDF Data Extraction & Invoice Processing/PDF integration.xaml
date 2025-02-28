@@ -1,0 +1,278 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="PDF_integration" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="PDF_integration_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart DisplayName="PDF_integration" sap:VirtualizedContainerService.HintSize="1209.3333333333333,420" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart.Variables>
+      <Variable x:TypeArguments="x:String" Name="strFolderpath" />
+      <Variable x:TypeArguments="x:Int32" Default="3" Name="intNumberOfRetry" />
+      <Variable x:TypeArguments="x:TimeSpan" Default="00:00:03" Name="tsRetryDeuration" />
+      <Variable x:TypeArguments="x:String" Name="strOutputfolder" />
+      <Variable x:TypeArguments="x:String" Name="strMissionType" />
+      <Variable x:TypeArguments="x:String" Name="strTryAgain" />
+    </Flowchart.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Size x:Key="ShapeSize">50,50</av:Size>
+        <av:Point x:Key="ShapeLocation">575,35</av:Point>
+        <av:PointCollection x:Key="ConnectorLocation">600,85 600,135</av:PointCollection>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID0</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep x:Name="__ReferenceID0">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">545,135</av:Point>
+          <av:Size x:Key="ShapeSize">110,70</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">600,205 600,255</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="PDF git user input - Invoke Workflow File (PDF git user input.xaml)" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="PDF git user input.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:Int32" x:Key="in_intNumberOfRetry">[intNumberOfRetry]</InArgument>
+          <InArgument x:TypeArguments="x:TimeSpan" x:Key="in_tsRetryDeuration">[tsRetryDeuration]</InArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_strFolderpath">[strFolderpath]</OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_strMissionType">[strMissionType]</OutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InvokeWorkflowFile>
+      <FlowStep.Next>
+        <FlowStep x:Name="__ReferenceID2" sap2010:WorkflowViewState.IdRef="FlowStep_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <av:Point x:Key="ShapeLocation">545,255</av:Point>
+              <av:Size x:Key="ShapeSize">110,70</av:Size>
+              <av:PointCollection x:Key="ConnectorLocation">600,325 600,355 600.3333333333334,355 600.3333333333334,370</av:PointCollection>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="PDF Creat out folder - Invoke Workflow File (PDF Creat out folder.xaml)" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="PDF Creat out folder.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InArgument x:TypeArguments="x:Int32" x:Key="in_intNumberOfRetry">[intNumberOfRetry]</InArgument>
+              <InArgument x:TypeArguments="x:TimeSpan" x:Key="in_tsRetryDeuration">[tsRetryDeuration]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_strFolderpath">[strFolderpath]</InArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="out_strOutputfolder">[strOutputfolder]</OutArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:InvokeWorkflowFile>
+          <FlowStep.Next>
+            <FlowSwitch x:TypeArguments="x:String" x:Name="__ReferenceID5" DisplayName="Flow Switch" sap:VirtualizedContainerService.HintSize="60.666666666666664,60.666666666666664" sap2010:WorkflowViewState.IdRef="FlowSwitch`1_2">
+              <FlowSwitch.Default>
+                <FlowStep x:Name="__ReferenceID3" sap2010:WorkflowViewState.IdRef="FlowStep_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <av:Point x:Key="ShapeLocation">695,475</av:Point>
+                      <av:Size x:Key="ShapeSize">110,70</av:Size>
+                      <av:PointCollection x:Key="ConnectorLocation">750,545 750,575 600,575 600,615</av:PointCollection>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="PDF convertion - Invoke Workflow File (PDF convertion.xaml)" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="PDF convertion.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="x:TimeSpan" x:Key="in_tsRetryDeuration">[tsRetryDeuration]</InArgument>
+                      <InArgument x:TypeArguments="x:Int32" x:Key="in_intNumberOfRetry">[intNumberOfRetry]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_strSourceFolder">[strFolderpath]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_strDestnationFolder">[strOutputfolder]</InArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:InvokeWorkflowFile>
+                  <FlowStep.Next>
+                    <x:Reference>__ReferenceID1</x:Reference>
+                  </FlowStep.Next>
+                </FlowStep>
+              </FlowSwitch.Default>
+              <FlowSwitch.Expression>
+                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="strMissionType" />
+              </FlowSwitch.Expression>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <av:Point x:Key="ShapeLocation">570,370</av:Point>
+                  <av:Size x:Key="ShapeSize">60.666666666666664,60.666666666666664</av:Size>
+                  <av:PointCollection x:Key="Default">630.6666666666666,400.3333333333333 750,400.3333333333333 750,475</av:PointCollection>
+                  <av:PointCollection x:Key="Read invoices DataConnector">570,400.3333333333333 430,400.3333333333333 430,475</av:PointCollection>
+                  <x:String x:Key="DefaultCaseDisplayName">Convert to txt file</x:String>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <FlowStep x:Key="Read invoices Data" x:Name="__ReferenceID4" sap2010:WorkflowViewState.IdRef="FlowStep_1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">375,475</av:Point>
+                    <av:Size x:Key="ShapeSize">110,70</av:Size>
+                    <av:PointCollection x:Key="ConnectorLocation">430,545 430,575 600,575 600,615</av:PointCollection>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoices - Invoke Workflow File (Invoices.xaml)" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Invoices.xaml">
+                  <ui:InvokeWorkflowFile.Arguments>
+                    <InArgument x:TypeArguments="x:TimeSpan" x:Key="in_tsRetryDeuration">[tsRetryDeuration]</InArgument>
+                    <InArgument x:TypeArguments="x:Int32" x:Key="in_intNumberOfRetry">[intNumberOfRetry]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_strSourceFolder">[strFolderpath]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_strDestnationFolder">[strOutputfolder]</InArgument>
+                  </ui:InvokeWorkflowFile.Arguments>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:InvokeWorkflowFile>
+                <FlowStep.Next>
+                  <FlowStep x:Name="__ReferenceID1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <av:Point x:Key="ShapeLocation">545,615</av:Point>
+                        <av:Size x:Key="ShapeSize">110,70</av:Size>
+                        <av:PointCollection x:Key="ConnectorLocation">600,685 600,715 600.3333333333334,715 600.3333333333334,720</av:PointCollection>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="334,300.6666666666667" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Mission completed, I will be hapy if you have another Mission for me :)" OptionsString="Yes;No,thanks" Title="Mission completed">
+                      <ui:InputDialog.Result>
+                        <OutArgument x:TypeArguments="x:String">[strTryAgain]</OutArgument>
+                      </ui:InputDialog.Result>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:InputDialog>
+                    <FlowStep.Next>
+                      <FlowDecision x:Name="__ReferenceID7" DisplayName="Try Again ?" sap:VirtualizedContainerService.HintSize="60.666666666666664,60.666666666666664" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
+                        <FlowDecision.Condition>
+                          <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="strTryAgain=&quot;Yes&quot;" />
+                        </FlowDecision.Condition>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <av:Point x:Key="ShapeLocation">570,720</av:Point>
+                            <av:Size x:Key="ShapeSize">60.666666666666664,60.666666666666664</av:Size>
+                            <av:PointCollection x:Key="TrueConnector">630.6666666666666,750.3333333333334 851.3333333333333,750.3333333333334 851.3333333333333,170 655,170</av:PointCollection>
+                            <av:PointCollection x:Key="FalseConnector">600.3333333333334,780.6666666666666 600.3333333333334,810.6666666666666 600,810.6666666666666 600,865</av:PointCollection>
+                            <x:String x:Key="TrueLabel">Yes</x:String>
+                            <x:String x:Key="FalseLabel">No</x:String>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <FlowDecision.True>
+                          <x:Reference>__ReferenceID0</x:Reference>
+                        </FlowDecision.True>
+                        <FlowDecision.False>
+                          <FlowStep x:Name="__ReferenceID6">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <av:Point x:Key="ShapeLocation">545,865</av:Point>
+                                <av:Size x:Key="ShapeSize">110,70</av:Size>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Thank You&quot;]">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:MessageBox>
+                          </FlowStep>
+                        </FlowDecision.False>
+                      </FlowDecision>
+                    </FlowStep.Next>
+                  </FlowStep>
+                </FlowStep.Next>
+              </FlowStep>
+            </FlowSwitch>
+          </FlowStep.Next>
+        </FlowStep>
+      </FlowStep.Next>
+    </FlowStep>
+    <x:Reference>__ReferenceID2</x:Reference>
+    <x:Reference>__ReferenceID3</x:Reference>
+    <x:Reference>__ReferenceID4</x:Reference>
+    <x:Reference>__ReferenceID5</x:Reference>
+    <x:Reference>__ReferenceID6</x:Reference>
+    <x:Reference>__ReferenceID1</x:Reference>
+    <x:Reference>__ReferenceID7</x:Reference>
+  </Flowchart>
+</Activity>

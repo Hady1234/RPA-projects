@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,3313.3333333333335</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,4498.666666666667</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Excel_Data_Maniupolation_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -119,7 +119,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="File Avtion : Maniupolate Data &#xA;&#xA;pre condetion : in_Data Table Is not Empety&#xA;&#xA;post Condetion : out_Data Table Is not Empety&#xA;&#xA;In_Arg : &#xA;in_intNumberOfRetry&#xA;in_tsRetryDeuration&#xA;in_Arg&#xA;in_dtAvilableData&#xA;out_Arg&#xA;out_strManiupolatedDataText" DisplayName="Excel_Data_Maniupolation" sap:VirtualizedContainerService.HintSize="796.6666666666666,3248.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_6">
+  <Sequence sap2010:Annotation.AnnotationText="File Avtion : Maniupolate Data &#xA;&#xA;pre condetion : in_Data Table Is not Empety&#xA;&#xA;post Condetion : out_Data Table Is not Empety&#xA;&#xA;In_Arg : &#xA;in_intNumberOfRetry&#xA;in_tsRetryDeuration&#xA;in_Arg&#xA;in_dtAvilableData&#xA;out_Arg&#xA;out_strManiupolatedDataText" DisplayName="Excel_Data_Maniupolation" sap:VirtualizedContainerService.HintSize="796.6666666666666,4434" sap2010:WorkflowViewState.IdRef="Sequence_6">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strDate" />
       <Variable x:TypeArguments="x:String" Name="strGender" />
@@ -137,7 +137,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="734.6666666666666,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Excel_Data_Maniupolation Strts&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="734.6666666666666,2588" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="734.6666666666666,3773.3333333333335" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -145,22 +145,22 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <ui:RetryScope DisplayName="Excel_Read Body" sap:VirtualizedContainerService.HintSize="696,2293.3333333333335" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[in_intNumberOfRetry]" RetryInterval="[in_tsRetryDeuration]">
+        <ui:RetryScope DisplayName="Excel_Read Body" sap:VirtualizedContainerService.HintSize="696,3478.6666666666665" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[in_intNumberOfRetry]" RetryInterval="[in_tsRetryDeuration]">
           <ui:RetryScope.ActivityBody>
             <ActivityAction>
-              <Sequence DisplayName="Process" sap:VirtualizedContainerService.HintSize="654,2114.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <Sequence DisplayName="Process" sap:VirtualizedContainerService.HintSize="654,3300" sap2010:WorkflowViewState.IdRef="Sequence_7">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Sequence DisplayName="Pre Condetion" sap:VirtualizedContainerService.HintSize="592,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                <Sequence DisplayName="Pre Condetion" sap:VirtualizedContainerService.HintSize="592,621.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_8">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:Boolean" Name="boolPreCondetion" />
                   </Sequence.Variables>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
@@ -200,13 +200,9 @@
                     </If.Else>
                   </If>
                 </Sequence>
-                <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="592,1921.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="592,1978.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_10">
                   <Sequence.Variables>
-                    <Variable x:TypeArguments="x:Int32" Name="intIncrementer">
-                      <Variable.Default>
-                        <Literal x:TypeArguments="x:Int32" />
-                      </Variable.Default>
-                    </Variable>
+                    <Variable x:TypeArguments="x:Int32" Name="intIncrementer" />
                   </Sequence.Variables>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -251,6 +247,40 @@ System.Text.RegularExpressions.Regex.Matches(strDataText, "(Male|Female)")
 )]</InArgument>
                     </Assign.Value>
                   </Assign>
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="530,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.6666666666667,140" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                          <ui:MultipleAssign.AssignOperations>
+                            <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                                <ui:AssignOperation.To>
+                                  <OutArgument x:TypeArguments="x:String">[strGender]</OutArgument>
+                                </ui:AssignOperation.To>
+                                <ui:AssignOperation.Value>
+                                  <InArgument x:TypeArguments="x:String" xml:space="preserve">["Gender=" +String.Join("=",
+System.Text.RegularExpressions.Regex.Matches(strDataText, "(Male|Female)")
+)]</InArgument>
+                                </ui:AssignOperation.Value>
+                              </ui:AssignOperation>
+                            </scg:List>
+                          </ui:MultipleAssign.AssignOperations>
+                        </ui:MultipleAssign>
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:CommentOut>
                   <Assign DisplayName="Age Group" sap:VirtualizedContainerService.HintSize="530,118" sap2010:WorkflowViewState.IdRef="Assign_6">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[strAgeGroup]</OutArgument>
@@ -315,7 +345,7 @@ System.Text.RegularExpressions.Regex.Matches(strDataText, "(\d+(?:.\d+)?)")
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="354,109.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Date = &quot;+strDate.Split(&quot;=&quot;).Count.ToString + Environment.NewLine+&#xD;&#xA;&quot;Gender = &quot;+strGender.Split(&quot;=&quot;).Count.ToString + Environment.NewLine+&#xD;&#xA;&quot;Department = &quot;+strDepartment.Split(&quot;=&quot;).Count.ToString + Environment.NewLine+&#xD;&#xA;&quot;AgeGroup = &quot;+strAgeGroup.Split(&quot;=&quot;).Count.ToString + Environment.NewLine+&#xD;&#xA;&quot;DaysLost = &quot;+strDaysLost.Split(&quot;=&quot;).Count.ToString + Environment.NewLine+&#xD;&#xA;&quot;IncidentCost = &quot;+strIncidentCost.Split(&quot;=&quot;).Count.ToString + Environment.NewLine]" />
+                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="354,109.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Date = &quot;+strDate.Split(&quot;=&quot;).Count.ToString + Environment.NewLine+&#xA;&quot;Gender = &quot;+strGender.Split(&quot;=&quot;).Count.ToString + Environment.NewLine+&#xA;&quot;Department = &quot;+strDepartment.Split(&quot;=&quot;).Count.ToString + Environment.NewLine+&#xA;&quot;AgeGroup = &quot;+strAgeGroup.Split(&quot;=&quot;).Count.ToString + Environment.NewLine+&#xA;&quot;DaysLost = &quot;+strDaysLost.Split(&quot;=&quot;).Count.ToString + Environment.NewLine+&#xA;&quot;IncidentCost = &quot;+strIncidentCost.Split(&quot;=&quot;).Count.ToString + Environment.NewLine]" />
                       </Sequence>
                     </ui:CommentOut.Body>
                     <sap:WorkflowViewStateService.ViewState>
@@ -325,7 +355,7 @@ System.Text.RegularExpressions.Regex.Matches(strDataText, "(\d+(?:.\d+)?)")
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:CommentOut>
-                  <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="530,452.6666666666667" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
+                  <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[(intIncrementer &lt; strDate.Split(&quot;=&quot;).Count)]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="530,452.6666666666667" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
                     <ui:InterruptibleDoWhile.Body>
                       <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,314" sap2010:WorkflowViewState.IdRef="Sequence_20">
                         <Sequence.Variables>
@@ -360,18 +390,15 @@ strIncidentCost.Split("=")(intIncrementer)+";"+Environment.NewLine]</InArgument>
                         </Assign>
                       </Sequence>
                     </ui:InterruptibleDoWhile.Body>
-                    <ui:InterruptibleDoWhile.Condition>
-                      <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="(intIncrementer &lt; strDate.Split(&quot;=&quot;).Count)" />
-                    </ui:InterruptibleDoWhile.Condition>
                   </ui:InterruptibleDoWhile>
                 </Sequence>
-                <Sequence DisplayName="Post Condetion" sap:VirtualizedContainerService.HintSize="592,48" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <Sequence DisplayName="Post Condetion" sap:VirtualizedContainerService.HintSize="592,612" sap2010:WorkflowViewState.IdRef="Sequence_9">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:Boolean" Name="boolPostCondetion" />
                   </Sequence.Variables>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
@@ -420,7 +447,7 @@ strIncidentCost.Split("=")(intIncrementer)+";"+Environment.NewLine]</InArgument>
         </ui:RetryScope>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="620.6666666666666,23.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="700.6666666666666,23.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -449,7 +476,7 @@ strIncidentCost.Split("=")(intIncrementer)+";"+Environment.NewLine]</InArgument>
             </Sequence>
           </ActivityAction>
         </Catch>
-        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="620.6666666666666,23.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+        <Catch x:TypeArguments="ui:BusinessRuleException" sap:VirtualizedContainerService.HintSize="700.6666666666666,23.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -481,6 +508,6 @@ strIncidentCost.Split("=")(intIncrementer)+";"+Environment.NewLine]</InArgument>
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="654.6666666666666,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Excel_Data_Maniupolation Ended&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="734.6666666666666,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Excel_Data_Maniupolation Ended&quot;]" />
   </Sequence>
 </Activity>

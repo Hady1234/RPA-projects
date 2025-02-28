@@ -1,0 +1,70 @@
+{
+  "name": "From pdf to text converter",
+  "projectId": "f8f9f101-cc59-4121-870a-bcf738299bb4",
+  "description": "Blank Process",
+  "main": "PDF integration.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.24.0-preview]",
+    "UiPath.IntegrationService.Activities": "[1.14.0]",
+    "UiPath.Mail.Activities": "[1.23.11]",
+    "UiPath.PDF.Activities": "[3.21.0-preview]",
+    "UiPath.System.Activities": "[24.11.0-preview]",
+    "UiPath.Testing.Activities": "[24.10.0]",
+    "UiPath.UIAutomation.Activities": "[24.11.1-preview]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "24.10.4.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "28b56021-a5ee-46c8-9c03-a8f8cd88cd56",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "PDF integration.xaml",
+      "uniqueId": "b0a1b3af-87e3-4522-b5e3-8249fb5557af",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

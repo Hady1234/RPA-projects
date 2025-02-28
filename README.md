@@ -30,7 +30,7 @@ The **Projects** folder contains all my RPA Robotic projects. Each project folde
    - This bot prompts the user to enter a country name.  
    - It navigates to the Worldometer COVID-19 page and retrieves the latest data for the specified country.  
    - Finally, it generates an Excel report, complete with detailed process notes and visually appealing formatting.  
-
+ 
 5. **Random Weather Generator Bot**:  
    - This bot fetches weather information from the Random Weather Generator website.  
    - It provides users with personalized clothing recommendations based on the retrieved weather conditions.  
@@ -42,6 +42,18 @@ The **Projects** folder contains all my RPA Robotic projects. Each project folde
    - User provides a corrupted Excel file.
    - The bot repairs and manipulates the data.
    - The cleaned file is saved in the selected destination.
+7. ** PDF Data Extraction & Invoice Processing with UiPath RPA **
+   
+    This RPA bot automates PDF content extraction using OCR. It offers two functionalities:
+
+   -Extracts full text from PDFs and saves each file’s content separately.
+   - Extracts key invoice details (Sales, Invoice ID, Quantity, Price) and saves them in a structured text file.
+     Features:
+   -Uses OCR to extract text from scanned PDFs.
+   -Saves extracted data in a structured format.
+   -Handles bulk processing of PDFs efficiently.
+   -Reduces manual effort and improves accuracy.   
+
 ### Certificates  
 The **Certificates** folder includes the following achievements:  
 1. **UiPath Business Analyst Automation Certificate**  

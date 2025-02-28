@@ -9,30 +9,10 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "Main.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": [],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "test.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "dtData&Sequence_1",
-        "strText&Sequence_1"
-      ],
-      "ArgumentsSectionElementsOrder": [
-        "in_strFilePath"
-      ],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
       "Path": "Excel Read.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "boolPreCondetion&Sequence_33",
         "boolFileExists&Sequence_25",
         "boolPreCondetion&Sequence_16",
         "boolPostCondetion&Sequence_17"
