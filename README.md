@@ -42,7 +42,7 @@ The **Projects** folder contains all my RPA Robotic projects. Each project folde
    - User provides a corrupted Excel file.
    - The bot repairs and manipulates the data.
    - The cleaned file is saved in the selected destination.
-7. ** PDF Data Extraction & Invoice Processing with UiPath RPA **
+7. **PDF Data Extraction & Invoice Processing with UiPath RPA**
    
     This RPA bot automates PDF content extraction using OCR. It offers two functionalities:
 
