@@ -1,0 +1,73 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "theknot integration.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strFolderLocation&Flowchart_1",
+        "intNumberOfRetry&Flowchart_1",
+        "tsRetryDeuration&Flowchart_1",
+        "boolIsOpen&Flowchart_1",
+        "strAllData&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "String manupolation.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strListText&Sequence_7",
+        "strTextCopy&Sequence_7",
+        "boolExixts&Sequence_5",
+        "boolPreCondetion&Sequence_5",
+        "boolPostCondetion&Sequence_6"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_tsRetryDeuration",
+        "in_intNumberOfRetry",
+        "in_strText",
+        "out_strInformations"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "test.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolNext&Sequence_1",
+        "strAllData&Sequence_1",
+        "strNextSelector&Sequence_1",
+        "strExtractedData&Sequence_1",
+        "ExtractDataTable&Sequence_1",
+        "element&Sequence_7",
+        "element&Sequence_13",
+        "strText&Sequence_13",
+        "ExtractDataTable&Sequence_13",
+        "ExtractDataTable&Sequence_11",
+        "strddd&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
