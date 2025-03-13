@@ -8,7 +8,7 @@ The **Projects** folder contains all my RPA Robotic projects. Each project folde
 - **Project Process Definition Document**: A comprehensive document detailing the project's workflow and design.  
 - **Project Code**: The actual implementation of the RPA solution.  
 
-#### Project Descriptions:  
+#### Projects Descriptions:  
  1. **IMDB Scraper**:
    - High-Speed Scraping – Extracts large amounts of data in minimal time.
    - Automated Workflow – Eliminates manual effort with UiPath automation.
@@ -52,8 +52,16 @@ The **Projects** folder contains all my RPA Robotic projects. Each project folde
    -Uses OCR to extract text from scanned PDFs.
    -Saves extracted data in a structured format.
    -Handles bulk processing of PDFs efficiently.
-   -Reduces manual effort and improves accuracy.   
+   -Reduces manual effort and improves accuracy. 
 
+##Advanced Projects
+1- HR Assistant & AI-Powered Resume Parser
+ - Supports Multiple Formats – Reads resumes from PDFs and low-quality images.
+ - AI-Powered Data Extraction – Uses Gemini LLM for deep resume analysis.
+ - Structured Data Output – Generates a well-organized table with Name, Experience, Certifications, Contact, and more.
+ - Automated Excel Report – Saves extracted resume data into an Excel sheet for easy review.
+ - Candidate Rating System – Provides a rating based on qualifications, experience, and resume completeness.
+ - AI-Generated Summary – Creates a concise summary for each candidate based.
 ### Certificates  
 The **Certificates** folder includes the following achievements:  
 1. **UiPath Business Analyst Automation Certificate**  

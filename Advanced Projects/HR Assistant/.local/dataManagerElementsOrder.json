@@ -43,6 +43,44 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "Write Data To excel sheet.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolExixts&Sequence_5",
+        "boolPreCondetion&Sequence_5",
+        "boolPostCondetion&Sequence_6"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_intNumberOfRetry",
+        "in_tsRetryDeuration",
+        "in_dtResumes",
+        "in_strFolderPath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Resumes as dadatable.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolExixts&Sequence_2",
+        "boolPreCondetion&Sequence_2",
+        "strRespons&Sequence_8",
+        "js_respons&Sequence_8",
+        "strDataTabel&Sequence_8",
+        "boolPostCondetion&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_intNumberOfRetry",
+        "in_tsRetryDeuration",
+        "in_strData",
+        "out_dtResumes",
+        "in_strApiKey"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
