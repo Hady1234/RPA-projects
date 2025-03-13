@@ -20,6 +20,8 @@
       "Path": "theknot integration.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "dtAllData&Flowchart_1",
+        "strFinalData&Flowchart_1",
         "strFolderLocation&Flowchart_1",
         "intNumberOfRetry&Flowchart_1",
         "tsRetryDeuration&Flowchart_1",
@@ -34,6 +36,12 @@
       "Path": "String manupolation.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "strDescription&Sequence_7",
+        "strPrice&Sequence_7",
+        "strGuest&Sequence_7",
+        "strRate&Sequence_7",
+        "strTitle&Sequence_7",
+        "strLocation&Sequence_7",
         "strListText&Sequence_7",
         "strTextCopy&Sequence_7",
         "boolExixts&Sequence_5",
@@ -53,19 +61,86 @@
       "Path": "test.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "boolNext&Sequence_1",
-        "strAllData&Sequence_1",
-        "strNextSelector&Sequence_1",
-        "strExtractedData&Sequence_1",
-        "ExtractDataTable&Sequence_1",
         "element&Sequence_7",
         "element&Sequence_13",
         "strText&Sequence_13",
         "ExtractDataTable&Sequence_13",
         "ExtractDataTable&Sequence_11",
-        "strddd&Sequence_11"
+        "strddd&Sequence_11",
+        "boolNext&Sequence_1",
+        "strAllData&Sequence_1",
+        "strNextSelector&Sequence_1",
+        "strExtractedData&Sequence_1",
+        "ExtractDataTable&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "theknot Open website.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolExixts&Sequence_5",
+        "boolPreCondetion&Sequence_5",
+        "boolPostCondetion&Sequence_6"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "theknot Data Scraping.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dtExtractDataTable&Sequence_7",
+        "boolExixts&Sequence_5",
+        "boolPreCondetion&Sequence_5",
+        "boolEnd&Sequence_11",
+        "strNextArroSelector&Sequence_20",
+        "intIncrementer&Sequence_20",
+        "strddd&Sequence_23",
+        "element&Sequence_19",
+        "strText&Sequence_19",
+        "boolPostCondetion&Sequence_6"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_dtAllData",
+        "in_intNumberOfRetry",
+        "in_tsRetryDeuration"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Excel Write.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolExixts&Sequence_9",
+        "boolPreCondetion&Sequence_9",
+        "boolPostCondetion&Sequence_10"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_dtData",
+        "in_strFilePath",
+        "in_tsRetryDeuration",
+        "in_intNumberOfRetry"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Template.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolExixts&Sequence_5",
+        "boolPreCondetion&Sequence_5",
+        "boolPostCondetion&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_intNumberOfRetry",
+        "in_tsRetryDeuration"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }

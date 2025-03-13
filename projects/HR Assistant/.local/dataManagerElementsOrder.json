@@ -1,0 +1,48 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "file data extracting.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "imOpject&Sequence_23",
+        "strImData&Sequence_23",
+        "strFilesData&Sequence_7",
+        "strImData&Sequence_22",
+        "imOpject&Sequence_22",
+        "boolExixts&Sequence_5",
+        "boolPreCondetion&Sequence_5",
+        "boolPostCondetion&Sequence_6"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_intNumberOfRetry",
+        "in_tsRetryDeuration",
+        "in_strFolderPath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Integration_File.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "intNumberOfRetry&Flowchart_1",
+        "tsRetryDeuration&Flowchart_1",
+        "strFolderPath&Flowchart_1",
+        "strAllfilesDatat&Flowchart_1",
+        "dtResumes&Flowchart_1",
+        "strApiKey&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
