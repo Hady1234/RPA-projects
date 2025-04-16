@@ -9,7 +9,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,6152</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1152,6152</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>file_data_extracting_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -139,7 +139,11 @@
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strHttpRequest" />
       <Variable x:TypeArguments="x:String" Name="strRespons" />
-      <Variable x:TypeArguments="njl:JObject" Name="js_respons" />
+      <Variable x:TypeArguments="njl:JObject" Name="js_respons">
+        <Variable.Default>
+          <VisualBasicValue x:TypeArguments="njl:JObject" ExpressionText="New Newtonsoft.Json.Linq.JObject" />
+        </Variable.Default>
+      </Variable>
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -539,7 +543,7 @@ strPdfData]</InArgument>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:ForEachFileX>
-                  <ui:WriteTextFile ContinueOnError="{x:Null}" DisplayName="Write Text File" Encoding="{x:Null}" File="{x:Null}" FileName="C:\Users\DELL\Desktop\DataExtracted.txt" sap:VirtualizedContainerService.HintSize="688,159.33333333333334" sap2010:WorkflowViewState.IdRef="WriteTextFile_2" Text="[out_strData]" />
+                  <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="C:\Users\DELL\Desktop\DataExtracted.txt" sap:VirtualizedContainerService.HintSize="688,159.33333333333334" sap2010:WorkflowViewState.IdRef="WriteTextFile_2" Text="[out_strData]" />
                 </Sequence>
                 <Sequence DisplayName="Post Condetion" sap:VirtualizedContainerService.HintSize="750,731.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <Sequence.Variables>

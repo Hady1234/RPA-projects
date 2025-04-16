@@ -1,0 +1,118 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Read Email.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolExixts&Sequence_6",
+        "boolPreCondetion&Sequence_6",
+        "boolPostCondetion&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_listEmail",
+        "in_intNumberOfRetry",
+        "in_tsRetryDeuration"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "AI Respons.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strRequest&Sequence_7",
+        "strFile&Sequence_7",
+        "strRespons&Sequence_7",
+        "jsonResponse&Sequence_7",
+        "boolExixts&Sequence_5",
+        "boolPreCondetion&Sequence_5",
+        "boolPostCondetion&Sequence_6"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "io_listEmail",
+        "in_tsRetryDeuration",
+        "in_intNumberOfRetry"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "integration.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "intNumberOfRetry&Sequence_1",
+        "tsRetryDeuration&Sequence_1",
+        "listEmail&Sequence_1",
+        "listEmailLoop&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": ".templates/Template.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolExixts&Sequence_5",
+        "boolPreCondetion&Sequence_5",
+        "boolPostCondetion&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_intNumberOfRetry",
+        "in_tsRetryDeuration"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": ".templates/Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strFile&Sequence_1",
+        "strRespons&Sequence_1",
+        "jsonResponse&Sequence_1",
+        "strRequest&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Email Replay.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolExixts&Sequence_5",
+        "boolPreCondetion&Sequence_5",
+        "strBody&Sequence_8",
+        "boolPostCondetion&Sequence_6"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_listMail",
+        "in_intNumberOfRetry",
+        "in_tsRetryDeuration"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Flow.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "listEmail&Flowchart_1",
+        "tsRetryDeuration&Flowchart_1",
+        "intNumberOfRetry&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

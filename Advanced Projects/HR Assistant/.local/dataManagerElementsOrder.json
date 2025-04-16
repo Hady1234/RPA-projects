@@ -12,9 +12,10 @@
       "Path": "file data extracting.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "imOpject&Sequence_23",
-        "strImData&Sequence_23",
-        "strFilesData&Sequence_7",
+        "strHttpRequest&Sequence_7",
+        "strRespons&Sequence_7",
+        "js_respons&Sequence_7",
+        "strPdfData&Sequence_24",
         "strImData&Sequence_22",
         "imOpject&Sequence_22",
         "boolExixts&Sequence_5",
@@ -22,6 +23,8 @@
         "boolPostCondetion&Sequence_6"
       ],
       "ArgumentsSectionElementsOrder": [
+        "out_strData",
+        "in_strApiKey",
         "in_intNumberOfRetry",
         "in_tsRetryDeuration",
         "in_strFolderPath"
@@ -79,6 +82,24 @@
         "out_dtResumes",
         "in_strApiKey"
       ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "test.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strRespons&Sequence_9",
+        "js_respons&Sequence_9",
+        "strUserQ&Sequence_9",
+        "strFileConverted&Sequence_9",
+        "strFile&Sequence_9",
+        "strMessage&Sequence_2",
+        "strRespons&Sequence_11",
+        "js_respons&Sequence_11",
+        "in_strFolderPatha&Sequence_12"
+      ],
+      "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }
